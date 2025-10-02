@@ -44,17 +44,17 @@ export default function MobileApp() {
             <h3 className="text-gray-600 font-sora text-xl md:text-2xl font-bold mt-6">
               Research findings identified dual user segments:
             </h3>
-            <div className="space-y-3 text-base">
-              <p className="text-gray-600">
+            <ul className="list-disc pl-6 space-y-2 text-base text-gray-600">
+              <li>
                 <span className="font-bold">League Organizers:</span> Personal trainers, gym owners, influencers, and coaches who could create branded competitions, set entry fees, and earn commission while maintaining client engagement between sessions
-              </p>
-              <p className="text-gray-600">
+              </li>
+              <li>
                 <span className="font-bold">Participants:</span> Their clients, followers, and community members seeking structured motivation and peer accountability
-              </p>
-              <p className="text-gray-600">
-                This B2B2C model insight fundamentally shaped the platform architecture, creating tools for fitness professionals to launch custom competitions, manage prize pools, and track participant engagement—essentially providing a white-label competition infrastructure that leverages their existing authority and relationships.
-              </p>
-            </div>
+              </li>
+            </ul>
+            <p className="text-gray-600 text-base mt-3">
+              This B2B2C model insight fundamentally shaped the platform architecture, creating tools for fitness professionals to launch custom competitions, manage prize pools, and track participant engagement—essentially providing a white-label competition infrastructure that leverages their existing authority and relationships.
+            </p>
           </div>
         </section>
 
