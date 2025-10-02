@@ -32,7 +32,7 @@ export default function Salesforce() {
             Design Process & Methodology
           </h2>
           
-          <div className="w-full text-[#59697F] text-base md:text-lg space-y-4">
+          <div className="w-full text-[#59697F] text-base md:text-lg space-y-4 leading-[16px] md:leading-[16px]">
             <p>
               Partnered with a Fortune 500 technology company experiencing critical sales enablement and partner certification challenges:
             </p>
@@ -76,8 +76,8 @@ export default function Salesforce() {
             className="w-full md:w-1/2 h-auto"
           />
           
-          <div className="w-full md:w-1/2 text-[#59697F] space-y-4">
-            <p className="text-base md:text-lg">
+          <div className="w-full md:w-1/2 text-[#59697F] space-y-4 leading-[16px]">
+            <p className="text-base md:text-lg leading-[16px] md:leading-[16px]">
               Developed a comprehensive design approach that balanced Salesforce's design constraints with enhanced learning experiences:
             </p>
 
@@ -129,7 +129,7 @@ export default function Salesforce() {
             className="w-full md:w-[398px] h-auto"
           />
           
-          <div className="flex-1 text-[#59697F] space-y-4">
+          <div className="flex-1 text-[#59697F] space-y-4 leading-[16px]">
             <div className="space-y-3">
               <h3 className="font-bold text-lg">Sales Onboarding Command Center Designed a revolutionary onboarding experience embedded in Salesforce:</h3>
               <ul className="list-disc pl-6 space-y-2 text-base leading-7 md:text-lg md:leading-8">
@@ -154,7 +154,7 @@ export default function Salesforce() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] pb-12 text-[#59697F] space-y-6">
+        <section className="w-full px-6 md:px-12 lg:px-[100px] pb-12 text-[#59697F] space-y-6 leading-[16px]">
           <div className="space-y-3">
             <h3 className="font-bold text-lg">Salesforce-Native Data Model Designed custom objects that leveraged Salesforce's relationship model:</h3>
             <ul className="list-disc pl-6 space-y-2 text-base leading-7 md:text-lg md:leading-8">
@@ -168,7 +168,7 @@ export default function Salesforce() {
 
           <div className="space-y-3">
             <h3 className="font-bold text-lg">Moodle & Canvas Plugin Architecture</h3>
-            <p className="text-base md:text-lg">Designed bi-directional synchronization interfaces for external LMS platforms:</p>
+            <p className="text-base md:text-lg leading-[16px] md:leading-[16px]">Designed bi-directional synchronization interfaces for external LMS platforms:</p>
             <h4 className="font-bold text-base">Visual Configuration Interface</h4>
             <ul className="list-disc pl-6 space-y-2 text-base leading-7 md:text-lg md:leading-8">
               <li>Field Mapping UI: Drag-and-drop interface for mapping Salesforce fields to LMS attributes</li>
@@ -205,7 +205,7 @@ export default function Salesforce() {
             className="w-full md:w-1/2 h-auto"
           />
           
-          <div className="flex-1 text-[#59697F] space-y-4">
+          <div className="flex-1 text-[#59697F] space-y-4 leading-[16px]">
             <div className="space-y-3">
               <h3 className="font-bold text-base">Automated Enrollment Workflows Designed sophisticated automation reducing manual work by 85%:</h3>
               <ul className="list-disc pl-6 space-y-2 text-base leading-7">
@@ -255,8 +255,8 @@ export default function Salesforce() {
             className="w-full md:w-1/2 h-auto"
           />
           
-          <div className="flex-1 text-[#59697F] space-y-4">
-            <p className="text-lg">Contextual Learning Delivery</p>
+          <div className="flex-1 text-[#59697F] space-y-4 leading-[16px]">
+            <p className="text-lg leading-[16px]">Contextual Learning Delivery</p>
             
             <div className="space-y-3">
               <h3 className="font-bold text-base">Pioneered "Learning in the Flow of Work" within Salesforce:</h3>
@@ -304,7 +304,7 @@ export default function Salesforce() {
             className="w-full md:w-1/2 h-auto"
           />
           
-          <div className="flex-1 text-[#59697F] space-y-4">
+          <div className="flex-1 text-[#59697F] space-y-4 leading-[16px]">
             <div className="space-y-3">
               <h3 className="font-bold text-base">Strategic Customer Success (Year 1)</h3>
               <ul className="list-disc pl-6 space-y-2 text-base leading-7">
@@ -361,7 +361,7 @@ export default function Salesforce() {
             className="w-full md:w-1/2 h-auto"
           />
           
-          <div className="flex-1 text-[#59697F] text-base space-y-3">
+          <div className="flex-1 text-[#59697F] text-base space-y-3 leading-[16px]">
             <div>
               <p><span className="font-bold">Challenge:</span> Visualforce's limited responsive capabilities</p>
               <p><span className="font-bold">Solution:</span> Created adaptive layouts using JavaScript and custom CSS grid systems</p>
@@ -403,8 +403,8 @@ export default function Salesforce() {
             className="w-full md:w-1/2 h-auto"
           />
           
-          <div className="flex-1 text-[#59697F] space-y-4">
-            <p className="text-base">
+          <div className="flex-1 text-[#59697F] space-y-4 leading-[16px]">
+            <p className="text-base leading-[16px]">
               EnlightenCRM represents my ability to design within strict platform constraints while delivering exceptional user experiences. The project demanded deep understanding of Salesforce's technical architecture, creative problem-solving within Visualforce limitations, and careful balance between innovation and platform compliance.
               Key achievements demonstrating design expertise:
             </p>
@@ -452,7 +452,7 @@ export default function Salesforce() {
         </section>
 
         <section className="w-full px-6 md:px-12 lg:px-[100px] pb-16">
-          <p className="text-[#59697F] text-base">
+          <p className="text-[#59697F] text-base leading-[16px]">
             EnlightenCRM proved that native platform integration trumps feature richness when solving enterprise problems. By embracing Salesforce's constraints rather than fighting them, we created a product that felt like a natural extension of the platform while delivering sophisticated learning management capabilities. The success validated that understanding technical architecture is essential for enterprise UX design, and that the best solutions often emerge from creative constraint navigation rather than unlimited possibility.
           </p>
         </section>
