@@ -21,9 +21,9 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
-          <Link to="/about" className="text-gray-600 text-lg font-normal hover:underline">
+          <a href="/#about" className="text-gray-600 text-lg font-normal hover:underline">
             About
-          </Link>
+          </a>
           <Link to="/portfolio" className="text-gray-600 text-lg font-normal hover:underline">
             Portfolio
           </Link>
@@ -48,13 +48,13 @@ export default function Header() {
 
       {mobileMenuOpen && (
         <div className="md:hidden w-full px-2.5 py-9 flex flex-col items-center gap-12 bg-white">
-          <Link
-            to="/about"
+          <a
+            href="/#about"
             className="text-gray-600 text-lg font-normal"
             onClick={() => setMobileMenuOpen(false)}
           >
             About
-          </Link>
+          </a>
           <Link
             to="/portfolio"
             className="text-gray-600 text-lg font-normal"
