@@ -1,9 +1,13 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 export default function WebsiteProject() {
+  const ogImage = "https://api.builder.io/api/v1/image/assets/TEMP/35abb0e68b5595f56e887e5539bc47dc23e0b049?width=1200";
+  const description = "Envisiontel corporate website case study: dual services and software positioning, WordPress architecture, and conversion results.";
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      <Seo title="Corporate Website Case Study — Envisiontel | VerityAscent" description={description} image={ogImage} canonicalPath="/portfolio/website" />
       <Header />
 
       <main className="flex-1">

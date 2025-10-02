@@ -1,11 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 export default function Ecommerce() {
+  const ogImage = "https://api.builder.io/api/v1/image/assets/TEMP/66222ed966fd45c1c4d79deaf7dc3c373ef42828?width=1200";
+  const description = "LMScheckout case study: enterprise course commerce platform design — multi-tenant architecture, Bootstrap design system, and measurable outcomes.";
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      <Seo title="Ecommerce Case Study — LMScheckout | VerityAscent" description={description} image={ogImage} canonicalPath="/ecommerce" />
       <Header />
-      
+
       <main className="flex-1 flex flex-col items-center">
         {/* Hero Section */}
         <section className="w-full px-6 md:px-12 lg:px-[100px] py-9 md:py-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 bg-[rgba(168,220,219,0.5)]">

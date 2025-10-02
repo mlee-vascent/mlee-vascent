@@ -2,12 +2,16 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SocialLinks } from "@/components/SocialLinks";
 import { Link } from "react-router-dom";
+import Seo from "@/components/Seo";
 
 export default function Portfolio() {
+  const ogImage = "https://api.builder.io/api/v1/image/assets/TEMP/cfc7b32d3bd84e2431b8ac9f31332e7430c2402d?width=1200";
+  const description = "Portfolio of UI/UX design and GTM case studies by Matt Lee: mobile apps, ecommerce platforms, Salesforce ISV products, and corporate websites.";
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      <Seo title="Portfolio — UI/UX & GTM Case Studies | VerityAscent" description={description} image={ogImage} canonicalPath="/portfolio" />
       <Header />
-      
+
       <main className="flex-1 flex flex-col items-center">
         {/* Hero Section */}
         <section

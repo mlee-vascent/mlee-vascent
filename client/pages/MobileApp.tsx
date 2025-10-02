@@ -1,11 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 export default function MobileApp() {
+  const ogImage = "https://api.builder.io/api/v1/image/assets/TEMP/2eb26e41379558561607d4d8396fcab00e19366b?width=800";
+  const description = "Fitleaguer mobile app case study: league management, gamification, and AI-enhanced design-to-dev workflows.";
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      <Seo title="Mobile App Case Study — Fitleaguer | VerityAscent" description={description} image={ogImage} canonicalPath="/mobile-app" />
       <Header />
-      
+
       <main className="flex-1 flex flex-col items-center">
         {/* Hero Section */}
         <section className="w-full px-6 md:px-9 lg:px-[100px] py-9 md:py-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 bg-gray-200">

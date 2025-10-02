@@ -1,11 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 export default function Salesforce() {
+  const ogImage = "https://api.builder.io/api/v1/image/assets/TEMP/2cfd9ed00d56763a050a99c331e77e43f45d11ed?width=1200";
+  const description = "EnlightenCRM case study: Salesforce‑native learning management solution—embedded training, analytics, and partner enablement.";
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      <Seo title="Salesforce ISV Case Study — EnlightenCRM | VerityAscent" description={description} image={ogImage} canonicalPath="/salesforce" />
       <Header />
-      
+
       <main className="flex-1 flex flex-col items-center">
         {/* Hero Section */}
         <section className="w-full px-6 md:px-9 lg:px-[100px] py-9 md:py-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 bg-[#FFD7C3]">
