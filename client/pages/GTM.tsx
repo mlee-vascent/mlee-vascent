@@ -187,7 +187,7 @@ export default function GTM() {
           <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
             Ready To Scale Your Pipeline?
           </h2>
-          <p className="text-gray-600 text-center text-lg max-w-3xl">
+          <p className="text-gray-600 text-center text-lg max-w-[1004px] w-full">
             Let's design your automated outreach engine and start booking more meetings this month.
           </p>
           <a href="https://calendly.com/verityascent/30min" target="_blank" rel="noopener noreferrer" className="px-6 py-6 rounded-2xl bg-orange-primary text-white font-sora text-xl md:text-2xl font-semibold">
