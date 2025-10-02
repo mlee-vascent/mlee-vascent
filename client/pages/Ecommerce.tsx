@@ -15,7 +15,7 @@ export default function Ecommerce() {
             className="w-full md:w-[419px] h-auto md:h-[335px] rounded-xl border border-gray-400 shadow-md object-cover"
           />
           <div className="flex flex-col justify-center items-start gap-4 max-w-[740px]">
-            <h1 className="text-gray-600 font-sora text-3xl md:text-4xl lg:text-[56px] font-bold leading-tight">
+            <h1 className="text-gray-600 font-sora text-3xl md:text-4xl lg:text-[56px] font-bold !leading-[65px]">
               LMScheckout: Enterprise Course Commerce Platform
             </h1>
             <h2 className="text-gray-600 font-sora text-xl md:text-2xl font-semibold">
