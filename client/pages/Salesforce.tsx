@@ -132,7 +132,7 @@ export default function Salesforce() {
           <div className="flex-1 text-[#59697F] space-y-4 leading-[16px]">
             <div className="space-y-3">
               <h3 className="font-bold text-lg">Sales Onboarding Command Center Designed a revolutionary onboarding experience embedded in Salesforce:</h3>
-              <ul className="list-disc pl-6 space-y-2 text-base leading-[16px] md:text-lg md:leading-8">
+              <ul className="list-disc pl-6 space-y-2 text-base leading-[16px] md:text-lg md:leading-[16px]">
                 <li>Role-Based Learning Paths: Automatic assignment based on Salesforce profiles</li>
                 <li>Contextual Microlearning: Training surfaces within opportunity and account pages</li>
                 <li>Progress Dashboards: Manager visibility into team readiness</li>
@@ -143,7 +143,7 @@ export default function Salesforce() {
 
             <div className="space-y-3 pt-4">
               <h3 className="font-bold text-lg">Partner Portal Learning Experience Created differentiated experiences for internal vs. external users:</h3>
-              <ul className="list-disc pl-6 space-y-2 text-base leading-[16px] md:text-lg md:leading-8">
+              <ul className="list-disc pl-6 space-y-2 text-base leading-[16px] md:text-lg md:leading-[16px]">
                 <li>Communities Integration: Seamless embedding in Salesforce Partner Communities</li>
                 <li>Branded Learning Paths: White-labeled experiences per partner tier</li>
                 <li>Deal Registration Training: Prerequisites for deal registration access</li>
@@ -157,7 +157,7 @@ export default function Salesforce() {
         <section className="w-full px-6 md:px-12 lg:px-[100px] pb-12 text-[#59697F] space-y-6 leading-[16px]">
           <div className="space-y-3">
             <h3 className="font-bold text-lg">Salesforce-Native Data Model Designed custom objects that leveraged Salesforce's relationship model:</h3>
-            <ul className="list-disc pl-6 space-y-2 text-base leading-[16px] md:text-lg md:leading-8">
+            <ul className="list-disc pl-6 space-y-2 text-base leading-[16px] md:text-lg md:leading-[16px]">
               <li>Learning Path Object: Parent object with curriculum structure</li>
               <li>Course Enrollment Object: Junction object linking users to courses</li>
               <li>Learning Activity Object: Granular tracking of all interactions</li>
@@ -170,7 +170,7 @@ export default function Salesforce() {
             <h3 className="font-bold text-lg">Moodle & Canvas Plugin Architecture</h3>
             <p className="text-base md:text-lg leading-[16px] md:leading-[16px]">Designed bi-directional synchronization interfaces for external LMS platforms:</p>
             <h4 className="font-bold text-base">Visual Configuration Interface</h4>
-            <ul className="list-disc pl-6 space-y-2 text-base leading-[16px] md:text-lg md:leading-8">
+            <ul className="list-disc pl-6 space-y-2 text-base leading-[16px] md:text-lg md:leading-[16px]">
               <li>Field Mapping UI: Drag-and-drop interface for mapping Salesforce fields to LMS attributes</li>
               <li>Sync Rules Builder: Visual workflow for enrollment automation</li>
               <li>Conflict Resolution Dashboard: Interface for handling data mismatches</li>
@@ -181,7 +181,7 @@ export default function Salesforce() {
 
           <div className="space-y-3">
             <h3 className="font-bold text-lg">Plugin Design Specifications</h3>
-            <ul className="list-disc pl-6 space-y-2 text-base leading-[16px] md:text-lg md:leading-8">
+            <ul className="list-disc pl-6 space-y-2 text-base leading-[16px] md:text-lg md:leading-[16px]">
               <li>Created mockups for Moodle admin interface matching their design patterns</li>
               <li>Designed Canvas LTI configuration screens</li>
               <li>Built OAuth flow visualizations for secure authentication</li>
