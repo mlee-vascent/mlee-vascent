@@ -9,11 +9,13 @@ export default function Salesforce() {
       <main className="flex-1 flex flex-col items-center">
         {/* Hero Section */}
         <section className="w-full px-6 md:px-9 lg:px-[100px] py-9 md:py-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 bg-[#FFD7C3]">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/2cfd9ed00d56763a050a99c331e77e43f45d11ed?width=838"
-            alt="Salesforce Hero"
-            className="w-full md:w-[419px] h-auto md:h-[335px] rounded-xl object-cover border-0 outline-none ring-0 shadow-[1px_4px_4px_rgba(0,0,0,0.25)]"
-          />
+          <div className="w-full md:w-[419px] h-auto md:h-[335px] rounded-xl overflow-hidden">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/2cfd9ed00d56763a050a99c331e77e43f45d11ed?width=838"
+              alt="Salesforce Hero"
+              className="w-full h-full object-cover block border-0 outline-none ring-0 shadow-none"
+            />
+          </div>
           <div className="flex flex-col justify-center items-start gap-4 max-w-[740px]">
             <h1 className="text-[#59697F] font-sora text-3xl md:text-4xl lg:text-[56px] font-bold leading-normal">
               EnlightenCRM: Salesforce-Native Learning Management Solution
