@@ -24,7 +24,7 @@ export function SocialLinks() {
         </svg>
       </a>
 
-      <a href="#" aria-label="Facebook">
+      <a href="https://www.facebook.com/matthewraganlee" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
         <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
           <circle cx="20" cy="20.5" r="20" fill="#00C3C1" />
           <path
