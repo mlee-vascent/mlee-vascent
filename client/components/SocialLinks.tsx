@@ -9,7 +9,7 @@ export function SocialLinks() {
         Resume
       </a>
 
-      <a href="#" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/matthewraganlee/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
         <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
           <circle cx="20" cy="20.5" r="20" fill="#00C3C1" />
           <path d="M13 16.5H8V32.5H13V16.5Z" fill="white" />
