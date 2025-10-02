@@ -17,7 +17,7 @@ export default function WebsiteProject() {
             />
           </div>
           <div className="flex-1 flex flex-col justify-center items-start gap-3 max-w-[740px]">
-            <h1 className="text-gray-600 font-sora text-3xl md:text-4xl lg:text-[56px] font-bold leading-[1.5]">
+            <h1 className="text-gray-600 font-sora text-3xl md:text-4xl lg:text-[56px] font-bold leading-[1.65]">
               Envisiontel Corporate Website: Elearning Solutions Digital Experience
             </h1>
             <h2 className="text-gray-600 font-sora text-xl md:text-2xl font-semibold leading-tight">
