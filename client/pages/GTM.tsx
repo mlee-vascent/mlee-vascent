@@ -18,9 +18,9 @@ export default function GTM() {
             </p>
             
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-14 w-full md:w-auto mt-6 md:px-24">
-              <button className="w-full md:w-auto px-9 py-9 rounded-2xl border-2 border-[#E4F4F3] text-[#F9FAFB] text-center font-sora text-2xl md:text-[30px] font-bold">
+              <a href="https://calendly.com/verityascent/30min" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto px-9 py-9 rounded-2xl border-2 border-[#E4F4F3] text-[#F9FAFB] text-center font-sora text-2xl md:text-[30px] font-bold">
                 Book a Consultation
-              </button>
+              </a>
               <button className="w-full md:w-auto px-9 py-9 rounded-2xl border-2 border-[#E4F4F3] text-[#F9FAFB] text-center font-sora text-2xl md:text-[30px] font-bold">
                 Resume
               </button>
@@ -190,9 +190,9 @@ export default function GTM() {
           <p className="text-gray-600 text-center text-lg max-w-3xl">
             Let's design your automated outreach engine and start booking more meetings this month.
           </p>
-          <button className="px-6 py-6 rounded-2xl bg-orange-primary text-white font-sora text-xl md:text-2xl font-semibold">
+          <a href="https://calendly.com/verityascent/30min" target="_blank" rel="noopener noreferrer" className="px-6 py-6 rounded-2xl bg-orange-primary text-white font-sora text-xl md:text-2xl font-semibold">
             Book A Consultation
-          </button>
+          </a>
         </section>
       </main>
 
