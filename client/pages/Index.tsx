@@ -182,7 +182,7 @@ export default function Index() {
           </h2>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-[68px] py-2 flex flex-wrap justify-center items-center gap-3">
+        <section className="w-full px-6 md:px-12 lg:px-[68px] py-2 flex flex-wrap justify-center items-center gap-12">
           <div className="flex flex-col items-center gap-5 w-full md:w-auto">
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
               Mobile
