@@ -14,6 +14,7 @@ import Blog from "./pages/Blog";
 import Ecommerce from "./pages/Ecommerce";
 import MobileApp from "./pages/MobileApp";
 import WebsiteProject from "./pages/WebsiteProject";
+import Salesforce from "./pages/Salesforce";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/mobile-app" element={<MobileApp />} />
+          <Route path="/salesforce" element={<Salesforce />} />
           <Route path="/portfolio/website" element={<WebsiteProject />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
