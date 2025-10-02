@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import GTM from "./pages/GTM";
 import Blog from "./pages/Blog";
+import WebsiteProject from "./pages/WebsiteProject";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/gtm" element={<GTM />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/portfolio/website" element={<WebsiteProject />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

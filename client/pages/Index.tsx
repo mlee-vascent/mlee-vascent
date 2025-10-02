@@ -216,7 +216,7 @@ export default function Index() {
             />
           </div>
 
-          <div className="flex flex-col items-center gap-5 w-full md:w-auto">
+          <Link to="/portfolio/website" className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity">
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
               Website
             </h3>
@@ -225,7 +225,7 @@ export default function Index() {
               alt="Website project"
               className="w-[290px] h-[334px] rounded-br-2xl shadow-md"
             />
-          </div>
+          </Link>
         </section>
 
         <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-center gap-5">
