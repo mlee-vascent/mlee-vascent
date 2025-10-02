@@ -7,10 +7,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import GTM from "./pages/GTM";
-import Blog from "./pages/Blog";
 import Ecommerce from "./pages/Ecommerce";
 import MobileApp from "./pages/MobileApp";
 import WebsiteProject from "./pages/WebsiteProject";
@@ -27,10 +25,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/gtm" element={<GTM />} />
-          <Route path="/blog" element={<Blog />} />
           <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/mobile-app" element={<MobileApp />} />
           <Route path="/salesforce" element={<Salesforce />} />
