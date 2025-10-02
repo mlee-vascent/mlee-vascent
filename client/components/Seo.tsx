@@ -27,7 +27,7 @@ function upsertLink(rel: string, href: string) {
   link.setAttribute("href", href);
 }
 
-export const Seo: React.FC<SeoProps> = ({ title, description, image, canonicalPath }) => {
+export const Seo: React.FC<SeoProps> = ({ title, description, image, canonicalPath, robots }) => {
   React.useEffect(() => {
     const origin = typeof window !== "undefined" ? window.location.origin : "";
     const url = canonicalPath ? `${origin}${canonicalPath}` : origin || "/";
