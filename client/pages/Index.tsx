@@ -47,13 +47,14 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-9 lg:px-[100px] py-9 md:py-9 flex flex-col md:flex-row justify-center items-center md:items-start gap-12">
+        <section className="w-full px-6 md:px-9 lg:px-[100px] py-9 md:py-9 flex flex-col md:flex-row justify-center items-center md:items-start gap-[50px]">
           <div className="flex-1 flex flex-col justify-center items-start gap-9">
             <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
-              Designing Interfaces That Feel Effortless
+              Designing Interfaces That <br />
+              Feel Effortless
             </h2>
 
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-9 w-full px-2">
+            <div className="flex flex-col md:flex-row items-center md:items-center justify-start gap-9 w-full px-2">
               <div className="flex justify-center items-center">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/40db7e666c3b74912cf3d36982b52cc98ca6ec0b?width=400"
@@ -81,7 +82,7 @@ export default function Index() {
               Modern Sales Infrastructure, Built for Automation & Scale
             </h2>
 
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-9 w-full px-2">
+            <div className="flex flex-col md:flex-row items-center md:items-center justify-start gap-9 w-full px-2">
               <div className="flex justify-center items-center">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/fdd9cdf6cd596a6cc3d1b6f5cc1ae6f762a9baf4?width=400"
