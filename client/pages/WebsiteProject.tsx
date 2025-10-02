@@ -17,10 +17,10 @@ export default function WebsiteProject() {
             />
           </div>
           <div className="flex-1 flex flex-col justify-center items-start gap-3 max-w-[740px]">
-            <h1 className="text-gray-600 font-sora text-3xl md:text-4xl lg:text-[56px] font-bold leading-[1.65]">
+            <h1 className="text-gray-600 font-sora text-3xl md:text-4xl lg:text-[56px] font-bold leading-[65px]">
               Envisiontel Corporate Website: Elearning Solutions Digital Experience
             </h1>
-            <h2 className="text-gray-600 font-sora text-xl md:text-2xl font-semibold leading-tight">
+            <h2 className="text-gray-600 font-sora text-xl md:text-2xl font-semibold leading-[32px]">
               UI/UX Design Case Study
             </h2>
           </div>
@@ -28,8 +28,8 @@ export default function WebsiteProject() {
 
         {/* Design Process & Methodology */}
         <section className="w-full px-6 md:px-12 lg:px-24 py-12 flex flex-col items-center gap-6">
-          <h2 className="text-gray-600 font-sora text-[30px] font-bold text-center">Design Process & Methodology</h2>
-          <div className="w-full max-w-[1000px] text-gray-600 text-[16px] leading-[1.45] space-y-4">
+          <h2 className="text-gray-600 font-sora text-[30px] font-bold leading-[45px] text-center">Design Process & Methodology</h2>
+          <div className="w-full max-w-[1166px] lg:ml-[51px] text-gray-600 text-[16px] leading-[1.45] space-y-4">
             <p className="font-semibold">Discovery & Strategic Planning</p>
             <p>Conducted extensive research to understand the eLearning industry landscape and buyer journey:</p>
 
