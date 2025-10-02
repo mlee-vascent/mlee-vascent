@@ -56,7 +56,7 @@ export default function Salesforce() {
               <li>Salesforce Administrators dealing with training data silos</li>
             </ul>
 
-            <p className="pt-4">
+            <p className="pt-4 leading-[24px]">
               Key Insight: Organizations didn't need another standalone LMS. They needed learning embedded where work happens, inside Salesforce, with native data integration enabling correlation between training and business outcomes.
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function Salesforce() {
           />
           
           <div className="w-full md:w-1/2 text-[#59697F] space-y-4 leading-[16px]">
-            <p className="text-base md:text-lg leading-[16px] md:leading-[16px]">
+            <p className="text-base md:text-lg leading-[24px] md:leading-[24px]">
               Developed a comprehensive design approach that balanced Salesforce's design constraints with enhanced learning experiences:
             </p>
 
@@ -168,7 +168,7 @@ export default function Salesforce() {
 
           <div className="space-y-3">
             <h3 className="font-bold text-lg">Moodle & Canvas Plugin Architecture</h3>
-            <p className="text-base md:text-lg leading-[16px] md:leading-[16px]">Designed bi-directional synchronization interfaces for external LMS platforms:</p>
+            <p className="text-base md:text-lg leading-[24px] md:leading-[24px]">Designed bi-directional synchronization interfaces for external LMS platforms:</p>
             <h4 className="font-bold text-base">Visual Configuration Interface</h4>
             <ul className="list-disc pl-6 space-y-2 text-base leading-[16px] md:text-lg md:leading-[16px]">
               <li>Field Mapping UI: Drag-and-drop interface for mapping Salesforce fields to LMS attributes</li>
@@ -256,7 +256,7 @@ export default function Salesforce() {
           />
           
           <div className="flex-1 text-[#59697F] space-y-4 leading-[16px]">
-            <p className="text-lg leading-[16px]">Contextual Learning Delivery</p>
+            <p className="text-lg leading-[24px]">Contextual Learning Delivery</p>
             
             <div className="space-y-3">
               <h3 className="font-bold text-base">Pioneered "Learning in the Flow of Work" within Salesforce:</h3>
@@ -404,7 +404,7 @@ export default function Salesforce() {
           />
           
           <div className="flex-1 text-[#59697F] space-y-4 leading-[16px]">
-            <p className="text-base leading-[16px]">
+            <p className="text-base leading-[24px]">
               EnlightenCRM represents my ability to design within strict platform constraints while delivering exceptional user experiences. The project demanded deep understanding of Salesforce's technical architecture, creative problem-solving within Visualforce limitations, and careful balance between innovation and platform compliance.
               Key achievements demonstrating design expertise:
             </p>
@@ -452,7 +452,7 @@ export default function Salesforce() {
         </section>
 
         <section className="w-full px-6 md:px-12 lg:px-[100px] pb-16">
-          <p className="text-[#59697F] text-base leading-[16px]">
+          <p className="text-[#59697F] text-base leading-[24px]">
             EnlightenCRM proved that native platform integration trumps feature richness when solving enterprise problems. By embracing Salesforce's constraints rather than fighting them, we created a product that felt like a natural extension of the platform while delivering sophisticated learning management capabilities. The success validated that understanding technical architecture is essential for enterprise UX design, and that the best solutions often emerge from creative constraint navigation rather than unlimited possibility.
           </p>
         </section>
