@@ -87,11 +87,13 @@ export default function Portfolio() {
         <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 md:py-16 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
           <div className="flex flex-col items-center gap-4 w-full md:w-auto md:px-12">
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold">Salesforce ISV</h3>
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/d699e84979aa8f2a0f419fa76a75792fce7bbf68?width=590"
-              alt="Salesforce project"
-              className="w-[295px] h-[295px] rounded-full border-0 ring-0 outline-none shadow-none"
-            />
+            <Link to="/salesforce">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/d699e84979aa8f2a0f419fa76a75792fce7bbf68?width=590"
+                alt="Salesforce project"
+                className="w-[295px] h-[295px] rounded-full border-0 ring-0 outline-none shadow-none hover:opacity-80 transition-opacity cursor-pointer"
+              />
+            </Link>
           </div>
           
           <div className="flex-1 max-w-[451px] flex flex-col gap-6">
@@ -103,9 +105,9 @@ export default function Portfolio() {
             <p className="text-gray-600 text-sm">
               Led design of EnlightenCRM, a native Salesforce learning management solution that transforms how organizations deliver training directly within their CRM ecosystem, from ideation through strategic customer collaboration and ultimately to AppExchange certification and market success. The challenge was creating a seamless learning experience that felt native to Salesforce while maintaining continuity with existing LMS capabilities for sales enablement and partner education.
             </p>
-            <button className="px-4 py-4 rounded-xl bg-orange-primary text-white text-lg self-start">
+            <Link to="/salesforce" className="px-4 py-4 rounded-xl bg-orange-primary text-white text-lg self-start text-center">
               Read More
-            </button>
+            </Link>
           </div>
         </section>
 
