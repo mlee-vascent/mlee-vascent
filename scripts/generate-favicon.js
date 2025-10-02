@@ -1,5 +1,6 @@
-const fs = require('node:fs');
-const path = require('node:path');
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 async function main() {
   const pngUrl = 'https://cdn.builder.io/api/v1/image/assets/4142780b5a85442faddc1827c5dbc44f/b72888cfb986457bba20a827b2b43604?format=png&width=256';
@@ -7,6 +8,7 @@ async function main() {
   if (!res.ok) throw new Error(`Failed to fetch image: ${res.status} ${res.statusText}`);
   const pngBuf = Buffer.from(await res.arrayBuffer());
 
+  const __dirname = path.dirname(fileURLToPath(import.meta.url));
   const publicDir = path.resolve(__dirname, '..', 'public');
   if (!fs.existsSync(publicDir)) fs.mkdirSync(publicDir, { recursive: true });
   const pngPath = path.join(publicDir, 'favicon.png');
