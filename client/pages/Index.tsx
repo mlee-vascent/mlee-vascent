@@ -2,10 +2,19 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SocialLinks } from "@/components/SocialLinks";
 import { Link } from "react-router-dom";
+import Seo from "@/components/Seo";
 
 export default function Index() {
+  const ogImage = "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47bd8390907741749758f6c6206db0b1?format=webp&width=1200";
+  const description = "Matt Lee helps startups and growth teams launch faster with UI/UX design and go-to-market strategy. Modern sales infrastructure and AI-powered outreach generate predictable pipeline. View the portfolio and book a consultation.";
   return (
     <div className="min-h-screen bg-white">
+      <Seo
+        title="Matt Lee | UI/UX Design & Go-To-Market Strategy — VerityAscent"
+        description={description}
+        image={ogImage}
+        canonicalPath="/"
+      />
       <Header />
 
       <main>

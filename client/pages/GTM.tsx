@@ -1,11 +1,20 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 
 export default function GTM() {
+  const ogImage = "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47bd8390907741749758f6c6206db0b1?format=webp&width=1200";
+  const description = "Design and implement scalable GTM systems that book more qualified meetings: buyer-intent data, LinkedIn automation, email sequencing, and AI-powered outreach to drive predictable growth.";
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      <Seo
+        title="AI‑Powered Outreach & Go‑To‑Market Systems | VerityAscent"
+        description={description}
+        image={ogImage}
+        canonicalPath="/gtm"
+      />
       <Header />
-      
+
       <main className="flex-1 flex flex-col">
         {/* Hero Section */}
         <section className="w-full px-6 md:px-24 lg:px-[100px] py-16 flex flex-col items-center gap-3 bg-gradient-to-r from-[#00C9C9] to-[#00A6A6]">
