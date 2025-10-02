@@ -21,16 +21,30 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
-          <a href="/#about" className="text-gray-600 text-lg font-normal hover:underline">
+          <a
+            href="/#about"
+            className="text-gray-600 text-lg font-normal hover:underline"
+          >
             About
           </a>
-          <Link to="/portfolio" className="text-gray-600 text-lg font-normal hover:underline">
+          <Link
+            to="/portfolio"
+            className="text-gray-600 text-lg font-normal hover:underline"
+          >
             Portfolio
           </Link>
-          <Link to="/gtm" className="text-gray-600 text-lg font-normal hover:underline">
+          <Link
+            to="/gtm"
+            className="text-gray-600 text-lg font-normal hover:underline"
+          >
             GTM
           </Link>
-          <a href="https://belayingkatie.blogspot.com/" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-lg font-normal hover:underline">
+          <a
+            href="https://belayingkatie.blogspot.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 text-lg font-normal hover:underline"
+          >
             Blog
           </a>
         </nav>

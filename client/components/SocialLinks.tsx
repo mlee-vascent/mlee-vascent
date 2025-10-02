@@ -3,13 +3,19 @@ export function SocialLinks() {
     <div className="flex items-center gap-6">
       <a
         href="https://drive.google.com/file/d/1dtBKTFjnGFqdcyo1n34rx2MbW2FvdQiL/view?usp=sharing"
-        target="_blank" rel="noopener noreferrer"
+        target="_blank"
+        rel="noopener noreferrer"
         className="px-3 py-3 rounded-2xl bg-teal-400 text-white text-base font-normal inline-flex items-center"
       >
         Resume
       </a>
 
-      <a href="https://www.linkedin.com/in/matthewraganlee/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <a
+        href="https://www.linkedin.com/in/matthewraganlee/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
         <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
           <circle cx="20" cy="20.5" r="20" fill="#00C3C1" />
           <path d="M13 16.5H8V32.5H13V16.5Z" fill="white" />
@@ -24,7 +30,12 @@ export function SocialLinks() {
         </svg>
       </a>
 
-      <a href="https://www.facebook.com/matthewraganlee" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+      <a
+        href="https://www.facebook.com/matthewraganlee"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Facebook"
+      >
         <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
           <circle cx="20" cy="20.5" r="20" fill="#00C3C1" />
           <path
@@ -34,7 +45,12 @@ export function SocialLinks() {
         </svg>
       </a>
 
-      <a href="https://www.instagram.com/mattrlee/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <a
+        href="https://www.instagram.com/mattrlee/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
+      >
         <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
           <circle cx="20" cy="20.5" r="20" fill="#00C3C1" />
           <path
@@ -50,7 +66,12 @@ export function SocialLinks() {
         </svg>
       </a>
 
-      <a href="https://x.com/mattrlee" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
+      <a
+        href="https://x.com/mattrlee"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Twitter/X"
+      >
         <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
           <circle cx="20" cy="20.5" r="20" fill="#00C3C1" />
           <path

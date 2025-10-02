@@ -27,30 +27,67 @@ function upsertLink(rel: string, href: string) {
   link.setAttribute("href", href);
 }
 
-export const Seo: React.FC<SeoProps> = ({ title, description, image, canonicalPath, robots }) => {
+export const Seo: React.FC<SeoProps> = ({
+  title,
+  description,
+  image,
+  canonicalPath,
+  robots,
+}) => {
   React.useEffect(() => {
     const origin = typeof window !== "undefined" ? window.location.origin : "";
     const url = canonicalPath ? `${origin}${canonicalPath}` : origin || "/";
 
     document.title = title;
 
-    upsertMeta("meta[name='description']", { name: "description", content: description });
-    upsertMeta("meta[name='robots']", { name: "robots", content: robots || "index, follow" });
+    upsertMeta("meta[name='description']", {
+      name: "description",
+      content: description,
+    });
+    upsertMeta("meta[name='robots']", {
+      name: "robots",
+      content: robots || "index, follow",
+    });
 
     // Open Graph
-    upsertMeta("meta[property='og:title']", { property: "og:title", content: title });
-    upsertMeta("meta[property='og:description']", { property: "og:description", content: description });
-    upsertMeta("meta[property='og:type']", { property: "og:type", content: "website" });
+    upsertMeta("meta[property='og:title']", {
+      property: "og:title",
+      content: title,
+    });
+    upsertMeta("meta[property='og:description']", {
+      property: "og:description",
+      content: description,
+    });
+    upsertMeta("meta[property='og:type']", {
+      property: "og:type",
+      content: "website",
+    });
     upsertMeta("meta[property='og:url']", { property: "og:url", content: url });
     if (image) {
-      upsertMeta("meta[property='og:image']", { property: "og:image", content: image });
+      upsertMeta("meta[property='og:image']", {
+        property: "og:image",
+        content: image,
+      });
     }
 
     // Twitter
-    upsertMeta("meta[name='twitter:card']", { name: "twitter:card", content: image ? "summary_large_image" : "summary" });
-    upsertMeta("meta[name='twitter:title']", { name: "twitter:title", content: title });
-    upsertMeta("meta[name='twitter:description']", { name: "twitter:description", content: description });
-    if (image) upsertMeta("meta[name='twitter:image']", { name: "twitter:image", content: image });
+    upsertMeta("meta[name='twitter:card']", {
+      name: "twitter:card",
+      content: image ? "summary_large_image" : "summary",
+    });
+    upsertMeta("meta[name='twitter:title']", {
+      name: "twitter:title",
+      content: title,
+    });
+    upsertMeta("meta[name='twitter:description']", {
+      name: "twitter:description",
+      content: description,
+    });
+    if (image)
+      upsertMeta("meta[name='twitter:image']", {
+        name: "twitter:image",
+        content: image,
+      });
 
     // Canonical
     upsertLink("canonical", url);

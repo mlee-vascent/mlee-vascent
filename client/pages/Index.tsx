@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 import Seo from "@/components/Seo";
 
 export default function Index() {
-  const ogImage = "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47bd8390907741749758f6c6206db0b1?format=webp&width=1200";
-  const description = "Matt Lee helps startups and growth teams launch faster with UI/UX design and go-to-market strategy. Modern sales infrastructure and AI-powered outreach generate predictable pipeline. View the portfolio and book a consultation.";
+  const ogImage =
+    "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47bd8390907741749758f6c6206db0b1?format=webp&width=1200";
+  const description =
+    "Matt Lee helps startups and growth teams launch faster with UI/UX design and go-to-market strategy. Modern sales infrastructure and AI-powered outreach generate predictable pipeline. View the portfolio and book a consultation.";
   return (
     <div className="min-h-screen bg-white">
       <Seo
@@ -79,7 +81,10 @@ export default function Index() {
                   launch products that are visually stunning, easy to use, and
                   ready to scale.
                 </p>
-                <Link to="/portfolio" className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center">
+                <Link
+                  to="/portfolio"
+                  className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center"
+                >
                   View Portfolio
                 </Link>
               </div>
@@ -107,7 +112,10 @@ export default function Index() {
                   automation, buyer intent data, and AI-powered sequencing to
                   accelerate your path to revenue.
                 </p>
-                <Link to="/gtm" className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center">
+                <Link
+                  to="/gtm"
+                  className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center"
+                >
                   Learn More
                 </Link>
               </div>
@@ -139,17 +147,20 @@ export default function Index() {
           </div>
 
           <div className="flex-1 flex flex-col items-center md:items-start gap-6 max-w-[710px] px-4 md:px-0">
-            <h2 id="about" className="text-gray-600 font-sora text-[30px] font-bold leading-normal">
+            <h2
+              id="about"
+              className="text-gray-600 font-sora text-[30px] font-bold leading-normal"
+            >
               About Me
             </h2>
             <div className="text-gray-600 text-base font-normal leading-normal space-y-4">
               <p>
                 I'm Matt Lee, a senior product and go-to-market leader with a
                 track record of building and scaling teams, designing innovative
-                products, and driving measurable business outcomes. My experience
-                spans leading GTM teams of more than 100 account executives as
-                well as managing developer teams bringing new applications and
-                Salesforce AppExchange products to market.
+                products, and driving measurable business outcomes. My
+                experience spans leading GTM teams of more than 100 account
+                executives as well as managing developer teams bringing new
+                applications and Salesforce AppExchange products to market.
               </p>
               <p>
                 I've led the entire product lifecycle from concept and
@@ -193,7 +204,10 @@ export default function Index() {
         </section>
 
         <section className="w-full px-6 md:px-12 lg:px-[68px] py-2 flex flex-wrap justify-center items-center gap-12">
-          <Link to="/mobile-app" className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity">
+          <Link
+            to="/mobile-app"
+            className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity"
+          >
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
               Mobile
             </h3>
@@ -204,7 +218,10 @@ export default function Index() {
             />
           </Link>
 
-          <Link to="/ecommerce" className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity">
+          <Link
+            to="/ecommerce"
+            className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity"
+          >
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
               Ecommerce
             </h3>
@@ -215,7 +232,10 @@ export default function Index() {
             />
           </Link>
 
-          <Link to="/salesforce" className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity">
+          <Link
+            to="/salesforce"
+            className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity"
+          >
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
               Salesforce
             </h3>
@@ -226,7 +246,10 @@ export default function Index() {
             />
           </Link>
 
-          <Link to="/portfolio/website" className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity">
+          <Link
+            to="/portfolio/website"
+            className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity"
+          >
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
               Website
             </h3>
@@ -239,7 +262,10 @@ export default function Index() {
         </section>
 
         <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-center gap-5">
-          <Link to="/portfolio" className="px-16 py-4 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block">
+          <Link
+            to="/portfolio"
+            className="px-16 py-4 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block"
+          >
             View More
           </Link>
         </section>

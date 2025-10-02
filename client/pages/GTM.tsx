@@ -3,8 +3,10 @@ import Footer from "@/components/Footer";
 import Seo from "@/components/Seo";
 
 export default function GTM() {
-  const ogImage = "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47bd8390907741749758f6c6206db0b1?format=webp&width=1200";
-  const description = "Design and implement scalable GTM systems that book more qualified meetings: buyer-intent data, LinkedIn automation, email sequencing, and AI-powered outreach to drive predictable growth.";
+  const ogImage =
+    "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47bd8390907741749758f6c6206db0b1?format=webp&width=1200";
+  const description =
+    "Design and implement scalable GTM systems that book more qualified meetings: buyer-intent data, LinkedIn automation, email sequencing, and AI-powered outreach to drive predictable growth.";
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Seo
@@ -23,14 +25,26 @@ export default function GTM() {
               Scale Your Pipeline with AI-Powered Outreach
             </h1>
             <p className="text-white text-center font-sora text-xl md:text-2xl lg:text-[30px] font-bold max-w-4xl">
-              Go-to-market strategy and automated outreach systems designed to book more meetings, close more deals, and grow revenue without adding headcount.
+              Go-to-market strategy and automated outreach systems designed to
+              book more meetings, close more deals, and grow revenue without
+              adding headcount.
             </p>
-            
+
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-14 w-full md:w-auto mt-6 md:px-24">
-              <a href="https://calendly.com/verityascent/30min" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto px-9 py-9 rounded-2xl border-2 border-[#E4F4F3] text-[#F9FAFB] text-center font-sora text-2xl md:text-[30px] font-bold">
+              <a
+                href="https://calendly.com/verityascent/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full md:w-auto px-9 py-9 rounded-2xl border-2 border-[#E4F4F3] text-[#F9FAFB] text-center font-sora text-2xl md:text-[30px] font-bold"
+              >
                 Book a Consultation
               </a>
-              <a href="https://drive.google.com/file/d/1dtBKTFjnGFqdcyo1n34rx2MbW2FvdQiL/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto px-9 py-9 rounded-2xl border-2 border-[#E4F4F3] text-[#F9FAFB] text-center font-sora text-2xl md:text-[30px] font-bold">
+              <a
+                href="https://drive.google.com/file/d/1dtBKTFjnGFqdcyo1n34rx2MbW2FvdQiL/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full md:w-auto px-9 py-9 rounded-2xl border-2 border-[#E4F4F3] text-[#F9FAFB] text-center font-sora text-2xl md:text-[30px] font-bold"
+              >
                 Resume
               </a>
             </div>
@@ -40,7 +54,13 @@ export default function GTM() {
         {/* Description */}
         <section className="w-full px-6 md:px-24 lg:px-[100px] py-12">
           <p className="text-gray-600 text-lg text-center md:text-left">
-            At VerityAscent, I help growing businesses and startups bring their products to market faster and more effectively by combining proven go-to-market strategy with modern AI-powered outreach automation. My focus is simple: create predictable sales pipelines by setting up systems that generate meetings, nurture prospects, and convert opportunities all while freeing up your team to focus on closing deals.
+            At VerityAscent, I help growing businesses and startups bring their
+            products to market faster and more effectively by combining proven
+            go-to-market strategy with modern AI-powered outreach automation. My
+            focus is simple: create predictable sales pipelines by setting up
+            systems that generate meetings, nurture prospects, and convert
+            opportunities all while freeing up your team to focus on closing
+            deals.
           </p>
         </section>
 
@@ -83,7 +103,9 @@ export default function GTM() {
             A Smarter Way to Reach Your Market
           </h2>
           <p className="text-gray-600 text-center font-sora text-xl md:text-2xl font-semibold max-w-4xl">
-            By combining go-to-market strategy with AI-powered outreach tools, we help you create predictable, scalable sales pipelines that drive consistent revenue growth.
+            By combining go-to-market strategy with AI-powered outreach tools,
+            we help you create predictable, scalable sales pipelines that drive
+            consistent revenue growth.
           </p>
         </section>
 
@@ -99,52 +121,88 @@ export default function GTM() {
           <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
             I Implement the Tools That Drive Growth
           </h2>
-          
+
           {/* Row 1 */}
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">Trigify</h3>
-              <p className="text-gray-600 text-center text-lg">Actionable LinkedIn Signals</p>
+              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
+                Trigify
+              </h3>
+              <p className="text-gray-600 text-center text-lg">
+                Actionable LinkedIn Signals
+              </p>
             </div>
             <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">RB2B</h3>
-              <p className="text-gray-600 text-center text-lg">Cold Website Signals</p>
+              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
+                RB2B
+              </h3>
+              <p className="text-gray-600 text-center text-lg">
+                Cold Website Signals
+              </p>
             </div>
             <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">Buyer Intent</h3>
-              <p className="text-gray-600 text-center text-lg">Keyword Search Signals</p>
+              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
+                Buyer Intent
+              </h3>
+              <p className="text-gray-600 text-center text-lg">
+                Keyword Search Signals
+              </p>
             </div>
           </div>
 
           {/* Row 2 */}
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">Clay</h3>
-              <p className="text-gray-600 text-center text-lg">Data Enrichment & Automation</p>
+              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
+                Clay
+              </h3>
+              <p className="text-gray-600 text-center text-lg">
+                Data Enrichment & Automation
+              </p>
             </div>
             <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">HeyReach</h3>
-              <p className="text-gray-600 text-center text-lg">LinkedIn Outreach & Nurturing</p>
+              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
+                HeyReach
+              </h3>
+              <p className="text-gray-600 text-center text-lg">
+                LinkedIn Outreach & Nurturing
+              </p>
             </div>
             <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">Reply</h3>
-              <p className="text-gray-600 text-center text-lg">LinkedIn & Email Sequencing</p>
+              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
+                Reply
+              </h3>
+              <p className="text-gray-600 text-center text-lg">
+                LinkedIn & Email Sequencing
+              </p>
             </div>
           </div>
 
           {/* Row 3 */}
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">Instantly</h3>
-              <p className="text-gray-600 text-center text-lg">Email Warmup & Sending</p>
+              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
+                Instantly
+              </h3>
+              <p className="text-gray-600 text-center text-lg">
+                Email Warmup & Sending
+              </p>
             </div>
             <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">Apollo</h3>
-              <p className="text-gray-600 text-center text-lg">Data Enrichment & Sequencing</p>
+              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
+                Apollo
+              </h3>
+              <p className="text-gray-600 text-center text-lg">
+                Data Enrichment & Sequencing
+              </p>
             </div>
             <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">Outreach</h3>
-              <p className="text-gray-600 text-center text-lg">Enterprise Sales Automation</p>
+              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
+                Outreach
+              </h3>
+              <p className="text-gray-600 text-center text-lg">
+                Enterprise Sales Automation
+              </p>
             </div>
           </div>
         </section>
@@ -154,38 +212,73 @@ export default function GTM() {
           <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
             What You'll Get!
           </h2>
-          
+
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="flex flex-col gap-4">
               <div className="flex items-start gap-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M20 6L9 17L4 12" stroke="#00B279" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path
+                    d="M20 6L9 17L4 12"
+                    stroke="#00B279"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
-                <p className="text-gray-600 text-lg">More qualified meetings booked</p>
+                <p className="text-gray-600 text-lg">
+                  More qualified meetings booked
+                </p>
               </div>
               <div className="flex items-start gap-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M20 6L9 17L4 12" stroke="#00B279" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path
+                    d="M20 6L9 17L4 12"
+                    stroke="#00B279"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
-                <p className="text-gray-600 text-lg">Predictable pipeline growth</p>
+                <p className="text-gray-600 text-lg">
+                  Predictable pipeline growth
+                </p>
               </div>
               <div className="flex items-start gap-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M20 6L9 17L4 12" stroke="#00B279" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path
+                    d="M20 6L9 17L4 12"
+                    stroke="#00B279"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
-                <p className="text-gray-600 text-lg">Reduced manual prospecting effort</p>
+                <p className="text-gray-600 text-lg">
+                  Reduced manual prospecting effort
+                </p>
               </div>
               <div className="flex items-start gap-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M20 6L9 17L4 12" stroke="#00B279" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path
+                    d="M20 6L9 17L4 12"
+                    stroke="#00B279"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
-                <p className="text-gray-600 text-lg">Higher ROI from outreach campaigns</p>
+                <p className="text-gray-600 text-lg">
+                  Higher ROI from outreach campaigns
+                </p>
               </div>
             </div>
 
             <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
               <p className="text-gray-600 text-center text-lg">
-                "Once we ramped up the outreach automation combined with the buyer intent data, we actually had to pause things in order to change our entire sales enablement strategy so our AE's could better manage their time in qualified meetings!"
+                "Once we ramped up the outreach automation combined with the
+                buyer intent data, we actually had to pause things in order to
+                change our entire sales enablement strategy so our AE's could
+                better manage their time in qualified meetings!"
               </p>
             </div>
           </div>
@@ -197,9 +290,15 @@ export default function GTM() {
             Ready To Scale Your Pipeline?
           </h2>
           <p className="text-gray-600 text-center text-lg max-w-[1004px] w-full">
-            Let's design your automated outreach engine and start booking more meetings this month.
+            Let's design your automated outreach engine and start booking more
+            meetings this month.
           </p>
-          <a href="https://calendly.com/verityascent/30min" target="_blank" rel="noopener noreferrer" className="px-6 py-6 rounded-2xl bg-orange-primary text-white font-sora text-xl md:text-2xl font-semibold">
+          <a
+            href="https://calendly.com/verityascent/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-6 rounded-2xl bg-orange-primary text-white font-sora text-xl md:text-2xl font-semibold"
+          >
             Book A Consultation
           </a>
         </section>

@@ -12,7 +12,11 @@ const routes = [
 
 export const handler: Handler = async (event) => {
   const proto = event.headers["x-forwarded-proto"] || "https";
-  const host = (event.headers["x-forwarded-host"] || event.headers.host || "").toString();
+  const host = (
+    event.headers["x-forwarded-host"] ||
+    event.headers.host ||
+    ""
+  ).toString();
   const base = host ? `${proto}://${host}` : "";
   const lastmod = new Date().toISOString();
 
