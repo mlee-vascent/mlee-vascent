@@ -10,13 +10,34 @@ export default function Portfolio() {
       <main className="flex-1 flex flex-col items-center">
         {/* Hero Section */}
         <section
-          className="relative w-full px-6 md:px-12 lg:px-24 py-12 md:py-16 flex flex-col items-center gap-6 md:gap-12 shadow-md overflow-hidden"
+          className="relative w-full px-6 md:px-12 lg:px-24 py-12 md:py-16 flex flex-col items-center gap-6 md:gap-12 border-b border-teal-300 shadow-md overflow-hidden"
         >
-          <div className="absolute inset-0 z-0" style={{
-            backgroundImage: "url('https://api.builder.io/api/v1/image/assets/TEMP/cfc7b32d3bd84e2431b8ac9f31332e7430c2402d?width=2880')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }} />
+          <div className="absolute inset-0 z-0">
+            {/* Desktop background */}
+            <div
+              className="hidden lg:block w-full h-full"
+              style={{
+                background:
+                  "url('https://api.builder.io/api/v1/image/assets/TEMP/c99fe03b9dbad6a90a0f4bf0fa9a93065c8d0f2e?width=2880') lightgray -468px -289.874px / 161.25% 289.624% no-repeat",
+              }}
+            />
+            {/* Tablet background */}
+            <div
+              className="hidden sm:block lg:hidden w-full h-full"
+              style={{
+                background:
+                  "url('https://api.builder.io/api/v1/image/assets/TEMP/4dd6e401d5044e9999a1fa8555b0186634e3a974?width=1596') lightgray -259.35px -301.842px / 161.25% 289.624% no-repeat",
+              }}
+            />
+            {/* Mobile background */}
+            <div
+              className="block sm:hidden w-full h-full"
+              style={{
+                background:
+                  "url('https://api.builder.io/api/v1/image/assets/TEMP/1a7caa0fdf3d577bddcfa65c938dd5caec0c17a5?width=786') lightgray -127.725px -301.842px / 161.25% 289.624% no-repeat",
+              }}
+            />
+          </div>
 
           <div className="relative z-10 flex flex-col items-center gap-6 md:gap-12">
             <h1 className="text-gray-600 font-sora text-4xl md:text-5xl lg:text-[56px] font-bold text-center" style={{ textShadow: "1px 4px 4px rgba(255, 255, 255, 0.90)" }}>
