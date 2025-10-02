@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import GTM from "./pages/GTM";
 import Blog from "./pages/Blog";
+import Ecommerce from "./pages/Ecommerce";
 import WebsiteProject from "./pages/WebsiteProject";
 import NotFound from "./pages/NotFound";
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/gtm" element={<GTM />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/portfolio/website" element={<WebsiteProject />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
