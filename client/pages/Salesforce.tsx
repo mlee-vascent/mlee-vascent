@@ -12,7 +12,7 @@ export default function Salesforce() {
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/2cfd9ed00d56763a050a99c331e77e43f45d11ed?width=838"
             alt="Salesforce Hero"
-            className="w-full md:w-[419px] h-auto md:h-[335px] rounded-xl object-cover border border-[#BFCAD6] shadow-md"
+            className="w-full md:w-[419px] h-auto md:h-[335px] rounded-xl object-cover shadow-md"
           />
           <div className="flex flex-col justify-center items-start gap-4 max-w-[740px]">
             <h1 className="text-[#59697F] font-sora text-3xl md:text-4xl lg:text-[56px] font-bold leading-normal">
