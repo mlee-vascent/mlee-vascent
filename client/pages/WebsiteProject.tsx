@@ -29,7 +29,7 @@ export default function WebsiteProject() {
           <h2 className="text-gray-600 font-sora text-[30px] font-bold leading-normal text-center w-full">
             Design Process & Methodology
           </h2>
-          <div className="text-gray-600 text-lg font-normal leading-normal space-y-4 max-w-full">
+          <div className="prose prose-slate max-w-none md:prose-lg prose-headings:font-sora prose-headings:text-gray-600 prose-p:text-gray-600 prose-strong:text-gray-600 prose-p:leading-relaxed">
             <p className="font-bold">Discovery & Strategic Planning</p>
             <p>Conducted extensive research to understand the eLearning industry landscape and buyer journey:</p>
             
@@ -73,7 +73,7 @@ export default function WebsiteProject() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-lg font-normal leading-normal space-y-4">
+          <div className="flex-1 prose prose-slate max-w-none md:prose-lg prose-headings:font-sora prose-headings:text-gray-600 prose-p:text-gray-600 prose-strong:text-gray-600 prose-p:leading-relaxed">
             <p>Developed a dual-focused architecture balancing services and software:</p>
             
             <p className="font-bold">Primary Navigation Structure</p>
@@ -130,7 +130,7 @@ export default function WebsiteProject() {
               className="w-full max-w-[515px] h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-base font-normal leading-normal space-y-4">
+          <div className="flex-1 prose prose-slate max-w-none md:prose-lg prose-headings:font-sora prose-headings:text-gray-600 prose-p:text-gray-600 prose-strong:text-gray-600 prose-p:leading-relaxed">
             <p className="font-bold">Custom Theme Development Built a sophisticated WordPress theme showcasing eLearning expertise:</p>
             <p>Mobile-First Design: Reflecting importance of mobile learning</p>
             <p>Interactive Elements: Demonstrating engagement techniques</p>
@@ -175,7 +175,7 @@ export default function WebsiteProject() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-base font-normal leading-normal space-y-4">
+          <div className="flex-1 prose prose-slate max-w-none md:prose-lg prose-headings:font-sora prose-headings:text-gray-600 prose-p:text-gray-600 prose-strong:text-gray-600 prose-p:leading-relaxed">
             <p>Design System for Learning Focus Created visual language emphasizing engagement and transformation:</p>
             
             <p className="font-bold">Color Psychology</p>
@@ -227,7 +227,7 @@ export default function WebsiteProject() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-lg font-normal leading-normal space-y-4">
+          <div className="flex-1 prose prose-slate max-w-none md:prose-lg prose-headings:font-sora prose-headings:text-gray-600 prose-p:text-gray-600 prose-strong:text-gray-600 prose-p:leading-relaxed">
             <p className="font-bold">Instructional Design Team Partnership Coordinated with IDs to showcase methodologies:</p>
             <p>ADDIE Model Visualization: Interactive explanation of design process</p>
             <p>Learning Objective Mapping: Visual frameworks and templates</p>
@@ -274,7 +274,7 @@ export default function WebsiteProject() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-base font-normal leading-normal space-y-4">
+          <div className="flex-1 prose prose-slate max-w-none md:prose-lg prose-headings:font-sora prose-headings:text-gray-600 prose-p:text-gray-600 prose-strong:text-gray-600 prose-p:leading-relaxed">
             <p className="font-bold">Interactive Learning Effectiveness Calculator</p>
             <p className="font-bold">Built custom tool demonstrating expertise:</p>
             <p>Current training cost inputs</p>
@@ -325,7 +325,7 @@ export default function WebsiteProject() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-base font-normal leading-normal space-y-4">
+          <div className="flex-1 prose prose-slate max-w-none md:prose-lg prose-headings:font-sora prose-headings:text-gray-600 prose-p:text-gray-600 prose-strong:text-gray-600 prose-p:leading-relaxed">
             <p className="font-bold">Traffic & Engagement Metrics (Year 1)</p>
             <p>183% increase in organic traffic</p>
             <p>4.3 average pages per session</p>
@@ -373,7 +373,7 @@ export default function WebsiteProject() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-base font-normal leading-normal space-y-4">
+          <div className="flex-1 prose prose-slate max-w-none md:prose-lg prose-headings:font-sora prose-headings:text-gray-600 prose-p:text-gray-600 prose-strong:text-gray-600 prose-p:leading-relaxed">
             <p><span className="font-bold">Challenge:</span> Demonstrating proprietary work under NDAs</p>
             <p><span className="font-bold">Solution:</span> Created anonymized case studies with permission, developed generic sample courses showcasing capabilities</p>
             
@@ -404,7 +404,7 @@ export default function WebsiteProject() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-base font-normal leading-normal space-y-4">
+          <div className="flex-1 prose prose-slate max-w-none md:prose-lg prose-headings:font-sora prose-headings:text-gray-600 prose-p:text-gray-600 prose-strong:text-gray-600 prose-p:leading-relaxed">
             <p>The Envisiontel website successfully positioned the company as a unique player in the eLearning space, one of the few offering both world-class content development AND the technology to deliver it. The project required balancing complex dual messaging while maintaining clarity and driving conversions for two distinct business lines.</p>
             
             <p>Key achievements demonstrating expertise:</p>
