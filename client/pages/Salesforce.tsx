@@ -361,7 +361,7 @@ export default function Salesforce() {
             className="w-full md:w-1/2 h-auto"
           />
           
-          <div className="flex-1 text-[#59697F] text-base space-y-3 leading-[16px]">
+          <div className="flex-1 text-[#59697F] text-base space-y-3 leading-[24px]">
             <div>
               <p><span className="font-bold">Challenge:</span> Visualforce's limited responsive capabilities</p>
               <p><span className="font-bold">Solution:</span> Created adaptive layouts using JavaScript and custom CSS grid systems</p>
