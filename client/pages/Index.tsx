@@ -35,7 +35,7 @@ export default function Index() {
           <div className="flex-1 flex justify-center items-center px-5 md:px-12 lg:px-24 py-4 md:py-[15px]">
             <div className="relative">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/f0e9dc48ad1b2ec48d18839ce369e80504fb3479?width=982"
+                src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47bd8390907741749758f6c6206db0b1?format=webp&width=800"
                 alt="Matt Lee climbing"
                 className="w-[157px] h-[157px] md:w-[200px] md:h-[200px] lg:w-[315px] lg:h-[315px] rounded-full object-cover border-[5px] border-teal-500"
               />
