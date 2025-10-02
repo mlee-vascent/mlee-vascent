@@ -1,62 +1,241 @@
-import { DemoResponse } from "@shared/api";
-import { useEffect, useState } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { SocialLinks } from "@/components/SocialLinks";
+import { Link } from "react-router-dom";
 
 export default function Index() {
-  const [exampleFromServer, setExampleFromServer] = useState("");
-  // Fetch users on component mount
-  useEffect(() => {
-    fetchDemo();
-  }, []);
-
-  // Example of how to fetch data from the server (if needed)
-  const fetchDemo = async () => {
-    try {
-      const response = await fetch("/api/demo");
-      const data = (await response.json()) as DemoResponse;
-      setExampleFromServer(data.message);
-    } catch (error) {
-      console.error("Error fetching hello:", error);
-    }
-  };
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
-      <div className="text-center">
-        {/* TODO: FUSION_GENERATION_APP_PLACEHOLDER replace everything here with the actual app! */}
-        <h1 className="text-2xl font-semibold text-slate-800 flex items-center justify-center gap-3">
-          <svg
-            className="animate-spin h-8 w-8 text-slate-400"
-            viewBox="0 0 50 50"
-          >
-            <circle
-              className="opacity-30"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
+    <div className="min-h-screen bg-white">
+      <Header />
+
+      <main>
+        <section
+          className="w-full flex flex-col md:flex-row items-start border-b border-teal-300 shadow-md"
+          style={{
+            backgroundImage:
+              "url('https://api.builder.io/api/v1/image/assets/TEMP/cfc7b32d3bd84e2431b8ac9f31332e7430c2402d?width=2880')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="flex-1 px-6 md:px-12 lg:px-24 py-10 md:py-10 flex flex-col items-start md:items-start gap-6">
+            <h1 className="text-gray-600 font-sora text-3xl md:text-[40px] lg:text-[56px] font-bold leading-normal w-full md:w-[538px] text-center md:text-left">
+              From Concept to Market, Fast!
+            </h1>
+            <p className="text-gray-600 text-lg font-normal w-full text-center md:text-left">
+              I design sleek, intuitive user experiences and craft go-to-market
+              strategies that help startups scale the mountain of success
+              quickly and win early.
+            </p>
+            <div className="hidden md:flex">
+              <SocialLinks />
+            </div>
+          </div>
+
+          <div className="flex-1 flex justify-center items-center px-5 md:px-12 lg:px-24 py-4 md:py-[15px]">
+            <div className="relative">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/f0e9dc48ad1b2ec48d18839ce369e80504fb3479?width=982"
+                alt="Matt Lee climbing"
+                className="w-[157px] h-[157px] md:w-[200px] md:h-[200px] lg:w-[315px] lg:h-[315px] rounded-full object-cover border-[5px] border-teal-500"
+              />
+            </div>
+          </div>
+
+          <div className="md:hidden w-full flex justify-center pb-9">
+            <SocialLinks />
+          </div>
+        </section>
+
+        <section className="w-full px-6 md:px-9 lg:px-[100px] py-9 md:py-9 flex flex-col md:flex-row justify-center items-center md:items-start gap-12">
+          <div className="flex-1 flex flex-col justify-center items-start gap-9">
+            <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
+              Designing Interfaces That Feel Effortless
+            </h2>
+
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-9 w-full px-2">
+              <div className="flex justify-center items-center">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/40db7e666c3b74912cf3d36982b52cc98ca6ec0b?width=400"
+                  alt="Design tools"
+                  className="w-[200px] h-[200px] rounded-full"
+                />
+              </div>
+
+              <div className="flex-1 flex flex-col justify-end items-end gap-6">
+                <p className="text-gray-500 text-base font-normal px-2 text-center md:text-left">
+                  Great design doesn't stop at aesthetics. I combine UI craft
+                  with UX strategy, helping startups and established brands
+                  launch products that are visually stunning, easy to use, and
+                  ready to scale.
+                </p>
+                <button className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal">
+                  View Portfolio
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex-1 flex flex-col justify-center items-start gap-9">
+            <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
+              Modern Sales Infrastructure, Built for Automation & Scale
+            </h2>
+
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-9 w-full px-2">
+              <div className="flex justify-center items-center">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/fdd9cdf6cd596a6cc3d1b6f5cc1ae6f762a9baf4?width=400"
+                  alt="Sales tools"
+                  className="w-[200px] h-[200px] rounded-full"
+                />
+              </div>
+
+              <div className="flex-1 flex flex-col justify-end items-end gap-6">
+                <p className="text-gray-500 text-base font-normal px-2 text-center md:text-left">
+                  Whether you're a startup or scaling organization, we implement
+                  end-to-end GTM systems leveraging tools like LinkedIn
+                  automation, buyer intent data, and AI-powered sequencing to
+                  accelerate your path to revenue.
+                </p>
+                <button className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal">
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full px-6 md:px-12 lg:px-[100px] py-9 flex flex-col items-center border-b border-gray-200">
+          <div className="w-full max-w-[880px] py-4 flex justify-center items-center">
+            <blockquote className="text-gray-500 text-center font-sora text-2xl md:text-[30px] font-bold leading-normal">
+              "It ain't what you don't know that gets you into trouble. It's
+              what you know for sure that just ain't so."
+            </blockquote>
+          </div>
+          <div className="w-full px-0 md:px-[100px] py-2 flex justify-end items-center">
+            <cite className="text-gray-600 text-right text-2xl font-normal italic not-italic">
+              Mark Twain
+            </cite>
+          </div>
+        </section>
+
+        <section className="w-full px-6 md:px-12 lg:px-[100px] py-9 flex flex-col md:flex-row justify-center items-start md:items-center gap-10">
+          <div className="flex justify-center items-center w-full md:w-auto">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/f0e9dc48ad1b2ec48d18839ce369e80504fb3479?width=982"
+              alt="Matt Lee on mountain"
+              className="w-[163px] h-[174px] md:w-[250px] md:h-[286px] lg:w-[491px] lg:h-[556px] rounded-full object-cover border-[3px] border-teal-300 shadow-md"
             />
-            <circle
-              className="text-slate-600"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-              strokeDasharray="100"
-              strokeDashoffset="75"
+          </div>
+
+          <div className="flex-1 flex flex-col items-center md:items-start gap-6 max-w-[710px] px-4 md:px-0">
+            <h2 className="text-gray-600 font-sora text-[30px] font-bold leading-normal">
+              About Me
+            </h2>
+            <div className="text-gray-600 text-base font-normal leading-normal space-y-4">
+              <p>
+                I'm Matt Lee, a senior product and go-to-market leader with a
+                track record of building and scaling teams, designing innovative
+                products, and driving measurable business outcomes. My experience
+                spans leading GTM teams of more than 100 account executives as
+                well as managing developer teams bringing new applications and
+                Salesforce AppExchange products to market.
+              </p>
+              <p>
+                I've led the entire product lifecycle from concept and
+                wire-framing through prototyping and full UI/UX execution,
+                creating intuitive digital experiences that accelerate
+                development and increase engagement.
+              </p>
+              <p>
+                One example: I designed and launched EnlightenCRM, a
+                Salesforce-integrated training platform used by enterprises like
+                Dynatrace, Everbridge, and Anaplan to improve onboarding
+                efficiency by 50%.
+              </p>
+              <p>
+                My background also includes designing and executing the
+                go-to-market strategy for LMSCheckout, a multi-tenant e-commerce
+                platform for selling courses that integrated with leading
+                learning management systems such as Canvas, Moodle, and Bridge.
+                This work highlights my ability to blend UI/UX design with
+                scalable business strategy.
+              </p>
+              <p>
+                Across every role, I've operated at the intersection of Sales,
+                Product, Marketing, and Operations, aligning cross-functional
+                teams to deliver smarter product enhancements, better
+                decision-making, and repeatable GTM execution.
+              </p>
+              <p>
+                In short, I specialize in turning ideas into products that drive
+                adoption and revenue while building the systems and teams that
+                make growth sustainable.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full px-6 md:px-12 lg:px-[100px] py-9 flex flex-col items-center gap-1">
+          <h2 className="text-gray-600 text-center font-sora text-[40px] font-bold leading-normal">
+            Portfolio
+          </h2>
+        </section>
+
+        <section className="w-full px-6 md:px-12 lg:px-[68px] py-2 flex flex-wrap justify-center items-center gap-3">
+          <div className="flex flex-col items-center gap-5 w-full md:w-auto">
+            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
+              Mobile
+            </h3>
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/78db42db315cce267f0f92f88c4f95df7baf9a16?width=580"
+              alt="Mobile project"
+              className="w-[290px] h-[334px] rounded-br-2xl border-r border-b border-teal-300 shadow-md"
             />
-          </svg>
-          Generating your app...
-        </h1>
-        <p className="mt-4 text-slate-600 max-w-md">
-          Watch the chat on the left for updates that might need your attention
-          to finish generating
-        </p>
-        <p className="mt-4 hidden max-w-md">{exampleFromServer}</p>
-      </div>
+          </div>
+
+          <div className="flex flex-col items-center gap-5 w-full md:w-auto">
+            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
+              Ecommerce
+            </h3>
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/9aa68bcf174ce04a5b573e0ef1ad6360ea9a04a9?width=580"
+              alt="Ecommerce project"
+              className="w-[290px] h-[334px] rounded-br-2xl border-r border-b border-teal-300 shadow-md"
+            />
+          </div>
+
+          <div className="flex flex-col items-center gap-5 w-full md:w-auto">
+            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
+              Salesforce
+            </h3>
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/659410b2ffaa782061f785f25d99c15df0b1a2eb?width=580"
+              alt="Salesforce project"
+              className="w-[290px] h-[334px] rounded-br-2xl border-r border-b border-teal-300 shadow-md"
+            />
+          </div>
+
+          <div className="flex flex-col items-center gap-5 w-full md:w-auto">
+            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
+              Website
+            </h3>
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/df9bc31f173e10aabca41e06fa9e2d2bd8f04546?width=580"
+              alt="Website project"
+              className="w-[290px] h-[334px] rounded-br-2xl border-r border-b border-teal-300 shadow-md"
+            />
+          </div>
+        </section>
+
+        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-center gap-5">
+          <button className="px-16 py-4 rounded-xl bg-orange-primary text-white text-lg font-normal">
+            View More
+          </button>
+        </section>
+      </main>
+
+      <Footer />
     </div>
   );
 }

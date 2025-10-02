@@ -57,6 +57,24 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        teal: {
+          300: "#55C6C5",
+          400: "#00C3C1",
+          500: "#00A6A6",
+        },
+        orange: {
+          primary: "#FF6835",
+        },
+        gray: {
+          200: "#EAEFF3",
+          300: "#DCE2EA",
+          500: "#8899AE",
+          600: "#59697F",
+        },
+      },
+      fontFamily: {
+        sora: ["Sora", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
