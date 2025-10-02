@@ -30,9 +30,9 @@ export default function Header() {
           <Link to="/gtm" className="text-gray-600 text-lg font-normal hover:underline">
             GTM
           </Link>
-          <Link to="/blog" className="text-gray-600 text-lg font-normal hover:underline">
+          <a href="https://belayingkatie.blogspot.com/" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-lg font-normal hover:underline">
             Blog
-          </Link>
+          </a>
         </nav>
 
         <button
@@ -69,13 +69,15 @@ export default function Header() {
           >
             GTM
           </Link>
-          <Link
-            to="/blog"
+          <a
+            href="https://belayingkatie.blogspot.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-gray-600 text-lg font-normal"
             onClick={() => setMobileMenuOpen(false)}
           >
             Blog
-          </Link>
+          </a>
         </div>
       )}
     </>
