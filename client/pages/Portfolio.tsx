@@ -12,7 +12,7 @@ export default function Portfolio() {
         <section
           className="relative w-full px-6 md:px-12 lg:px-24 py-12 md:py-16 flex flex-col items-center gap-6 md:gap-12 border-b border-teal-300 shadow-md overflow-hidden"
         >
-          <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 z-0">
             <picture>
               <source media="(max-width: 640px)" srcSet="https://api.builder.io/api/v1/image/assets/TEMP/1a7caa0fdf3d577bddcfa65c938dd5caec0c17a5?width=786" />
               <source media="(max-width: 1024px)" srcSet="https://api.builder.io/api/v1/image/assets/TEMP/4dd6e401d5044e9999a1fa8555b0186634e3a974?width=1596" />
@@ -24,10 +24,12 @@ export default function Portfolio() {
             </picture>
           </div>
 
-          <h1 className="text-gray-600 font-sora text-4xl md:text-5xl lg:text-[56px] font-bold text-center" style={{ textShadow: "1px 4px 4px rgba(255, 255, 255, 0.90)" }}>
-            Portfolio
-          </h1>
-          <SocialLinks />
+          <div className="relative z-10 flex flex-col items-center gap-6 md:gap-12">
+            <h1 className="text-gray-600 font-sora text-4xl md:text-5xl lg:text-[56px] font-bold text-center" style={{ textShadow: "1px 4px 4px rgba(255, 255, 255, 0.90)" }}>
+              Portfolio
+            </h1>
+            <SocialLinks />
+          </div>
         </section>
 
         {/* Mobile/Fitleaguer */}
