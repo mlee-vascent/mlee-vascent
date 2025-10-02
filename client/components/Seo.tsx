@@ -35,7 +35,7 @@ export const Seo: React.FC<SeoProps> = ({ title, description, image, canonicalPa
     document.title = title;
 
     upsertMeta("meta[name='description']", { name: "description", content: description });
-    upsertMeta("meta[name='robots']", { name: "robots", content: "index, follow" });
+    upsertMeta("meta[name='robots']", { name: "robots", content: robots || "index, follow" });
 
     // Open Graph
     upsertMeta("meta[property='og:title']", { property: "og:title", content: title });
