@@ -190,7 +190,7 @@ export default function Index() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/78db42db315cce267f0f92f88c4f95df7baf9a16?width=580"
               alt="Mobile project"
-              className="w-[290px] h-[334px] rounded-br-2xl shadow-md"
+              className="w-[290px] h-[334px] rounded-br-2xl border-0 outline-none ring-0 shadow-none"
             />
           </div>
 
@@ -201,7 +201,7 @@ export default function Index() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/9aa68bcf174ce04a5b573e0ef1ad6360ea9a04a9?width=580"
               alt="Ecommerce project"
-              className="w-[290px] h-[334px] rounded-br-2xl shadow-md"
+              className="w-[290px] h-[334px] rounded-br-2xl border-0 outline-none ring-0 shadow-none"
             />
           </div>
 
@@ -212,7 +212,7 @@ export default function Index() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/659410b2ffaa782061f785f25d99c15df0b1a2eb?width=580"
               alt="Salesforce project"
-              className="w-[290px] h-[334px] rounded-br-2xl shadow-md"
+              className="w-[290px] h-[334px] rounded-br-2xl border-0 outline-none ring-0 shadow-none"
             />
           </div>
 
@@ -223,7 +223,7 @@ export default function Index() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/df9bc31f173e10aabca41e06fa9e2d2bd8f04546?width=580"
               alt="Website project"
-              className="w-[290px] h-[334px] rounded-br-2xl shadow-md"
+              className="w-[290px] h-[334px] rounded-br-2xl border-0 outline-none ring-0 shadow-none"
             />
           </Link>
         </section>
