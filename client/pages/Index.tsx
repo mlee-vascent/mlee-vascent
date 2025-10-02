@@ -119,7 +119,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-9 flex flex-col md:flex-row justify-center items-start md:items-center gap-10">
+        <section id="about" className="w-full px-6 md:px-12 lg:px-[100px] py-9 flex flex-col md:flex-row justify-center items-start md:items-center gap-10">
           <div className="flex justify-center items-center w-full md:w-auto">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/f0e9dc48ad1b2ec48d18839ce369e80504fb3479?width=982"
