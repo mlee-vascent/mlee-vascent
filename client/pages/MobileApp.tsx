@@ -53,7 +53,7 @@ export default function MobileApp() {
               </li>
             </ul>
             <p className="text-gray-600 text-base mt-3">
-              This B2B2C model insight fundamentally shaped the platform architecture, creating tools for fitness professionals to launch custom competitions, manage prize pools, and track participant engagement—essentially providing a white-label competition infrastructure that leverages their existing authority and relationships.
+              This B2B2C model insight fundamentally shaped the platform architecture, creating tools for fitness professionals to launch custom competitions, manage prize pools, and track participant engagement, essentially providing a white-label competition infrastructure that leverages their existing authority and relationships.
             </p>
           </div>
         </section>
