@@ -17,7 +17,7 @@ export default function Salesforce() {
             />
           </div>
           <div className="flex flex-col justify-center items-start gap-4 max-w-[740px]">
-            <h1 className="text-[#59697F] font-sora text-3xl md:text-4xl lg:text-[56px] font-bold leading-normal">
+            <h1 className="text-[#59697F] font-sora text-3xl md:text-4xl lg:text-[56px] font-bold !leading-[65px]">
               EnlightenCRM: Salesforce-Native Learning Management Solution
             </h1>
             <h2 className="text-[#59697F] font-sora text-xl md:text-2xl font-semibold">
