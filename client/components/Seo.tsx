@@ -5,6 +5,7 @@ export type SeoProps = {
   description: string;
   image?: string;
   canonicalPath?: string; // e.g. "/gtm"
+  robots?: string; // e.g. "index, follow" or "noindex, nofollow"
 };
 
 function upsertMeta(selector: string, attrs: Record<string, string>) {
