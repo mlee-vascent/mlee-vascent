@@ -30,7 +30,7 @@ export default function Header() {
           <Link to="/gtm" className="text-gray-600 text-lg font-normal hover:underline">
             GTM
           </Link>
-          <Link to="/blog" className="text-gray-600 text-lg font-normal underline">
+          <Link to="/blog" className="text-gray-600 text-lg font-normal hover:underline">
             Blog
           </Link>
         </nav>
@@ -71,7 +71,7 @@ export default function Header() {
           </Link>
           <Link
             to="/blog"
-            className="text-gray-600 text-lg font-normal underline"
+            className="text-gray-600 text-lg font-normal"
             onClick={() => setMobileMenuOpen(false)}
           >
             Blog
