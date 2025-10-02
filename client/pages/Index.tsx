@@ -183,7 +183,7 @@ export default function Index() {
         </section>
 
         <section className="w-full px-6 md:px-12 lg:px-[68px] py-2 flex flex-wrap justify-center items-center gap-12">
-          <div className="flex flex-col items-center gap-5 w-full md:w-auto">
+          <Link to="/mobile-app" className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity">
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
               Mobile
             </h3>
@@ -192,7 +192,7 @@ export default function Index() {
               alt="Mobile project"
               className="w-[290px] h-[334px] rounded-br-2xl border-0 outline-none ring-0 shadow-none"
             />
-          </div>
+          </Link>
 
           <Link to="/ecommerce" className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity">
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">

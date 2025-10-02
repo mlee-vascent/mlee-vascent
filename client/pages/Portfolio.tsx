@@ -31,13 +31,15 @@ export default function Portfolio() {
         <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 md:py-16 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
           <div className="flex flex-col items-center gap-4 w-full md:w-auto md:px-12">
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold">Mobile</h3>
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/a5adbe45e624f8ee20f1574359c4a9e64824bcdb?width=590"
-              alt="Mobile project"
-              className="w-[295px] h-[295px] rounded-full border-0 ring-0 outline-none shadow-none"
-            />
+            <Link to="/mobile-app">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/a5adbe45e624f8ee20f1574359c4a9e64824bcdb?width=590"
+                alt="Mobile project"
+                className="w-[295px] h-[295px] rounded-full border-0 ring-0 outline-none shadow-none hover:opacity-80 transition-opacity cursor-pointer"
+              />
+            </Link>
           </div>
-          
+
           <div className="flex-1 max-w-[451px] flex flex-col gap-6">
             <h2 className="text-gray-600 font-sora text-2xl font-semibold">
               Fitleaguer: Fitness League Management & Gamification App
@@ -47,9 +49,9 @@ export default function Portfolio() {
             <p className="text-gray-600 text-sm">
               Leading the end-to-end design of Fitleaguer, a pre-seed competitive fitness platform currently in stealth mode. The challenge is creating an engaging experience that seamlessly blends fitness tracking, competitive gaming, and financial transactions while building a B2B2C marketplace that empowers fitness professionals to monetize their communities through organized competition.
             </p>
-            <button className="px-4 py-4 rounded-xl bg-orange-primary text-white text-lg self-start">
+            <Link to="/mobile-app" className="px-4 py-4 rounded-xl bg-orange-primary text-white text-lg self-start text-center">
               Read More
-            </button>
+            </Link>
           </div>
         </section>
 
