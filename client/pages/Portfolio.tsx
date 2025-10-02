@@ -9,12 +9,21 @@ export default function Portfolio() {
       
       <main className="flex-1 flex flex-col items-center">
         {/* Hero Section */}
-        <section 
-          className="w-full px-6 md:px-12 lg:px-24 py-12 md:py-16 flex flex-col items-center gap-6 md:gap-12 border-b border-teal-300 shadow-md"
-          style={{
-            background: "url('https://api.builder.io/api/v1/image/assets/TEMP/c99fe03b9dbad6a90a0f4bf0fa9a93065c8d0f2e?width=2880') lightgray center / cover no-repeat"
-          }}
+        <section
+          className="relative w-full px-6 md:px-12 lg:px-24 py-12 md:py-16 flex flex-col items-center gap-6 md:gap-12 border-b border-teal-300 shadow-md overflow-hidden"
         >
+          <div className="absolute inset-0 -z-10">
+            <picture>
+              <source media="(max-width: 640px)" srcSet="https://api.builder.io/api/v1/image/assets/TEMP/1a7caa0fdf3d577bddcfa65c938dd5caec0c17a5?width=786" />
+              <source media="(max-width: 1024px)" srcSet="https://api.builder.io/api/v1/image/assets/TEMP/4dd6e401d5044e9999a1fa8555b0186634e3a974?width=1596" />
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/c99fe03b9dbad6a90a0f4bf0fa9a93065c8d0f2e?width=2880"
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </picture>
+          </div>
+
           <h1 className="text-gray-600 font-sora text-4xl md:text-5xl lg:text-[56px] font-bold text-center" style={{ textShadow: "1px 4px 4px rgba(255, 255, 255, 0.90)" }}>
             Portfolio
           </h1>
