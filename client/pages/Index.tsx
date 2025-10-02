@@ -97,9 +97,9 @@ export default function Index() {
                   automation, buyer intent data, and AI-powered sequencing to
                   accelerate your path to revenue.
                 </p>
-                <button className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal">
+                <Link to="/gtm" className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center">
                   Learn More
-                </button>
+                </Link>
               </div>
             </div>
           </div>
