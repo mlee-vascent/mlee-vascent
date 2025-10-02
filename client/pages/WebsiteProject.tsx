@@ -29,7 +29,7 @@ export default function WebsiteProject() {
         {/* Design Process & Methodology */}
         <section className="w-full px-6 md:px-12 lg:px-24 py-12 flex flex-col items-center gap-6">
           <h2 className="text-gray-600 font-sora text-[30px] font-bold leading-[45px] text-center">Design Process & Methodology</h2>
-          <div className="w-full max-w-[1166px] lg:ml-[51px] text-gray-600 text-[16px] leading-[1.45] space-y-4">
+          <div className="w-full max-w-[1166px] lg:ml-[51px] text-gray-600 text-[16px] leading-[16px] space-y-4">
             <p className="font-semibold">Discovery & Strategic Planning</p>
             <p>Conducted extensive research to understand the eLearning industry landscape and buyer journey:</p>
 
@@ -78,7 +78,7 @@ export default function WebsiteProject() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-[16px] leading-[1.45] space-y-4">
+          <div className="flex-1 text-gray-600 text-[16px] leading-[16px] space-y-4">
             <p>Developed a dual-focused architecture balancing services and software:</p>
             <p className="font-semibold">Primary Navigation Structure</p>
             <p><span className="font-semibold">Solutions</span></p>
@@ -139,7 +139,7 @@ export default function WebsiteProject() {
               className="w-full max-w-[515px] h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-[16px] leading-[1.45] space-y-4">
+          <div className="flex-1 text-gray-600 text-[16px] leading-[16px] space-y-4">
             <p className="font-semibold">Custom Theme Development — built a sophisticated WordPress theme showcasing eLearning expertise:</p>
             <ul className="list-disc pl-6 space-y-1">
               <li>Mobile-First Design reflecting importance of mobile learning</li>
@@ -188,7 +188,7 @@ export default function WebsiteProject() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-[16px] leading-[1.45] space-y-4">
+          <div className="flex-1 text-gray-600 text-[16px] leading-[16px] space-y-4">
             <p>Design System for Learning Focus created visual language emphasizing engagement and transformation:</p>
             <p className="font-semibold">Color Psychology</p>
             <ul className="list-disc pl-6 space-y-1">
@@ -243,7 +243,7 @@ export default function WebsiteProject() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-[16px] leading-[1.45] space-y-4">
+          <div className="flex-1 text-gray-600 text-[16px] leading-[16px] space-y-4">
             <p className="font-semibold">Instructional Design Team Partnership — coordinated with IDs to showcase methodologies:</p>
             <ul className="list-disc pl-6 space-y-1">
               <li>ADDIE Model visualization</li>
@@ -294,7 +294,7 @@ export default function WebsiteProject() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-[16px] leading-[1.45] space-y-4">
+          <div className="flex-1 text-gray-600 text-[16px] leading-[16px] space-y-4">
             <p className="font-semibold">Interactive Learning Effectiveness Calculator</p>
             <ul className="list-disc pl-6 space-y-1">
               <li>Current training cost inputs</li>
@@ -345,7 +345,7 @@ export default function WebsiteProject() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-[16px] leading-[1.45] space-y-4">
+          <div className="flex-1 text-gray-600 text-[16px] leading-[16px] space-y-4">
             <p className="font-semibold">Traffic & Engagement Metrics (Year 1)</p>
             <ul className="list-disc pl-6 space-y-1">
               <li>183% increase in organic traffic</li>
@@ -433,7 +433,7 @@ export default function WebsiteProject() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-[16px] leading-[1.45] space-y-4">
+          <div className="flex-1 text-gray-600 text-[16px] leading-[16px] space-y-4">
             <p>The Envisiontel website successfully positioned the company as a unique player in the eLearning space, one of the few offering both world-class content development AND the technology to deliver it. The project required balancing complex dual messaging while maintaining clarity and driving conversions for two distinct business lines.</p>
             <p className="font-semibold">Key achievements demonstrating expertise:</p>
             <p className="font-semibold">Strategic Design Thinking</p>
