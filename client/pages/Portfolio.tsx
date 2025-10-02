@@ -56,13 +56,15 @@ export default function Portfolio() {
         <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 md:py-16 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
           <div className="flex flex-col items-center gap-4 w-full md:w-auto md:px-12">
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold">Ecommerce</h3>
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/56cd0093b869dd4913d08def33d1e228a2fd03c8?width=590"
-              alt="Ecommerce project"
-              className="w-[295px] h-[295px] rounded-full border-0 ring-0 outline-none shadow-none"
-            />
+            <Link to="/ecommerce">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/56cd0093b869dd4913d08def33d1e228a2fd03c8?width=590"
+                alt="Ecommerce project"
+                className="w-[295px] h-[295px] rounded-full border-0 ring-0 outline-none shadow-none hover:opacity-80 transition-opacity cursor-pointer"
+              />
+            </Link>
           </div>
-          
+
           <div className="flex-1 max-w-[451px] flex flex-col gap-6">
             <h2 className="text-gray-600 font-sora text-2xl font-semibold">
               LMScheckout: Enterprise Course Ecommerce Platform
@@ -72,9 +74,9 @@ export default function Portfolio() {
             <p className="text-gray-600 text-sm">
               Led the end-to-end design of LMScheckout, a multi-tenant ecommerce platform that revolutionizes how organizations sell and deliver online courses, from initial concept through launch and profitability. The challenge was creating a white-label solution flexible enough to serve diverse sectors, higher education, non-profits, associations, SaaS companies, and corporate training, while maintaining seamless integration with existing LMS and CRM ecosystems.
             </p>
-            <button className="px-4 py-4 rounded-xl bg-orange-primary text-white text-lg self-start">
+            <Link to="/ecommerce" className="px-4 py-4 rounded-xl bg-orange-primary text-white text-lg self-start text-center">
               Read More
-            </button>
+            </Link>
           </div>
         </section>
 

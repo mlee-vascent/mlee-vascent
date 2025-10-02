@@ -194,7 +194,7 @@ export default function Index() {
             />
           </div>
 
-          <div className="flex flex-col items-center gap-5 w-full md:w-auto">
+          <Link to="/ecommerce" className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity">
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
               Ecommerce
             </h3>
@@ -203,7 +203,7 @@ export default function Index() {
               alt="Ecommerce project"
               className="w-[290px] h-[334px] rounded-br-2xl border-0 outline-none ring-0 shadow-none"
             />
-          </div>
+          </Link>
 
           <div className="flex flex-col items-center gap-5 w-full md:w-auto">
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
