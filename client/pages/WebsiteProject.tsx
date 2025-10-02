@@ -13,7 +13,7 @@ export default function WebsiteProject() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/35abb0e68b5595f56e887e5539bc47dc23e0b049?width=838"
               alt="Website project hero"
-              className="w-full max-w-[419px] h-auto rounded-xl shadow-md"
+              className="w-full max-w-[419px] h-auto rounded-xl border-0 outline-none ring-0 shadow-none"
             />
           </div>
           <div className="flex-1 flex flex-col justify-center items-start gap-3 max-w-[740px]">
