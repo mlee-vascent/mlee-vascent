@@ -33,7 +33,7 @@ export default function Portfolio() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/a5adbe45e624f8ee20f1574359c4a9e64824bcdb?width=590"
               alt="Mobile project"
-              className="w-[295px] h-[295px] rounded-full border-4 border-teal-primary shadow-[1px_2px_2px_2px_rgba(0,0,0,0.25)]"
+              className="w-[295px] h-[295px] rounded-full border-0 ring-0 outline-none shadow-none"
             />
           </div>
           
@@ -59,7 +59,7 @@ export default function Portfolio() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/56cd0093b869dd4913d08def33d1e228a2fd03c8?width=590"
               alt="Ecommerce project"
-              className="w-[295px] h-[295px] rounded-full border-4 border-teal-primary shadow-[1px_2px_2px_2px_rgba(0,0,0,0.25)]"
+              className="w-[295px] h-[295px] rounded-full border-0 ring-0 outline-none shadow-none"
             />
           </div>
           
@@ -85,7 +85,7 @@ export default function Portfolio() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/d699e84979aa8f2a0f419fa76a75792fce7bbf68?width=590"
               alt="Salesforce project"
-              className="w-[295px] h-[295px] rounded-full border-4 border-teal-primary shadow-[1px_2px_2px_2px_rgba(0,0,0,0.25)]"
+              className="w-[295px] h-[295px] rounded-full border-0 ring-0 outline-none shadow-none"
             />
           </div>
           
@@ -111,7 +111,7 @@ export default function Portfolio() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/9619c109db62dd801d49ac16c6a0030ae285f65a?width=590"
               alt="Corporate Website project"
-              className="w-[295px] h-[295px] rounded-full border-4 border-teal-primary shadow-[1px_2px_2px_2px_rgba(0,0,0,0.25)]"
+              className="w-[295px] h-[295px] rounded-full border-0 ring-0 outline-none shadow-none"
             />
           </div>
           
