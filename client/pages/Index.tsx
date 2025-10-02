@@ -69,9 +69,9 @@ export default function Index() {
                   launch products that are visually stunning, easy to use, and
                   ready to scale.
                 </p>
-                <button className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal">
+                <Link to="/portfolio" className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center">
                   View Portfolio
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -229,9 +229,9 @@ export default function Index() {
         </section>
 
         <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-center gap-5">
-          <button className="px-16 py-4 rounded-xl bg-orange-primary text-white text-lg font-normal">
+          <Link to="/portfolio" className="px-16 py-4 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block">
             View More
-          </button>
+          </Link>
         </section>
       </main>
 
