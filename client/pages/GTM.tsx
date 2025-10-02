@@ -21,9 +21,9 @@ export default function GTM() {
               <a href="https://calendly.com/verityascent/30min" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto px-9 py-9 rounded-2xl border-2 border-[#E4F4F3] text-[#F9FAFB] text-center font-sora text-2xl md:text-[30px] font-bold">
                 Book a Consultation
               </a>
-              <button className="w-full md:w-auto px-9 py-9 rounded-2xl border-2 border-[#E4F4F3] text-[#F9FAFB] text-center font-sora text-2xl md:text-[30px] font-bold">
+              <a href="https://drive.google.com/file/d/1dtBKTFjnGFqdcyo1n34rx2MbW2FvdQiL/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto px-9 py-9 rounded-2xl border-2 border-[#E4F4F3] text-[#F9FAFB] text-center font-sora text-2xl md:text-[30px] font-bold">
                 Resume
-              </button>
+              </a>
             </div>
           </div>
         </section>
