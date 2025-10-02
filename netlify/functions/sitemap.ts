@@ -2,10 +2,8 @@ import type { Handler } from "@netlify/functions";
 
 const routes = [
   "/",
-  "/about",
   "/portfolio",
   "/gtm",
-  "/blog",
   "/ecommerce",
   "/mobile-app",
   "/salesforce",
