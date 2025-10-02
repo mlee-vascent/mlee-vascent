@@ -398,13 +398,23 @@ export default function WebsiteProject() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex-1 text-gray-600 text-[16px] leading-[1.45] space-y-4">
-            <ul className="list-disc pl-6 space-y-1">
-              <li><span className="font-semibold">Challenge:</span> Demonstrating proprietary work under NDAs — <span className="font-semibold">Solution:</span> Created anonymized case studies with permission, developed generic sample courses showcasing capabilities</li>
-              <li><span className="font-semibold">Challenge:</span> Balancing dual value propositions without confusion — <span className="font-semibold">Solution:</span> Designed clear navigation paths and created a solution finder tool</li>
-              <li><span className="font-semibold">Challenge:</span> Long B2B sales cycles for enterprise learning programs — <span className="font-semibold">Solution:</span> Developed nurture content for each buyer stage; created self‑service resources</li>
-              <li><span className="font-semibold">Challenge:</span> Competing with larger LMS vendors and boutique agencies — <span className="font-semibold">Solution:</span> Emphasized unique integrated approach; showcased end‑to‑end transformation case studies</li>
-            </ul>
+          <div className="flex-1 text-gray-600 text-[16px] leading-[1.45] space-y-6">
+            <div className="space-y-1">
+              <p><span className="font-semibold">Challenge:</span> Demonstrating proprietary work under NDAs</p>
+              <p><span className="font-semibold">Solution:</span> Created anonymized case studies with permission, developed generic sample courses showcasing capabilities</p>
+            </div>
+            <div className="space-y-1">
+              <p><span className="font-semibold">Challenge:</span> Balancing dual value propositions without confusion</p>
+              <p><span className="font-semibold">Solution:</span> Designed clear navigation paths and created a solution finder tool</p>
+            </div>
+            <div className="space-y-1">
+              <p><span className="font-semibold">Challenge:</span> Long B2B sales cycles for enterprise learning programs</p>
+              <p><span className="font-semibold">Solution:</span> Developed nurture content for each buyer stage; created self‑service resources</p>
+            </div>
+            <div className="space-y-1">
+              <p><span className="font-semibold">Challenge:</span> Competing with larger LMS vendors and boutique agencies</p>
+              <p><span className="font-semibold">Solution:</span> Emphasized unique integrated approach; showcased end‑to‑end transformation case studies</p>
+            </div>
           </div>
         </section>
 
