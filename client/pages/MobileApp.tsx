@@ -12,7 +12,7 @@ export default function MobileApp() {
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/2eb26e41379558561607d4d8396fcab00e19366b?width=452"
             alt="Fitleaguer Mobile App"
-            className="w-full md:w-[226px] h-auto md:h-[429px] rounded-xl border border-gray-400 shadow-md object-cover"
+            className="w-full md:w-[226px] h-auto md:h-[429px] rounded-xl object-cover border-0 outline-none ring-0 shadow-none"
           />
           <div className="flex flex-col justify-center items-start gap-4 max-w-[740px]">
             <h1 className="text-gray-600 font-sora text-3xl md:text-4xl lg:text-[56px] font-bold !leading-[65px]">
