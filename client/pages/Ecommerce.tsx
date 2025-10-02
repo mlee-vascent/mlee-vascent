@@ -12,7 +12,7 @@ export default function Ecommerce() {
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/66222ed966fd45c1c4d79deaf7dc3c373ef42828?width=838"
             alt="LMScheckout Platform"
-            className="w-full md:w-[419px] h-auto md:h-[335px] rounded-xl shadow-md object-cover"
+            className="w-full md:w-[419px] h-auto md:h-[335px] rounded-xl object-cover border-0 outline-none ring-0 shadow-none"
           />
           <div className="flex flex-col justify-center items-start gap-4 max-w-[740px]">
             <h1 className="text-gray-600 font-sora text-3xl md:text-4xl lg:text-[56px] font-bold !leading-[65px]">
