@@ -19,7 +19,7 @@ export default function Portfolio() {
       />
       <Header />
 
-      <main className="flex-1 flex flex-col items-center">
+      <main className="flex-1 flex flex-col items-center gap-12">
         {/* Hero Section */}
         <section className="relative w-full px-6 md:px-12 lg:px-0 py-7 md:py-7 lg:py-7 flex flex-col items-center gap-6 md:gap-12 shadow-md overflow-hidden border-b border-teal-300">
           <div
