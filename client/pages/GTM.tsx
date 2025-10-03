@@ -19,7 +19,7 @@ export default function GTM() {
 
       <main className="flex-1 flex flex-col">
         {/* Hero Section */}
-        <section className="w-full px-6 md:px-24 lg:px-[100px] py-16 flex flex-col items-center gap-3 bg-gradient-to-r from-[#00C9C9] to-[#00A6A6]">
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-16 flex flex-col items-center gap-3 bg-gradient-to-r from-[#00C9C9] to-[#00A6A6]">
           <div className="flex flex-col items-center w-full gap-6">
             <h1 className="text-[#F6F8FA] text-center font-sora text-3xl md:text-4xl lg:text-[56px] font-bold">
               Scale Your Pipeline with AI-Powered Outreach
@@ -52,7 +52,7 @@ export default function GTM() {
         </section>
 
         {/* Description */}
-        <section className="w-full px-6 md:px-24 lg:px-[100px] py-12">
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-12">
           <p className="text-gray-600 text-lg text-center md:text-left">
             At VerityAscent, I help growing businesses and startups bring their
             products to market faster and more effectively by combining proven
@@ -65,7 +65,7 @@ export default function GTM() {
         </section>
 
         {/* Why Section */}
-        <section className="w-full px-6 md:px-24 lg:px-[100px] py-12 bg-[#F6F8FA] flex flex-col items-center gap-12">
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 bg-[#F6F8FA] flex flex-col items-center gap-12">
           <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
             Why Manual Prospecting Doesn't Work Anymore
           </h2>
@@ -98,7 +98,7 @@ export default function GTM() {
         </section>
 
         {/* Smarter Section */}
-        <section className="w-full px-6 md:px-24 lg:px-[100px] py-12 flex flex-col items-center gap-12">
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 flex flex-col items-center gap-12">
           <h2 className="text-gray-600 text-center font-sora text-3xl md:text-[40px] font-bold">
             A Smarter Way to Reach Your Market
           </h2>
@@ -117,7 +117,7 @@ export default function GTM() {
         />
 
         {/* Implement Section */}
-        <section className="w-full px-6 md:px-24 lg:px-[100px] py-12 bg-[#F6F8FA] flex flex-col items-center gap-12">
+        <section className="w-full px-6 md:px-24 lg:px-[180px] py-12 bg-[#F6F8FA] flex flex-col items-center gap-12">
           <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
             I Implement the Tools That Drive Growth
           </h2>
@@ -208,7 +208,7 @@ export default function GTM() {
         </section>
 
         {/* What You'll Get */}
-        <section className="w-full px-6 md:px-24 lg:px-[100px] py-12 bg-[#F6F8FA] flex flex-col items-center gap-12">
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 bg-[#F6F8FA] flex flex-col items-center gap-12">
           <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
             What You'll Get!
           </h2>
@@ -285,7 +285,7 @@ export default function GTM() {
         </section>
 
         {/* CTA Section */}
-        <section className="w-full px-6 md:px-24 lg:px-[100px] py-12 flex flex-col items-center gap-12">
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 flex flex-col items-center gap-12">
           <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
             Ready To Scale Your Pipeline?
           </h2>
