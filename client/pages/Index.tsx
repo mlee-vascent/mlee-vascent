@@ -43,7 +43,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="flex-1 flex justify-center items-center px-5 md:px-5 lg:px-24 py-4 md:py-[15px]">
+          <div className="flex-1 flex justify-center items-center px-5 md:px-5 lg:px-[200px] py-4 md:py-[15px]">
             <div className="relative">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47bd8390907741749758f6c6206db0b1?format=webp&width=800"
