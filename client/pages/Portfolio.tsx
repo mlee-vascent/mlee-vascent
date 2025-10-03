@@ -169,7 +169,7 @@ export default function Portfolio() {
         </section>
 
         {/* Corporate Website/Envisiontel */}
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-0 lg:py-0 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:pt-0 md:pb-12 lg:pt-0 lg:pb-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
           <div className="flex flex-col items-center gap-4 w-full md:w-auto md:px-12">
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold">
               Corporate Website
