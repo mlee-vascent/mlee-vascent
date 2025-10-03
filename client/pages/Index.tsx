@@ -21,7 +21,7 @@ export default function Index() {
 
       <main>
         <section
-          className="w-full flex flex-col md:flex-row items-center md:items-stretch shadow-md border-b md:border-b border-teal-300"
+          className="w-full flex flex-col md:flex-row items-center md:items-stretch"
           style={{
             backgroundImage:
               "url('https://api.builder.io/api/v1/image/assets/TEMP/cfc7b32d3bd84e2431b8ac9f31332e7430c2402d?width=2880')",
