@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="w-full px-6 md:px-9 lg:px-[100px] py-6 flex justify-between items-center bg-white">
+      <header className="w-full px-6 md:px-9 lg:px-[200px] py-6 flex justify-between items-center bg-white">
         <Link to="/" className="flex items-center justify-center flex-shrink-0">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/55cf334ddb4058968f1851ac82c62d2dcba2020e?width=616"
