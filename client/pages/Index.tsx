@@ -29,7 +29,7 @@ export default function Index() {
             backgroundPosition: "center",
           }}
         >
-          <div className="flex-1 px-6 md:px-[60px] lg:px-24 py-10 md:py-10 flex flex-col items-start md:items-start gap-6 md:gap-4">
+          <div className="flex-1 px-6 md:px-[60px] lg:px-[200px] py-10 md:py-10 flex flex-col items-start md:items-start gap-6 md:gap-4">
             <h1 className="text-gray-600 font-sora text-3xl md:text-[40px] lg:text-[56px] font-bold leading-normal w-full md:w-[340px] lg:w-[538px] text-center md:text-left">
               From Concept to Market, Fast!
             </h1>
@@ -58,7 +58,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-9 lg:px-[100px] py-9 md:py-9 flex flex-col md:flex-row justify-center items-center md:items-start gap-[50px] md:gap-6">
+        <section className="w-full px-6 md:px-9 lg:px-[200px] py-9 md:py-9 flex flex-col md:flex-row justify-center items-center md:items-start gap-[50px] md:gap-6">
           <div className="flex-1 flex flex-col justify-center items-start gap-9 md:gap-6 md:px-4">
             <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
               Designing Interfaces That <br />
@@ -137,7 +137,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-9 md:py-10 flex flex-col md:flex-col lg:flex-row justify-center items-center md:items-center lg:items-center gap-10 md:gap-16">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-9 md:py-10 flex flex-col md:flex-col lg:flex-row justify-center items-center md:items-center lg:items-center gap-10 md:gap-16">
           <div className="flex justify-center items-center w-full md:w-full lg:w-auto">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/f0e9dc48ad1b2ec48d18839ce369e80504fb3479?width=982"
@@ -197,13 +197,13 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-9 md:py-12 flex flex-col items-center gap-1">
+        <section className="w-full px-6 md:px-12 lg:px-0 py-9 md:py-9 flex flex-col items-center gap-1">
           <h2 className="text-gray-600 text-center font-sora text-[40px] font-bold leading-normal">
             Portfolio
           </h2>
         </section>
 
-        <section className="w-full px-6 md:px-[44px] lg:px-[68px] py-2 md:py-16 flex flex-wrap justify-center items-start gap-12 md:gap-6">
+        <section className="w-full px-6 md:px-[44px] lg:px-[200px] py-2 md:py-2 flex flex-wrap justify-center items-start gap-12 md:gap-6">
           <Link
             to="/ecommerce"
             className="flex flex-col items-center gap-5 w-full md:w-[348px] lg:w-auto hover:opacity-80 transition-opacity"
@@ -261,7 +261,7 @@ export default function Index() {
           </Link>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 md:py-9 flex flex-col items-center gap-5">
+        <section className="w-full px-6 md:px-12 lg:px-0 py-12 md:py-12 flex flex-col items-center gap-5">
           <Link
             to="/portfolio"
             className="px-16 py-4 md:px-16 md:py-4 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block"
