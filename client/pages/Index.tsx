@@ -48,7 +48,7 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47bd8390907741749758f6c6206db0b1?format=webp&width=800"
                 alt="Matt Lee climbing"
-                className="w-[157px] h-[157px] md:w-[200px] md:h-[200px] lg:w-[315px] lg:h-[315px] rounded-full object-cover"
+                className="w-[157px] h-[157px] md:w-[200px] md:h-[200px] lg:w-[315px] lg:h-[315px] rounded-full object-cover mx-auto"
               />
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function Index() {
                 />
               </div>
 
-              <div className="flex-1 flex flex-col justify-end items-end gap-6">
+              <div className="flex-1 flex flex-col justify-end items-center md:items-end gap-6">
                 <p className="text-gray-500 text-base font-normal px-2 text-center md:text-left">
                   Great design doesn't stop at aesthetics. I combine UI craft
                   with UX strategy, helping startups and established brands
@@ -83,7 +83,7 @@ export default function Index() {
                 </p>
                 <Link
                   to="/portfolio"
-                  className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center"
+                  className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center self-center md:self-auto"
                 >
                   View Portfolio
                 </Link>
@@ -105,7 +105,7 @@ export default function Index() {
                 />
               </div>
 
-              <div className="flex-1 flex flex-col justify-end items-end gap-6">
+              <div className="flex-1 flex flex-col justify-end items-center md:items-end gap-6">
                 <p className="text-gray-500 text-base font-normal px-2 text-center md:text-left">
                   Whether you're a startup or scaling organization, we implement
                   end-to-end GTM systems leveraging tools like LinkedIn
@@ -114,7 +114,7 @@ export default function Index() {
                 </p>
                 <Link
                   to="/gtm"
-                  className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center"
+                  className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center self-center md:self-auto"
                 >
                   Learn More
                 </Link>
