@@ -21,7 +21,7 @@ export default function Portfolio() {
 
       <main className="flex-1 flex flex-col items-center">
         {/* Hero Section */}
-        <section className="relative w-full px-6 md:px-12 lg:px-24 py-12 md:py-16 flex flex-col items-center gap-6 md:gap-12 shadow-md overflow-hidden">
+        <section className="relative w-full px-6 md:px-12 lg:px-0 py-7 md:py-7 lg:py-7 flex flex-col items-center gap-6 md:gap-12 shadow-md overflow-hidden border-b border-teal-300">
           <div
             className="absolute inset-0 z-0"
             style={{
@@ -44,7 +44,7 @@ export default function Portfolio() {
         </section>
 
         {/* Mobile/Fitleaguer */}
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 md:py-16 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-0 lg:py-0 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
           <div className="flex flex-col items-center gap-4 w-full md:w-auto md:px-12">
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold">
               Mobile
@@ -85,7 +85,7 @@ export default function Portfolio() {
         </section>
 
         {/* Ecommerce/LMScheckout */}
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 md:py-16 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-0 lg:py-0 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
           <div className="flex flex-col items-center gap-4 w-full md:w-auto md:px-12">
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold">
               Ecommerce
@@ -127,7 +127,7 @@ export default function Portfolio() {
         </section>
 
         {/* Salesforce/EnlightenCRM */}
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 md:py-16 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-0 lg:py-0 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
           <div className="flex flex-col items-center gap-4 w-full md:w-auto md:px-12">
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold">
               Salesforce ISV
@@ -169,7 +169,7 @@ export default function Portfolio() {
         </section>
 
         {/* Corporate Website/Envisiontel */}
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 md:py-16 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-0 lg:py-0 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
           <div className="flex flex-col items-center gap-4 w-full md:w-auto md:px-12">
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold">
               Corporate Website
