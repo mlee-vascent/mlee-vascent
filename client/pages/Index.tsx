@@ -43,12 +43,13 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="flex-1 flex justify-center items-center px-5 md:px-5 lg:px-[200px] py-4 md:py-[15px]">
+          <div className="flex-1 flex justify-center items-center px-5 md:px-5 lg:pl-24 lg:pr-[200px] py-4 md:py-[15px]">
             <div className="relative">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47bd8390907741749758f6c6206db0b1?format=webp&width=800"
                 alt="Matt Lee climbing"
-                className="w-[157px] h-[157px] md:w-[315px] md:h-[315px] lg:w-[315px] lg:h-[315px] rounded-full object-cover mx-auto border-0 outline-none ring-0 shadow-none"
+                className="w-[157px] h-[157px] md:w-[315px] md:h-[315px] lg:w-[363px] lg:h-[363px] rounded-full object-cover mx-auto border-0 outline-none ring-0 shadow-none"
+                style={{ border: 'none', boxShadow: 'none' }}
               />
             </div>
           </div>
