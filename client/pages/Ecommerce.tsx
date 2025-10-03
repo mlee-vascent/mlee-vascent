@@ -19,7 +19,7 @@ export default function Ecommerce() {
 
       <main className="flex-1 flex flex-col items-center">
         {/* Hero Section */}
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-9 md:py-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 bg-[rgba(168,220,219,0.5)]">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-9 md:py-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 bg-[rgba(168,220,219,0.5)]">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/66222ed966fd45c1c4d79deaf7dc3c373ef42828?width=838"
             alt="LMScheckout Platform"
@@ -36,7 +36,7 @@ export default function Ecommerce() {
         </section>
 
         {/* Design Process Section */}
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-center gap-7">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-center gap-7">
           <h2 className="text-gray-600 text-center font-sora text-2xl md:text-[30px] font-bold">
             Design Process & Methodology
           </h2>
@@ -95,7 +95,7 @@ export default function Ecommerce() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-start gap-9">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start gap-9">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/0a1abc0caf18a8b6749322d4e8b0a4816cdbc42e?width=2480"
             alt="Architecture Diagram"
@@ -291,7 +291,7 @@ export default function Ecommerce() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-start">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start">
           <div className="text-gray-600 space-y-4">
             <p className="text-base md:text-lg">
               Worked closely with development team to ensure designs aligned
@@ -487,7 +487,7 @@ export default function Ecommerce() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-start">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start">
           <div className="text-gray-600 space-y-4">
             <p className="text-base md:text-lg">
               Engineered a sophisticated taxonomy system that solved complex
@@ -534,7 +534,7 @@ export default function Ecommerce() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-start">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start">
           <div className="text-gray-600 space-y-4">
             <p className="text-base md:text-lg">
               Conducted extensive testing across multiple phases:
@@ -584,7 +584,7 @@ export default function Ecommerce() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-start">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start">
           <div className="text-gray-600 space-y-4">
             <div className="space-y-3">
               <h3 className="font-bold text-base">Smart Checkout Flow</h3>
@@ -639,7 +639,7 @@ export default function Ecommerce() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-start">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start">
           <div className="text-gray-600 space-y-4">
             <p className="text-base md:text-lg">
               From launch through first year of profitability:
@@ -694,7 +694,7 @@ export default function Ecommerce() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-start gap-9">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start gap-9">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/e9270be75c5c7c77cc6938a664134ffa37bb87be?width=2480"
             alt="Reflection Image"
