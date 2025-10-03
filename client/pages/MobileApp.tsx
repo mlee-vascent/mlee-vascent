@@ -19,7 +19,7 @@ export default function MobileApp() {
 
       <main className="flex-1 flex flex-col items-center">
         {/* Hero Section */}
-        <section className="w-full px-6 md:px-9 lg:px-[100px] py-9 md:py-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 bg-gray-200">
+        <section className="w-full px-6 md:px-9 lg:px-[200px] py-9 md:py-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 bg-gray-200">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/2eb26e41379558561607d4d8396fcab00e19366b?width=452"
             alt="Fitleaguer Mobile App"
@@ -36,7 +36,7 @@ export default function MobileApp() {
         </section>
 
         {/* Design Process Section */}
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-center gap-12">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-center gap-12">
           <h2 className="text-gray-600 text-center font-sora text-2xl md:text-[30px] font-bold">
             Design Process & Methodology
           </h2>
@@ -97,7 +97,7 @@ export default function MobileApp() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-center gap-12">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-center gap-12">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/bddd8f82fa802c2aa9d4564d2c0951b581935716?width=2480"
             alt="Component Architecture"
@@ -244,7 +244,7 @@ export default function MobileApp() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-start gap-12">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start gap-12">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/d5d9843de8ba49f80cf5efdb3c323f5cf525a9f8?width=2480"
             alt="Feedback and Iteration"
@@ -440,7 +440,7 @@ export default function MobileApp() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-start gap-12">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start gap-12">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/e7395e495c88498174693fab134221b5d1dbb3a7?width=2480"
             alt="Go-To-Market Planning"
