@@ -19,7 +19,7 @@ export default function Salesforce() {
 
       <main className="flex-1 flex flex-col items-center">
         {/* Hero Section */}
-        <section className="w-full px-6 md:px-9 lg:px-[100px] py-9 md:py-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 bg-[#FFD7C3]">
+        <section className="w-full px-6 md:px-9 lg:px-[200px] py-9 md:py-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 bg-[#FFD7C3]">
           <div className="w-full md:w-[419px] h-auto md:h-[335px] rounded-xl overflow-hidden">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/2cfd9ed00d56763a050a99c331e77e43f45d11ed?width=838"
@@ -38,7 +38,7 @@ export default function Salesforce() {
         </section>
 
         {/* Design Process Section */}
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-center gap-7">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-center gap-7">
           <h2 className="text-[#59697F] text-center font-sora text-2xl md:text-[40px] font-bold">
             Design Process & Methodology
           </h2>
@@ -112,7 +112,7 @@ export default function Salesforce() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col md:flex-row items-start md:items-center gap-6">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col md:flex-row items-start md:items-center gap-6">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/a9f856d5164c2bf986d9059084503ba2722c9abf?width=1216"
             alt="Design System"
@@ -211,7 +211,7 @@ export default function Salesforce() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col md:flex-row items-start md:items-center gap-8">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col md:flex-row items-start md:items-center gap-8">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/2c3ff3965061e697008c148eb9e090da40e65d3c?width=796"
             alt="Strategic Feature Design"
@@ -275,7 +275,7 @@ export default function Salesforce() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] pb-12 text-[#59697F] space-y-6 leading-[16px]">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] pb-12 text-[#59697F] space-y-6 leading-[16px]">
           <div className="space-y-3">
             <h3 className="font-bold text-lg">
               Salesforce-Native Data Model Designed custom objects that
@@ -357,7 +357,7 @@ export default function Salesforce() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col md:flex-row items-start md:items-center gap-8">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col md:flex-row items-start md:items-center gap-8">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/d2860d22b2b1bbae55c8719928eb96efecdd38c6?width=1176"
             alt="Complex Workflow"
@@ -441,7 +441,7 @@ export default function Salesforce() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col md:flex-row items-start md:items-center gap-8">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col md:flex-row items-start md:items-center gap-8">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/d625949cd83407333b8c80274e76f3cb705c2393?width=1176"
             alt="Key Design Innovations"
@@ -520,7 +520,7 @@ export default function Salesforce() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col md:flex-row items-start md:items-center gap-8">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col md:flex-row items-start md:items-center gap-8">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/8c2b3066baea27c18b3bfce23b1d34d7f5e9e91d?width=1176"
             alt="Measurable Outcomes"
@@ -583,7 +583,7 @@ export default function Salesforce() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col md:flex-row items-start md:items-center gap-8">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col md:flex-row items-start md:items-center gap-8">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/c9a7c753890d943e4cf30391861e5a7a9809e1a6?width=1176"
             alt="Design Challenges"
@@ -657,7 +657,7 @@ export default function Salesforce() {
           </h2>
         </div>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col md:flex-row items-start md:items-center gap-8">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col md:flex-row items-start md:items-center gap-8">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/fc3c09f4740f8a0058329df21bcd181871c8730f?width=1176"
             alt="Reflection & Impact"
@@ -734,7 +734,7 @@ export default function Salesforce() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] pb-16">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] pb-16">
           <p className="text-[#59697F] text-base leading-[24px]">
             EnlightenCRM proved that native platform integration trumps feature
             richness when solving enterprise problems. By embracing Salesforce's
