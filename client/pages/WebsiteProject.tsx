@@ -19,7 +19,7 @@ export default function WebsiteProject() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="w-full px-6 md:px-12 lg:px-24 py-10 flex flex-col md:flex-row justify-center items-center gap-12 bg-[#FFF8DC]">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-9 md:py-9 lg:py-9 flex flex-col md:flex-row justify-center items-center gap-12 bg-[#FFF8DC]">
           <div className="flex-1 flex justify-center items-center">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/35abb0e68b5595f56e887e5539bc47dc23e0b049?width=838"
@@ -39,7 +39,7 @@ export default function WebsiteProject() {
         </section>
 
         {/* Design Process & Methodology */}
-        <section className="w-full px-6 md:px-12 lg:px-24 py-12 flex flex-col items-center gap-6">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-12 lg:py-12 flex flex-col items-center gap-6">
           <h2 className="text-gray-600 font-sora text-[30px] font-bold leading-[45px] text-center">
             Design Process & Methodology
           </h2>
@@ -131,7 +131,7 @@ export default function WebsiteProject() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-24 py-12 flex flex-col md:flex-row justify-center items-center gap-12">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-12 lg:py-12 flex flex-col md:flex-row justify-center items-center gap-12">
           <div className="flex-1 flex justify-center">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/0099d59e4fa8dbcc6ed979bd8359522851ee7556?width=1192"
@@ -207,7 +207,7 @@ export default function WebsiteProject() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-24 py-12 flex flex-col md:flex-row justify-center items-center gap-12">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-12 lg:py-12 flex flex-col md:flex-row justify-center items-center gap-12">
           <div className="flex-1 flex justify-center">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/18bf5566d5ee20c2b3f753b6f06750bbe3f3da7b?width=1030"
@@ -271,7 +271,7 @@ export default function WebsiteProject() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-24 py-12 flex flex-col md:flex-row justify-center items-center gap-16">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-12 lg:py-12 flex flex-col md:flex-row justify-center items-center gap-16">
           <div className="flex-1 flex justify-center">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/3ee5e10cb8abb48b84446b1f79b2564b3035c3b3?width=1176"
@@ -337,7 +337,7 @@ export default function WebsiteProject() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-24 py-12 flex flex-col md:flex-row justify-center items-center gap-16">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-12 lg:py-12 flex flex-col md:flex-row justify-center items-center gap-16">
           <div className="flex-1 flex justify-center">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/d6dd8d8a05d3425985dcb21b6a91e07440c06287?width=1176"
@@ -401,7 +401,7 @@ export default function WebsiteProject() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-24 py-12 flex flex-col md:flex-row justify-center items-center gap-16">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-12 lg:py-12 flex flex-col md:flex-row justify-center items-center gap-16">
           <div className="flex-1 flex justify-center">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/b74a9c736bc0c668a80ebda920a3738aaefe27c1?width=1176"
@@ -458,7 +458,7 @@ export default function WebsiteProject() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-24 py-12 flex flex-col md:flex-row justify-center items-center gap-16">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-12 lg:py-12 flex flex-col md:flex-row justify-center items-center gap-16">
           <div className="flex-1 flex justify-center">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/93b66cd7d91244e2ccbe7ea50e435495cc9ec44b?width=1176"
@@ -515,7 +515,7 @@ export default function WebsiteProject() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-24 py-12 flex flex-col md:flex-row justify-center items-center gap-16">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-12 lg:py-12 flex flex-col md:flex-row justify-center items-center gap-16">
           <div className="flex-1 flex justify-center">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/51843bf3e97beb8dcf8813ae1ffffed0b3fe80fd?width=1176"
@@ -579,7 +579,7 @@ export default function WebsiteProject() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-24 py-12 flex flex-col md:flex-row justify-center items-start gap-16">
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-12 lg:py-12 flex flex-col md:flex-row justify-center items-start gap-16">
           <div className="flex-1 flex justify-center">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/e26ab9a625bb0eaef81c810832768e8f0eebc68c?width=1176"
