@@ -21,7 +21,7 @@ export default function Index() {
 
       <main>
         <section
-          className="w-full flex flex-col md:flex-row items-center md:items-start shadow-md"
+          className="w-full flex flex-col md:flex-row items-center md:items-stretch shadow-md border-b md:border-b border-teal-300"
           style={{
             backgroundImage:
               "url('https://api.builder.io/api/v1/image/assets/TEMP/cfc7b32d3bd84e2431b8ac9f31332e7430c2402d?width=2880')",
@@ -29,8 +29,8 @@ export default function Index() {
             backgroundPosition: "center",
           }}
         >
-          <div className="flex-1 px-6 md:px-12 lg:px-24 py-10 md:py-10 flex flex-col items-start md:items-start gap-6">
-            <h1 className="text-gray-600 font-sora text-3xl md:text-[40px] lg:text-[56px] font-bold leading-normal w-full md:w-[538px] text-center md:text-left">
+          <div className="flex-1 px-6 md:px-[60px] lg:px-24 py-10 md:py-10 flex flex-col items-start md:items-start gap-6 md:gap-4">
+            <h1 className="text-gray-600 font-sora text-3xl md:text-[40px] lg:text-[56px] font-bold leading-normal w-full md:w-[340px] lg:w-[538px] text-center md:text-left">
               From Concept to Market, Fast!
             </h1>
             <p className="text-gray-600 text-lg font-normal w-full text-center md:text-left">
@@ -43,12 +43,12 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="flex-1 flex justify-center items-center px-5 md:px-12 lg:px-24 py-4 md:py-[15px]">
+          <div className="flex-1 flex justify-center items-center px-5 md:px-5 lg:px-24 py-4 md:py-[15px]">
             <div className="relative">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47bd8390907741749758f6c6206db0b1?format=webp&width=800"
                 alt="Matt Lee climbing"
-                className="w-[157px] h-[157px] md:w-[200px] md:h-[200px] lg:w-[315px] lg:h-[315px] rounded-full object-cover mx-auto"
+                className="w-[157px] h-[157px] md:w-[315px] md:h-[315px] lg:w-[315px] lg:h-[315px] rounded-full object-cover mx-auto border-[5px] border-teal-500"
               />
             </div>
           </div>
@@ -58,14 +58,14 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-9 lg:px-[100px] py-9 md:py-9 flex flex-col md:flex-row justify-center items-center md:items-start gap-[50px]">
-          <div className="flex-1 flex flex-col justify-center items-start gap-9">
+        <section className="w-full px-6 md:px-9 lg:px-[100px] py-9 md:py-9 flex flex-col md:flex-row justify-center items-center md:items-start gap-[50px] md:gap-6">
+          <div className="flex-1 flex flex-col justify-center items-start gap-9 md:gap-6 md:px-4">
             <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
               Designing Interfaces That <br />
               Feel Effortless
             </h2>
 
-            <div className="flex flex-col md:flex-row items-center md:items-center justify-start gap-9 w-full px-2">
+            <div className="flex flex-col md:flex-col items-center md:items-center justify-start gap-9 md:gap-6 w-full px-2 md:px-2">
               <div className="flex justify-center items-center">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/40db7e666c3b74912cf3d36982b52cc98ca6ec0b?width=400"
@@ -74,8 +74,8 @@ export default function Index() {
                 />
               </div>
 
-              <div className="flex-1 flex flex-col justify-end items-center md:items-end gap-6">
-                <p className="text-gray-500 text-base font-normal px-2 text-center md:text-left">
+              <div className="flex-1 flex flex-col justify-end items-center md:items-center gap-6 md:gap-6">
+                <p className="text-gray-500 text-base font-normal px-2 md:px-2 text-center md:text-left">
                   Great design doesn't stop at aesthetics. I combine UI craft
                   with UX strategy, helping startups and established brands
                   launch products that are visually stunning, easy to use, and
@@ -83,7 +83,7 @@ export default function Index() {
                 </p>
                 <Link
                   to="/portfolio"
-                  className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center self-center md:self-auto"
+                  className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center self-center md:self-center"
                 >
                   View Portfolio
                 </Link>
@@ -91,12 +91,12 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col justify-center items-start gap-9">
+          <div className="flex-1 flex flex-col justify-center items-start gap-9 md:gap-6 md:px-4">
             <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
               Modern Sales Infrastructure, Built for Automation & Scale
             </h2>
 
-            <div className="flex flex-col md:flex-row items-center md:items-center justify-start gap-9 w-full px-2">
+            <div className="flex flex-col md:flex-col items-center md:items-center justify-start gap-9 md:gap-6 w-full px-2 md:px-2">
               <div className="flex justify-center items-center">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/fdd9cdf6cd596a6cc3d1b6f5cc1ae6f762a9baf4?width=400"
@@ -105,8 +105,8 @@ export default function Index() {
                 />
               </div>
 
-              <div className="flex-1 flex flex-col justify-end items-center md:items-end gap-6">
-                <p className="text-gray-500 text-base font-normal px-2 text-center md:text-left">
+              <div className="flex-1 flex flex-col justify-end items-center md:items-center gap-6 md:gap-6">
+                <p className="text-gray-500 text-base font-normal px-2 md:px-2 text-center md:text-left">
                   Whether you're a startup or scaling organization, we implement
                   end-to-end GTM systems leveraging tools like LinkedIn
                   automation, buyer intent data, and AI-powered sequencing to
@@ -114,7 +114,7 @@ export default function Index() {
                 </p>
                 <Link
                   to="/gtm"
-                  className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center self-center md:self-auto"
+                  className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center self-center md:self-center"
                 >
                   Learn More
                 </Link>
@@ -137,16 +137,16 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-9 flex flex-col md:flex-row justify-center items-start md:items-center gap-10">
-          <div className="flex justify-center items-center w-full md:w-auto">
+        <section className="w-full px-6 md:px-12 lg:px-[100px] py-9 md:py-10 flex flex-col md:flex-col lg:flex-row justify-center items-center md:items-center lg:items-center gap-10 md:gap-16">
+          <div className="flex justify-center items-center w-full md:w-full lg:w-auto">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/f0e9dc48ad1b2ec48d18839ce369e80504fb3479?width=982"
               alt="Matt Lee on mountain"
-              className="w-[163px] h-[174px] md:w-[250px] md:h-[286px] lg:w-[491px] lg:h-[556px] rounded-full object-cover border-0 outline-none ring-0 shadow-none"
+              className="w-[163px] h-[174px] md:w-[500px] md:h-[556px] lg:w-[491px] lg:h-[556px] rounded-full object-cover border-[3px] border-teal-300"
             />
           </div>
 
-          <div className="flex-1 flex flex-col items-center md:items-start gap-6 max-w-[710px] px-4 md:px-0">
+          <div className="flex-1 flex flex-col items-center md:items-center lg:items-start gap-6 max-w-[710px] px-4 md:px-12 lg:px-0">
             <h2
               id="about"
               className="text-gray-600 font-sora text-[30px] font-bold leading-normal"
@@ -197,30 +197,16 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-9 flex flex-col items-center gap-1">
+        <section className="w-full px-6 md:px-12 lg:px-[100px] py-9 md:py-12 flex flex-col items-center gap-1">
           <h2 className="text-gray-600 text-center font-sora text-[40px] font-bold leading-normal">
             Portfolio
           </h2>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-[68px] py-2 flex flex-wrap justify-center items-center gap-12">
-          <Link
-            to="/mobile-app"
-            className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity"
-          >
-            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
-              Mobile
-            </h3>
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/78db42db315cce267f0f92f88c4f95df7baf9a16?width=580"
-              alt="Mobile project"
-              className="w-[290px] h-[334px] rounded-br-2xl border-0 outline-none ring-0 shadow-none"
-            />
-          </Link>
-
+        <section className="w-full px-6 md:px-[44px] lg:px-[68px] py-2 md:py-16 flex flex-wrap justify-center items-start gap-12 md:gap-6">
           <Link
             to="/ecommerce"
-            className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity"
+            className="flex flex-col items-center gap-5 w-full md:w-[348px] lg:w-auto hover:opacity-80 transition-opacity"
           >
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
               Ecommerce
@@ -228,27 +214,13 @@ export default function Index() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/9aa68bcf174ce04a5b573e0ef1ad6360ea9a04a9?width=580"
               alt="Ecommerce project"
-              className="w-[290px] h-[334px] rounded-br-2xl border-0 outline-none ring-0 shadow-none"
-            />
-          </Link>
-
-          <Link
-            to="/salesforce"
-            className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity"
-          >
-            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
-              Salesforce
-            </h3>
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/659410b2ffaa782061f785f25d99c15df0b1a2eb?width=580"
-              alt="Salesforce project"
-              className="w-[290px] h-[334px] rounded-br-2xl border-0 outline-none ring-0 shadow-none"
+              className="w-[290px] h-[334px] rounded-br-2xl border-r border-b border-teal-300 shadow-md"
             />
           </Link>
 
           <Link
             to="/portfolio/website"
-            className="flex flex-col items-center gap-5 w-full md:w-auto hover:opacity-80 transition-opacity"
+            className="flex flex-col items-center gap-5 w-full md:w-[342px] lg:w-auto hover:opacity-80 transition-opacity"
           >
             <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
               Website
@@ -256,15 +228,43 @@ export default function Index() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/df9bc31f173e10aabca41e06fa9e2d2bd8f04546?width=580"
               alt="Website project"
-              className="w-[290px] h-[334px] rounded-br-2xl border-0 outline-none ring-0 shadow-none"
+              className="w-[290px] h-[334px] rounded-br-2xl border-r border-b border-teal-300 shadow-md"
+            />
+          </Link>
+
+          <Link
+            to="/salesforce"
+            className="flex flex-col items-center gap-5 w-full md:w-[342px] lg:w-auto hover:opacity-80 transition-opacity"
+          >
+            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
+              Salesforce
+            </h3>
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/659410b2ffaa782061f785f25d99c15df0b1a2eb?width=580"
+              alt="Salesforce project"
+              className="w-[290px] h-[334px] rounded-br-2xl border-r border-b border-teal-300 shadow-md"
+            />
+          </Link>
+
+          <Link
+            to="/mobile-app"
+            className="flex flex-col items-center gap-5 w-full md:w-[346px] lg:w-auto hover:opacity-80 transition-opacity"
+          >
+            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
+              Mobile
+            </h3>
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/78db42db315cce267f0f92f88c4f95df7baf9a16?width=580"
+              alt="Mobile project"
+              className="w-[290px] h-[334px] rounded-br-2xl border-r border-b border-teal-300 shadow-md"
             />
           </Link>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 flex flex-col items-center gap-5">
+        <section className="w-full px-6 md:px-12 lg:px-[100px] py-12 md:py-9 flex flex-col items-center gap-5">
           <Link
             to="/portfolio"
-            className="px-16 py-4 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block"
+            className="px-16 py-4 md:px-16 md:py-4 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block"
           >
             View More
           </Link>
