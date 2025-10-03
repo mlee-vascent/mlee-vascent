@@ -22,7 +22,7 @@ export default function Header() {
 
         <nav className="hidden md:flex items-center gap-6">
           <a
-            href="/mlee-vascent/#about"
+            href="/#about"
             className="text-gray-600 text-lg font-normal hover:underline"
           >
             About
@@ -63,7 +63,7 @@ export default function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden w-full px-2.5 py-9 flex flex-col items-center gap-12 bg-white">
           <a
-            href="/mlee-vascent/#about"
+            href="/#about"
             className="text-gray-600 text-lg font-normal"
             onClick={() => setMobileMenuOpen(false)}
           >
