@@ -142,7 +142,7 @@ export default function Index() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/f0e9dc48ad1b2ec48d18839ce369e80504fb3479?width=982"
               alt="Matt Lee on mountain"
-              className="w-[163px] h-[174px] md:w-[250px] md:h-[286px] lg:w-[491px] lg:h-[556px] rounded-full object-cover shadow-md"
+              className="w-[163px] h-[174px] md:w-[250px] md:h-[286px] lg:w-[491px] lg:h-[556px] rounded-full object-cover border-0 outline-none ring-0 shadow-none"
             />
           </div>
 
