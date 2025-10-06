@@ -141,7 +141,7 @@ export default function Index() {
         <section className="w-full px-6 md:px-12 lg:px-[200px] py-9 md:py-10 flex flex-col md:flex-col lg:flex-row justify-center items-center md:items-center lg:items-center gap-10 md:gap-16">
           <div className="flex justify-center items-center w-full md:w-full lg:w-auto">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/f0e9dc48ad1b2ec48d18839ce369e80504fb3479?width=982"
+              src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fc962fc98d19c45a49abf2d4499ff17a8?format=webp&width=800"
               alt="Matt Lee on mountain"
               className="w-[163px] h-[174px] md:w-[500px] md:h-[556px] lg:w-[491px] lg:h-[556px] rounded-full object-cover border-0 outline-none ring-0 shadow-none"
             />
