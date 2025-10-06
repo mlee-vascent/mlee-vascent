@@ -40,7 +40,7 @@ export default function Header() {
             GTM
           </Link>
           <a
-            href="https://belayingkatie.blogspot.com/"
+            href="https://belaying-katie.ghost.io/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 text-lg font-normal hover:underline"
@@ -84,7 +84,7 @@ export default function Header() {
             GTM
           </Link>
           <a
-            href="https://belayingkatie.blogspot.com/"
+            href="https://belaying-katie.ghost.io/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 text-lg font-normal"
