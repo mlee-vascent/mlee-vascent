@@ -143,7 +143,7 @@ export default function Index() {
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F56454eb42d164a989da8875c2b68c526?format=webp&width=800"
               alt="Matt Lee on mountain"
-              className="w-[163px] h-[174px] md:w-[500px] md:h-[556px] lg:w-[491px] lg:h-[556px] rounded-full object-cover border-0 outline-none ring-0 shadow-none"
+              className="w-[163px] md:w-[500px] lg:w-[491px] h-auto object-contain border-0 outline-none ring-0 shadow-none"
             />
           </div>
 
