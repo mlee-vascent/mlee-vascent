@@ -21,7 +21,7 @@ export default function GTM() {
         {/* Hero Section */}
         <section className="w-full px-6 md:px-24 lg:px-[200px] py-16 flex flex-col items-center gap-3 bg-gradient-to-r from-[#00C9C9] to-[#00A6A6]">
           <div className="flex flex-col items-center w-full gap-6">
-            <h1 className="text-[#F6F8FA] text-center font-sora text-3xl md:text-4xl lg:text-[56px] font-bold">
+            <h1 className="text-[#F6F8FA] text-center font-sora text-3xl md:text-4xl lg:text-[56px] font-bold leading-[65px]">
               Scale Your Pipeline with AI-Powered Outreach
             </h1>
             <p className="text-white text-center font-sora text-xl md:text-2xl lg:text-[30px] font-bold max-w-4xl">
