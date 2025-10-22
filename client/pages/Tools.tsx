@@ -6,7 +6,28 @@ export default function Tools() {
   const ogImage =
     "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47bd8390907741749758f6c6206db0b1?format=webp&width=1200";
   const description =
-    "Reduce your IT costs and buy the right platforms. Get independent guidance aligned with your business outcomes, not vendor quotas.";
+    "Reduce your IT costs and buy the right platforms. Get independent guidance on UCaaS, CCaaS, Security, Connectivity, and Cloud & Colo. Vendor-agnostic consulting aligned with your business outcomes.";
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "IT Procurement & Cost Optimization Consulting",
+    description: description,
+    provider: {
+      "@type": "LocalBusiness",
+      name: "VerityAscent",
+      url: "https://verityascent.com",
+    },
+    areaServed: "US",
+    serviceType: [
+      "IT Cost Assessment",
+      "Platform Vetting",
+      "Contract Negotiation",
+      "Implementation Planning",
+      "Ongoing Optimization",
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Seo
@@ -14,6 +35,8 @@ export default function Tools() {
         description={description}
         image={ogImage}
         canonicalPath="/tools"
+        keywords="IT consulting, cost optimization, platform selection, UCaaS, CCaaS, security, connectivity, cloud, procurement, vendor negotiation, AVANT"
+        structuredData={structuredData}
       />
       <Header />
 
