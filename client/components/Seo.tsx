@@ -6,6 +6,8 @@ export type SeoProps = {
   image?: string;
   canonicalPath?: string; // e.g. "/gtm"
   robots?: string; // e.g. "index, follow" or "noindex, nofollow"
+  structuredData?: Record<string, unknown>; // JSON-LD structured data
+  keywords?: string; // SEO keywords
 };
 
 function upsertMeta(selector: string, attrs: Record<string, string>) {
