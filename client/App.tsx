@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Portfolio from "./pages/Portfolio";
 import GTM from "./pages/GTM";
+import Tools from "./pages/Tools";
 import Ecommerce from "./pages/Ecommerce";
 import MobileApp from "./pages/MobileApp";
 import WebsiteProject from "./pages/WebsiteProject";
