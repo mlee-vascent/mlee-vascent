@@ -28,6 +28,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/gtm" element={<GTM />} />
+          <Route path="/tools" element={<Tools />} />
           <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/mobile-app" element={<MobileApp />} />
           <Route path="/salesforce" element={<Salesforce />} />
