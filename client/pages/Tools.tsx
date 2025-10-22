@@ -243,7 +243,7 @@ export default function Tools() {
                 </h3>
                 <p className="text-gray-600 text-base">
                   Real-time pricing quotes, provider comparisons, market data and
-                  more — all at your fingertips.
+                  more, all at your fingertips.
                 </p>
               </div>
             </div>
