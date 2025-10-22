@@ -48,9 +48,10 @@ export default function Tools() {
               Reduce Your IT Costs. Buy the Right Platforms.
             </h1>
             <p className="text-white text-center font-sora text-xl md:text-2xl lg:text-[30px] font-bold max-w-4xl">
-              Your independent guide to enterprise technology procurement without
-              pressure from direct reps. Leveraging AVANT's market insights to
-              align technology decisions with your business outcomes.
+              Your independent guide to enterprise technology procurement
+              without pressure from direct reps. Leveraging AVANT's market
+              insights to align technology decisions with your business
+              outcomes.
             </p>
 
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-14 w-full md:w-auto mt-6 md:px-24">
@@ -95,7 +96,9 @@ export default function Tools() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-orange-primary font-bold">•</span>
-                    <span>Confusion around contract terms and benchmarking</span>
+                    <span>
+                      Confusion around contract terms and benchmarking
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -116,13 +119,15 @@ export default function Tools() {
                   <li className="flex gap-3">
                     <span className="text-orange-primary font-bold">•</span>
                     <span>
-                      Deep access to AVANT's tools, data and provider comparisons
+                      Deep access to AVANT's tools, data and provider
+                      comparisons
                     </span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-orange-primary font-bold">•</span>
                     <span>
-                      Focus on reducing IT spend and selecting the right platform
+                      Focus on reducing IT spend and selecting the right
+                      platform
                     </span>
                   </li>
                   <li className="flex gap-3">
@@ -156,7 +161,9 @@ export default function Tools() {
                 </li>
                 <li className="flex gap-2">
                   <span>•</span>
-                  <span>Identify hidden costs, redundancies or overlapping licenses</span>
+                  <span>
+                    Identify hidden costs, redundancies or overlapping licenses
+                  </span>
                 </li>
                 <li className="flex gap-2">
                   <span>•</span>
@@ -176,11 +183,15 @@ export default function Tools() {
                 </li>
                 <li className="flex gap-2">
                   <span>•</span>
-                  <span>Compare multiple vendors side-by-side using AVANT's data</span>
+                  <span>
+                    Compare multiple vendors side-by-side using AVANT's data
+                  </span>
                 </li>
                 <li className="flex gap-2">
                   <span>•</span>
-                  <span>Vendor-agnostic recommendations based on business fit</span>
+                  <span>
+                    Vendor-agnostic recommendations based on business fit
+                  </span>
                 </li>
               </ul>
             </div>
@@ -236,7 +247,9 @@ export default function Tools() {
                 </li>
                 <li className="flex gap-2">
                   <span>•</span>
-                  <span>Recommendations for optimization and renegotiation</span>
+                  <span>
+                    Recommendations for optimization and renegotiation
+                  </span>
                 </li>
                 <li className="flex gap-2">
                   <span>•</span>
@@ -265,8 +278,8 @@ export default function Tools() {
                   Access to AVANT's Toolkit
                 </h3>
                 <p className="text-gray-600 text-base">
-                  Real-time pricing quotes, provider comparisons, market data and
-                  more, all at your fingertips.
+                  Real-time pricing quotes, provider comparisons, market data
+                  and more, all at your fingertips.
                 </p>
               </div>
             </div>
@@ -299,8 +312,8 @@ export default function Tools() {
                   Expert Support Built In
                 </h3>
                 <p className="text-gray-600 text-base">
-                  Engineers, channel managers and partner support are part of the
-                  AVANT model.
+                  Engineers, channel managers and partner support are part of
+                  the AVANT model.
                 </p>
               </div>
             </div>
@@ -316,7 +329,8 @@ export default function Tools() {
                   Skip the Pressure
                 </h3>
                 <p className="text-gray-600 text-base">
-                  Make decisions in a calm, informed way without vendor push-sales.
+                  Make decisions in a calm, informed way without vendor
+                  push-sales.
                 </p>
               </div>
             </div>
@@ -332,8 +346,8 @@ export default function Tools() {
                   Long-Term Value
                 </h3>
                 <p className="text-gray-600 text-base">
-                  Plan for growth, change and future-proofing, not just a one-time
-                  deal.
+                  Plan for growth, change and future-proofing, not just a
+                  one-time deal.
                 </p>
               </div>
             </div>
@@ -347,8 +361,9 @@ export default function Tools() {
           </h2>
 
           <p className="text-gray-600 text-lg text-center max-w-3xl mb-8">
-            This service is ideal for mid-sized companies and organizations facing
-            high cost or confusion around cloud, telecom, or UC platforms.
+            This service is ideal for mid-sized companies and organizations
+            facing high cost or confusion around cloud, telecom, or UC
+            platforms.
           </p>
 
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl">
@@ -371,7 +386,8 @@ export default function Tools() {
                   Renewal Period
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Businesses entering renewal or considering vendor/platform change
+                  Businesses entering renewal or considering vendor/platform
+                  change
                 </p>
               </div>
             </div>
@@ -415,10 +431,15 @@ export default function Tools() {
                 UCaaS
               </h3>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Unified Communications as a Service (UCaaS) solutions enable remote teams to collaborate seamlessly. I help you evaluate providers, negotiate contracts, and implement systems that replace legacy PBX infrastructure with modern, scalable platforms.
+                Unified Communications as a Service (UCaaS) solutions enable
+                remote teams to collaborate seamlessly. I help you evaluate
+                providers, negotiate contracts, and implement systems that
+                replace legacy PBX infrastructure with modern, scalable
+                platforms.
               </p>
               <p className="text-gray-600 text-base font-semibold">
-                UCaaS Benefits: No hardware costs, remote functionality, create users in seconds, web-based portal and control
+                UCaaS Benefits: No hardware costs, remote functionality, create
+                users in seconds, web-based portal and control
               </p>
             </div>
             <div className="flex-1 flex justify-center items-center rounded-2xl overflow-hidden">
@@ -437,10 +458,15 @@ export default function Tools() {
                 CCaaS
               </h3>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Contact Center as a Service (CCaaS) solutions provide on-demand scalability and global reach for customer interactions. I guide you through vendor selection, integration planning, and cost optimization to ensure your contact center supports growth without hardware investment.
+                Contact Center as a Service (CCaaS) solutions provide on-demand
+                scalability and global reach for customer interactions. I guide
+                you through vendor selection, integration planning, and cost
+                optimization to ensure your contact center supports growth
+                without hardware investment.
               </p>
               <p className="text-gray-600 text-base font-semibold">
-                CCaaS Benefits: No hardware costs, built-in HA and DR, remote functionality, web-based portal and control
+                CCaaS Benefits: No hardware costs, built-in HA and DR, remote
+                functionality, web-based portal and control
               </p>
             </div>
             <div className="flex-1 flex justify-center items-center rounded-2xl overflow-hidden">
@@ -459,7 +485,11 @@ export default function Tools() {
                 Security
               </h3>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Security is critical to protecting your business from evolving threats. I help you develop a comprehensive security framework aligned with NIST Cybersecurity standards, select the right security providers, and implement controls that prevent breaches before they become costly.
+                Security is critical to protecting your business from evolving
+                threats. I help you develop a comprehensive security framework
+                aligned with NIST Cybersecurity standards, select the right
+                security providers, and implement controls that prevent breaches
+                before they become costly.
               </p>
               <p className="text-gray-600 text-base font-semibold">
                 NIST Framework: Identify, Protect, Detect, Respond, Recover
@@ -481,10 +511,15 @@ export default function Tools() {
                 Connectivity
               </h3>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Global connectivity solutions — DIA, broadband, layer 2, dark fiber, wireless, and IoT — form the foundation of modern enterprise operations. I help you select providers that deliver cost savings, increased speeds, and the flexibility your business needs as it evolves.
+                Global connectivity solutions — DIA, broadband, layer 2, dark
+                fiber, wireless, and IoT — form the foundation of modern
+                enterprise operations. I help you select providers that deliver
+                cost savings, increased speeds, and the flexibility your
+                business needs as it evolves.
               </p>
               <p className="text-gray-600 text-base font-semibold">
-                Connectivity Solutions: Cost savings, upgraded technology, increased speeds, and flexibility
+                Connectivity Solutions: Cost savings, upgraded technology,
+                increased speeds, and flexibility
               </p>
             </div>
             <div className="flex-1 flex justify-center items-center rounded-2xl overflow-hidden">
@@ -503,10 +538,15 @@ export default function Tools() {
                 Cloud & Colo
               </h3>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Cloud computing and colocation services enable hyperscale IT infrastructure without the burden of on-premise hardware. I guide you through vendor selection, cost optimization, and migration planning to ensure your cloud and colocation strategy supports growth and scalability.
+                Cloud computing and colocation services enable hyperscale IT
+                infrastructure without the burden of on-premise hardware. I
+                guide you through vendor selection, cost optimization, and
+                migration planning to ensure your cloud and colocation strategy
+                supports growth and scalability.
               </p>
               <p className="text-gray-600 text-base font-semibold">
-                Cloud & Colo Benefits: Scalability, global reach, flexibility, reduced capital expenditure
+                Cloud & Colo Benefits: Scalability, global reach, flexibility,
+                reduced capital expenditure
               </p>
             </div>
             <div className="flex-1 flex justify-center items-center rounded-2xl overflow-hidden">
@@ -525,9 +565,9 @@ export default function Tools() {
             Ready to Take Control of Your IT Spend?
           </h2>
           <p className="text-gray-600 text-center text-lg max-w-3xl">
-            Let's map your cost-savings, define the right platforms and structure
-            a vendor-agnostic decision path. Schedule your free 30-minute call
-            today.
+            Let's map your cost-savings, define the right platforms and
+            structure a vendor-agnostic decision path. Schedule your free
+            30-minute call today.
           </p>
           <a
             href="https://calendly.com/verityascent/30min"

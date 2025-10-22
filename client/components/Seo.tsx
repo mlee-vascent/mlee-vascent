@@ -62,7 +62,7 @@ export const Seo: React.FC<SeoProps> = ({
     // Add structured data (JSON-LD)
     if (structuredData) {
       let script = document.querySelector<HTMLScriptElement>(
-        'script[type="application/ld+json"]'
+        'script[type="application/ld+json"]',
       );
       if (!script) {
         script = document.createElement("script");

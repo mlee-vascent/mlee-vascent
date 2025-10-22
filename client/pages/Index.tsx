@@ -172,7 +172,11 @@ export default function Index() {
               IT Cost Reduction Consulting
             </h2>
             <p className="text-gray-600 text-lg text-center md:text-center lg:text-left max-w-lg">
-              Reduce your IT costs and buy the right platforms. Get independent guidance aligned with your business outcomes, not vendor quotas. From UCaaS and CCaaS to Security, Connectivity, and Cloud & Colo, we help you navigate enterprise technology procurement with confidence.
+              Reduce your IT costs and buy the right platforms. Get independent
+              guidance aligned with your business outcomes, not vendor quotas.
+              From UCaaS and CCaaS to Security, Connectivity, and Cloud & Colo,
+              we help you navigate enterprise technology procurement with
+              confidence.
             </p>
             <Link
               to="/tools"
