@@ -442,11 +442,12 @@ export default function Tools() {
                 NIST Framework: Identify, Protect, Detect, Respond, Recover
               </p>
             </div>
-            <div className="flex-1 flex justify-center items-center bg-gradient-to-br from-teal-50 to-blue-50 rounded-2xl p-8 h-[300px]">
-              <div className="text-center text-gray-400">
-                <div className="text-6xl mb-4">🔐</div>
-                <p className="text-gray-600">Security Providers</p>
-              </div>
+            <div className="flex-1 flex justify-center items-center rounded-2xl overflow-hidden">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F4abaf748beae4cd28184f791136d89fb?format=webp&width=800"
+                alt="Security Providers"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
