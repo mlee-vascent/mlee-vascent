@@ -138,6 +138,31 @@ export default function Index() {
           </div>
         </section>
 
+        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-16 flex flex-col md:flex-col lg:flex-row justify-center items-center md:items-center lg:items-center gap-10 md:gap-16">
+          <div className="flex-1 flex flex-col items-center md:items-center lg:items-start gap-6">
+            <h2 className="text-gray-600 font-sora text-[30px] md:text-[40px] font-bold leading-normal">
+              IT Cost Reduction Consulting
+            </h2>
+            <p className="text-gray-600 text-lg text-center md:text-center lg:text-left max-w-lg">
+              Reduce your IT costs and buy the right platforms. Get independent guidance aligned with your business outcomes, not vendor quotas. From UCaaS and CCaaS to Security, Connectivity, and Cloud & Colo, we help you navigate enterprise technology procurement with confidence.
+            </p>
+            <Link
+              to="/tools"
+              className="px-6 py-3 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center"
+            >
+              Explore IT Consulting
+            </Link>
+          </div>
+
+          <div className="flex justify-center items-center w-full md:w-full lg:w-auto">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fb2171e29b8114b70ae106d6cf47d6942?format=webp&width=800"
+              alt="CCaaS Consulting Services"
+              className="w-full md:w-[500px] lg:w-[400px] h-auto object-contain border-0 outline-none ring-0 shadow-none rounded-2xl"
+            />
+          </div>
+        </section>
+
         <section className="w-full px-6 md:px-12 lg:px-[200px] py-9 md:py-10 flex flex-col md:flex-col lg:flex-row justify-center items-center md:items-center lg:items-center gap-10 md:gap-16">
           <div className="flex justify-center items-center w-full md:w-full lg:w-auto">
             <img
