@@ -420,11 +420,12 @@ export default function Tools() {
                 CCaaS Benefits: No hardware costs, built-in HA and DR, remote functionality, web-based portal and control
               </p>
             </div>
-            <div className="flex-1 flex justify-center items-center bg-gradient-to-br from-teal-50 to-blue-50 rounded-2xl p-8 h-[300px]">
-              <div className="text-center text-gray-400">
-                <div className="text-6xl mb-4">👥</div>
-                <p className="text-gray-600">CCaaS Providers</p>
-              </div>
+            <div className="flex-1 flex justify-center items-center rounded-2xl overflow-hidden">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fb2171e29b8114b70ae106d6cf47d6942?format=webp&width=800"
+                alt="CCaaS Providers"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
