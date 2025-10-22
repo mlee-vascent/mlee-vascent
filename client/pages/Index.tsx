@@ -140,7 +140,7 @@ export default function Index() {
 
         <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-16 flex flex-col md:flex-col lg:flex-row justify-center items-center md:items-center lg:items-center gap-10 md:gap-16">
           <div className="flex-1 flex flex-col items-center md:items-center lg:items-start gap-6">
-            <h2 className="text-gray-600 font-sora text-[30px] md:text-[40px] font-bold leading-normal">
+            <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
               IT Cost Reduction Consulting
             </h2>
             <p className="text-gray-600 text-lg text-center md:text-center lg:text-left max-w-lg">
