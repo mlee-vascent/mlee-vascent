@@ -379,55 +379,146 @@ export default function Tools() {
           </div>
         </section>
 
-        {/* Engagement Models */}
-        <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 bg-[#F6F8FA] flex flex-col items-center gap-12">
+        {/* Areas of Expertise */}
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 flex flex-col items-center gap-12">
           <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
-            Engagement Models
+            Areas of Expertise
           </h2>
 
-          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
-            <div className="flex flex-col gap-4 p-8 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-xl font-bold">
-                Discovery & Quick Audit
+          {/* UCaaS */}
+          <div className="w-full flex flex-col md:flex-row items-center gap-12 max-w-5xl">
+            <div className="flex-1 flex flex-col gap-6">
+              <h3 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold">
+                UCaaS
               </h3>
-              <p className="text-gray-600 text-base">
-                Fixed fee engagement
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Unified Communications as a Service (UCaaS) solutions enable remote teams to collaborate seamlessly. I help you evaluate providers, negotiate contracts, and implement systems that replace legacy PBX infrastructure with modern, scalable platforms.
               </p>
-              <p className="text-gray-500 text-sm">
-                2-3 weeks to assess your current spend and identify quick wins
+              <p className="text-gray-600 text-base font-semibold">
+                UCaaS Benefits: No hardware costs, remote functionality, create users in seconds, web-based portal and control
               </p>
+              <a
+                href="#contact"
+                className="text-orange-primary font-sora text-lg font-bold hover:underline"
+              >
+                Explore UCaaS Options →
+              </a>
             </div>
-
-            <div className="flex flex-col gap-4 p-8 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-xl font-bold">
-                Full Advisory Engagement
-              </h3>
-              <p className="text-gray-600 text-base">
-                Monthly retainer or project-based
-              </p>
-              <p className="text-gray-500 text-sm">
-                3-6 months of comprehensive guidance through procurement and
-                implementation
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-4 p-8 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-xl font-bold">
-                Ongoing Optimization
-              </h3>
-              <p className="text-gray-600 text-base">
-                Quarterly review + support
-              </p>
-              <p className="text-gray-500 text-sm">
-                Continuous governance, optimization and strategic vendor
-                management
-              </p>
+            <div className="flex-1 flex justify-center items-center bg-gradient-to-br from-teal-50 to-blue-50 rounded-2xl p-8 h-[300px]">
+              <div className="text-center text-gray-400">
+                <div className="text-6xl mb-4">☎️</div>
+                <p className="text-gray-600">UCaaS Providers</p>
+              </div>
             </div>
           </div>
 
-          <p className="text-gray-600 text-center text-lg">
-            Contact for details on pricing and customized packages
-          </p>
+          {/* CCaaS */}
+          <div className="w-full flex flex-col md:flex-row-reverse items-center gap-12 max-w-5xl">
+            <div className="flex-1 flex flex-col gap-6">
+              <h3 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold">
+                CCaaS
+              </h3>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Contact Center as a Service (CCaaS) solutions provide on-demand scalability and global reach for customer interactions. I guide you through vendor selection, integration planning, and cost optimization to ensure your contact center supports growth without hardware investment.
+              </p>
+              <p className="text-gray-600 text-base font-semibold">
+                CCaaS Benefits: No hardware costs, built-in HA and DR, remote functionality, web-based portal and control
+              </p>
+              <a
+                href="#contact"
+                className="text-orange-primary font-sora text-lg font-bold hover:underline"
+              >
+                Explore CCaaS Options →
+              </a>
+            </div>
+            <div className="flex-1 flex justify-center items-center bg-gradient-to-br from-teal-50 to-blue-50 rounded-2xl p-8 h-[300px]">
+              <div className="text-center text-gray-400">
+                <div className="text-6xl mb-4">👥</div>
+                <p className="text-gray-600">CCaaS Providers</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Security */}
+          <div className="w-full flex flex-col md:flex-row items-center gap-12 max-w-5xl">
+            <div className="flex-1 flex flex-col gap-6">
+              <h3 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold">
+                Security
+              </h3>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Security is critical to protecting your business from evolving threats. I help you develop a comprehensive security framework aligned with NIST Cybersecurity standards, select the right security providers, and implement controls that prevent breaches before they become costly.
+              </p>
+              <p className="text-gray-600 text-base font-semibold">
+                NIST Framework: Identify, Protect, Detect, Respond, Recover
+              </p>
+              <a
+                href="#contact"
+                className="text-orange-primary font-sora text-lg font-bold hover:underline"
+              >
+                Explore Security Options →
+              </a>
+            </div>
+            <div className="flex-1 flex justify-center items-center bg-gradient-to-br from-teal-50 to-blue-50 rounded-2xl p-8 h-[300px]">
+              <div className="text-center text-gray-400">
+                <div className="text-6xl mb-4">🔐</div>
+                <p className="text-gray-600">Security Providers</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Connectivity */}
+          <div className="w-full flex flex-col md:flex-row-reverse items-center gap-12 max-w-5xl">
+            <div className="flex-1 flex flex-col gap-6">
+              <h3 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold">
+                Connectivity
+              </h3>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Global connectivity solutions — DIA, broadband, layer 2, dark fiber, wireless, and IoT — form the foundation of modern enterprise operations. I help you select providers that deliver cost savings, increased speeds, and the flexibility your business needs as it evolves.
+              </p>
+              <p className="text-gray-600 text-base font-semibold">
+                Connectivity Solutions: Cost savings, upgraded technology, increased speeds, and flexibility
+              </p>
+              <a
+                href="#contact"
+                className="text-orange-primary font-sora text-lg font-bold hover:underline"
+              >
+                Compare Connectivity Providers →
+              </a>
+            </div>
+            <div className="flex-1 flex justify-center items-center bg-gradient-to-br from-teal-50 to-blue-50 rounded-2xl p-8 h-[300px]">
+              <div className="text-center text-gray-400">
+                <div className="text-6xl mb-4">🌐</div>
+                <p className="text-gray-600">Connectivity Providers</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Cloud & Colo */}
+          <div className="w-full flex flex-col md:flex-row items-center gap-12 max-w-5xl">
+            <div className="flex-1 flex flex-col gap-6">
+              <h3 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold">
+                Cloud & Colo
+              </h3>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Cloud computing and colocation services enable hyperscale IT infrastructure without the burden of on-premise hardware. I guide you through vendor selection, cost optimization, and migration planning to ensure your cloud and colocation strategy supports growth and scalability.
+              </p>
+              <p className="text-gray-600 text-base font-semibold">
+                Cloud & Colo Benefits: Scalability, global reach, flexibility, reduced capital expenditure
+              </p>
+              <a
+                href="#contact"
+                className="text-orange-primary font-sora text-lg font-bold hover:underline"
+              >
+                Explore Cloud & Colo Options →
+              </a>
+            </div>
+            <div className="flex-1 flex justify-center items-center bg-gradient-to-br from-teal-50 to-blue-50 rounded-2xl p-8 h-[300px]">
+              <div className="text-center text-gray-400">
+                <div className="text-6xl mb-4">☁️</div>
+                <p className="text-gray-600">Cloud & Colo Providers</p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* CTA Section */}
