@@ -25,7 +25,7 @@ export default function Tools() {
               Reduce Your IT Costs. Buy the Right Platforms.
             </h1>
             <p className="text-white text-center font-sora text-xl md:text-2xl lg:text-[30px] font-bold max-w-4xl">
-              Your independent guide to enterprise technology procurement — no
+              Your independent guide to enterprise technology procurement without
               pressure from direct reps. Leveraging AVANT's market insights to
               align technology decisions with your business outcomes.
             </p>
