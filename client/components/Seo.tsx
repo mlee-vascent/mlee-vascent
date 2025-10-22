@@ -35,6 +35,8 @@ export const Seo: React.FC<SeoProps> = ({
   image,
   canonicalPath,
   robots,
+  structuredData,
+  keywords,
 }) => {
   React.useEffect(() => {
     const origin = typeof window !== "undefined" ? window.location.origin : "";
@@ -46,10 +48,29 @@ export const Seo: React.FC<SeoProps> = ({
       name: "description",
       content: description,
     });
+    if (keywords) {
+      upsertMeta("meta[name='keywords']", {
+        name: "keywords",
+        content: keywords,
+      });
+    }
     upsertMeta("meta[name='robots']", {
       name: "robots",
       content: robots || "index, follow",
     });
+
+    // Add structured data (JSON-LD)
+    if (structuredData) {
+      let script = document.querySelector<HTMLScriptElement>(
+        'script[type="application/ld+json"]'
+      );
+      if (!script) {
+        script = document.createElement("script");
+        script.type = "application/ld+json";
+        document.head.appendChild(script);
+      }
+      script.textContent = JSON.stringify(structuredData);
+    }
 
     // Open Graph
     upsertMeta("meta[property='og:title']", {
