@@ -4,6 +4,7 @@ const routes = [
   "/",
   "/portfolio",
   "/gtm",
+  "/tools",
   "/ecommerce",
   "/mobile-app",
   "/salesforce",
