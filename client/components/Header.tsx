@@ -46,7 +46,7 @@ export default function Header() {
             Tools
           </Link>
           <a
-            href="https://belaying-katie.ghost.io/"
+            href="https://blog.verityascent.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 text-lg font-normal hover:underline"
@@ -97,7 +97,7 @@ export default function Header() {
             Tools
           </Link>
           <a
-            href="https://belaying-katie.ghost.io/"
+            href="https://blog.verityascent.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 text-lg font-normal"
