@@ -8,7 +8,33 @@ export default function Index() {
   const ogImage =
     "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47bd8390907741749758f6c6206db0b1?format=webp&width=1200";
   const description =
-    "Matt Lee helps startups and growth teams launch faster with UI/UX design and go-to-market strategy. Modern sales infrastructure and AI-powered outreach generate predictable pipeline. View the portfolio and book a consultation.";
+    "Matt Lee helps startups and growth teams launch faster with UI/UX design, go-to-market strategy, and IT cost reduction consulting. Modern sales infrastructure, AI-powered outreach, and independent technology procurement guidance. View portfolio and book a consultation.";
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Matt Lee",
+    jobTitle: "UI/UX Designer & Go-To-Market Strategist",
+    url: "https://verityascent.com",
+    image: ogImage,
+    description: description,
+    sameAs: [
+      "https://www.linkedin.com/in/matthewraganlee/",
+      "https://www.facebook.com/matthewraganlee",
+      "https://www.instagram.com/mattrlee/",
+      "https://x.com/mattrlee",
+    ],
+    knowsAbout: [
+      "UI/UX Design",
+      "Go-To-Market Strategy",
+      "Product Design",
+      "GTM Systems",
+      "IT Procurement",
+      "Cost Optimization",
+      "Sales Infrastructure",
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Seo
@@ -16,6 +42,8 @@ export default function Index() {
         description={description}
         image={ogImage}
         canonicalPath="/"
+        keywords="UI/UX design, go-to-market strategy, GTM, product design, UI design, UX design, sales infrastructure, AI outreach, IT consulting, cost optimization"
+        structuredData={structuredData}
       />
       <Header />
 
