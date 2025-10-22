@@ -397,18 +397,13 @@ export default function Tools() {
               <p className="text-gray-600 text-base font-semibold">
                 UCaaS Benefits: No hardware costs, remote functionality, create users in seconds, web-based portal and control
               </p>
-              <a
-                href="#contact"
-                className="text-orange-primary font-sora text-lg font-bold hover:underline"
-              >
-                Explore UCaaS Options →
-              </a>
             </div>
-            <div className="flex-1 flex justify-center items-center bg-gradient-to-br from-teal-50 to-blue-50 rounded-2xl p-8 h-[300px]">
-              <div className="text-center text-gray-400">
-                <div className="text-6xl mb-4">☎️</div>
-                <p className="text-gray-600">UCaaS Providers</p>
-              </div>
+            <div className="flex-1 flex justify-center items-center rounded-2xl overflow-hidden">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F7dd23bfda09448f39c9757d49168ad92?format=webp&width=800"
+                alt="UCaaS Providers"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
