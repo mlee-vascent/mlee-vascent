@@ -89,6 +89,13 @@ export default function Header() {
           >
             GTM
           </Link>
+          <Link
+            to="/tools"
+            className="text-gray-600 text-lg font-normal"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Tools
+          </Link>
           <a
             href="https://belaying-katie.ghost.io/"
             target="_blank"
