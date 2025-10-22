@@ -463,12 +463,6 @@ export default function Tools() {
               <p className="text-gray-600 text-base font-semibold">
                 Connectivity Solutions: Cost savings, upgraded technology, increased speeds, and flexibility
               </p>
-              <a
-                href="#contact"
-                className="text-orange-primary font-sora text-lg font-bold hover:underline"
-              >
-                Compare Connectivity Providers →
-              </a>
             </div>
             <div className="flex-1 flex justify-center items-center bg-gradient-to-br from-teal-50 to-blue-50 rounded-2xl p-8 h-[300px]">
               <div className="text-center text-gray-400">
