@@ -224,10 +224,10 @@ export default function Tools() {
           </div>
         </section>
 
-        {/* Why Work With Me & AVANT */}
+        {/* Why Work With Us */}
         <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 bg-[#F6F8FA] flex flex-col items-center gap-12">
           <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
-            Why Work With Me & AVANT
+            Why Work With Us
           </h2>
 
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
