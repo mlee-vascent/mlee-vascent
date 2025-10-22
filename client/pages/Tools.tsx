@@ -309,7 +309,7 @@ export default function Tools() {
                   Long-Term Value
                 </h3>
                 <p className="text-gray-600 text-base">
-                  Plan for growth, change and future-proofing — not just a one-time
+                  Plan for growth, change and future-proofing, not just a one-time
                   deal.
                 </p>
               </div>
