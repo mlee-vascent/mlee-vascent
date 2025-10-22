@@ -114,7 +114,7 @@ export const Seo: React.FC<SeoProps> = ({
 
     // Canonical
     upsertLink("canonical", url);
-  }, [title, description, image, canonicalPath]);
+  }, [title, description, image, canonicalPath, structuredData, keywords]);
 
   return null;
 };
