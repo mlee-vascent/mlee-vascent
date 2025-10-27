@@ -171,6 +171,13 @@ export default function Index() {
             <h2 className="text-gray-600 font-sora text-[30px] font-bold leading-normal text-center md:text-center lg:text-left">
               IT Cost Reduction Consulting
             </h2>
+            <div className="flex justify-center items-center w-full lg:hidden">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fb2171e29b8114b70ae106d6cf47d6942?format=webp&width=800"
+                alt="CCaaS Consulting Services"
+                className="w-full md:w-[500px] h-auto object-contain border-0 outline-none ring-0 shadow-none rounded-2xl"
+              />
+            </div>
             <p className="text-gray-600 text-lg text-center md:text-center lg:text-left max-w-lg">
               Reduce your IT costs and buy the right platforms. Get independent
               guidance aligned with your business outcomes, not vendor quotas.
@@ -186,7 +193,7 @@ export default function Index() {
             </Link>
           </div>
 
-          <div className="flex justify-center items-center w-full md:w-full lg:w-auto">
+          <div className="hidden lg:flex justify-center items-center w-full lg:w-auto">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fb2171e29b8114b70ae106d6cf47d6942?format=webp&width=800"
               alt="CCaaS Consulting Services"
