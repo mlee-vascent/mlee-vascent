@@ -160,7 +160,7 @@ export default function Index() {
             </blockquote>
           </div>
           <div className="w-full px-0 md:px-[100px] py-2 flex justify-end items-center">
-            <cite className="text-gray-600 text-right text-2xl font-normal italic">
+            <cite className="text-gray-500 text-right font-sora text-lg md:text-xl font-bold italic">
               Mark Twain
             </cite>
           </div>
