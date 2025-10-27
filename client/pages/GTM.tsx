@@ -40,7 +40,7 @@ export default function GTM() {
                 Book a Consultation
               </a>
               <a
-                href="https://drive.google.com/file/d/1dtBKTFjnGFqdcyo1n34rx2MbW2FvdQiL/view?usp=sharing"
+                href="https://drive.google.com/file/d/1O24y3Cj6QdDbRQyWsJO5-DKYb4Us4069/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full md:w-auto px-9 py-9 rounded-2xl border-2 border-[#E4F4F3] text-[#F9FAFB] text-center font-sora text-2xl md:text-[30px] font-bold"

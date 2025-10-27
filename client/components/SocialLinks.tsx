@@ -2,7 +2,7 @@ export function SocialLinks() {
   return (
     <div className="flex items-center gap-6">
       <a
-        href="https://drive.google.com/file/d/1dtBKTFjnGFqdcyo1n34rx2MbW2FvdQiL/view?usp=sharing"
+        href="https://drive.google.com/file/d/1O24y3Cj6QdDbRQyWsJO5-DKYb4Us4069/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="px-3 py-3 rounded-2xl bg-teal-400 text-white text-base font-normal inline-flex items-center"
