@@ -186,7 +186,7 @@ export default function Index() {
               confidence.
             </p>
             <Link
-              to="/tools"
+              to="/operations"
               className="px-6 py-3 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center"
             >
               Explore IT Consulting
