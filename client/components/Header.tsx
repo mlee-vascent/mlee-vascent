@@ -40,7 +40,7 @@ export default function Header() {
             GTM
           </Link>
           <Link
-            to="/tools"
+            to="/operations"
             className="text-gray-600 text-lg font-normal hover:underline"
           >
             Operations
@@ -90,7 +90,7 @@ export default function Header() {
             GTM
           </Link>
           <Link
-            to="/tools"
+            to="/operations"
             className="text-gray-600 text-lg font-normal"
             onClick={() => setMobileMenuOpen(false)}
           >
