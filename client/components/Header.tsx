@@ -43,7 +43,7 @@ export default function Header() {
             to="/tools"
             className="text-gray-600 text-lg font-normal hover:underline"
           >
-            Tools
+            Operations
           </Link>
           <a
             href="https://blog.verityascent.com/"
@@ -94,7 +94,7 @@ export default function Header() {
             className="text-gray-600 text-lg font-normal"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Tools
+            Operations
           </Link>
           <a
             href="https://blog.verityascent.com/"
