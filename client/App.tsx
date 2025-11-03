@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Portfolio from "./pages/Portfolio";
 import GTM from "./pages/GTM";
-import Tools from "./pages/Tools";
+import Operations from "./pages/Operations";
 import Ecommerce from "./pages/Ecommerce";
 import MobileApp from "./pages/MobileApp";
 import WebsiteProject from "./pages/WebsiteProject";
@@ -28,7 +28,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/gtm" element={<GTM />} />
-          <Route path="/tools" element={<Tools />} />
+          <Route path="/operations" element={<Operations />} />
           <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/mobile-app" element={<MobileApp />} />
           <Route path="/salesforce" element={<Salesforce />} />
