@@ -2,9 +2,8 @@ export function SocialLinks() {
   return (
     <div className="flex items-center gap-6">
       <a
-        href="https://drive.google.com/file/d/1O24y3Cj6QdDbRQyWsJO5-DKYb4Us4069/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/matthew-lee-resume.pdf"
+        download="Matthew Lee Resume.pdf"
         className="px-3 py-3 rounded-2xl bg-teal-400 text-white text-base font-normal inline-flex items-center"
       >
         Resume
