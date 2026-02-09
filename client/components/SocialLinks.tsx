@@ -2,7 +2,7 @@ export function SocialLinks() {
   return (
     <div className="flex items-center gap-6">
       <a
-        href="/matthew-lee-resume.pdf"
+        href="/Matthew Lee Resume.pdf"
         download="Matthew Lee Resume.pdf"
         className="px-3 py-3 rounded-2xl bg-teal-400 text-white text-base font-normal inline-flex items-center"
       >

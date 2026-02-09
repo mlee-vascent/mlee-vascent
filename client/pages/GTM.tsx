@@ -40,7 +40,7 @@ export default function GTM() {
                 Book a Consultation
               </a>
               <a
-                href="/matthew-lee-resume.pdf"
+                href="/Matthew Lee Resume.pdf"
                 download="Matthew Lee Resume.pdf"
                 className="w-full md:w-auto px-9 py-9 rounded-2xl border-2 border-[#E4F4F3] text-[#F9FAFB] text-center font-sora text-2xl md:text-[30px] font-bold"
               >
