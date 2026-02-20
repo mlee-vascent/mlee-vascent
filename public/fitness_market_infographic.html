@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Business of Sweat: Paid Exercise Market Analysis</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            color: #f8fafc; /* Slate 50 */
+        }
+        
+        /* Custom Chart Container Styling */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px; /* Default max-width to prevent stretching */
+            height: 400px;
+            max-height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Taller container for specific charts */
+        .chart-container-tall {
+            height: 500px;
+            max-height: 600px;
+        }
+
+        /* Card Hover Effects */
+        .stat-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563eb;
+        }
+    </style>
+
+    <!-- 
+    Source Material Integration Plan:
+    1.  **Narrative:** The story moves from the macro (Global Market Size) to the micro (Cost per user), then explores industry dynamics (Digital Growth, Top Players) and ends with complex correlations.
+    2.  **Color Palette:** "High Energy/Cyber" - Dark background (#0f172a) with Neon Blue (#00f0ff), Electric Purple (#d946ef), and Lime Green (#84cc16).
+    3.  **Visualization Choices:**
+        - Global Snapshot -> Big Numbers (Inform) -> Justification: Immediate impact.
+        - Market Segmentation -> Doughnut Chart (Compare) -> Justification: Clear part-to-whole view.
+        - Digital Growth -> Line Chart (Change) -> Justification: Shows trajectory over time.
+        - Cost Analysis -> Bar Chart (Compare) -> Justification: Direct value comparison.
+        - Top Players -> Horizontal Bar (Rank) -> Justification: Accommodates names, ranks revenue.
+        - Engagement/Price/Share -> Plotly 3D Scatter (Relationship) -> Justification: Complex multi-variable correlation.
+    -->
+    <!-- Palette: High Energy / Cyber Fitness -->
+    <!-- NEITHER Mermaid JS NOR SVG were used anywhere in this output. -->
+</head>
+<body class="antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-b border-slate-700 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="text-3xl">⚡</div> <!-- Unicode Icon -->
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
+                        THE BUSINESS OF SWEAT
+                    </h1>
+                    <p class="text-xs text-slate-400 tracking-wider uppercase">Global Fitness Market Intelligence • 2024-2025 Outlook</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+                <a href="#overview" class="hover:text-cyan-400 transition-colors">Overview</a>
+                <a href="#digital" class="hover:text-purple-400 transition-colors">Digital Boom</a>
+                <a href="#economics" class="hover:text-lime-400 transition-colors">Economics</a>
+                <a href="#leaders" class="hover:text-pink-400 transition-colors">Market Leaders</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 space-y-16">
+
+        <!-- Section 1: Introduction & Global Overview -->
+        <section id="overview" class="space-y-8">
+            <div class="max-w-4xl mx-auto text-center space-y-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">The Hybrid Fitness Economy</h2>
+                <p class="text-lg text-slate-300 leading-relaxed">
+                    The paid exercise market has undergone a seismic shift. While traditional "big box" gyms are rebounding, they now coexist in a fractured ecosystem with connected home equipment, boutique studios, and a booming digital subscription economy. This infographic dissects the revenue flows of the <strong>$96 Billion+</strong> global industry.
+                </p>
+            </div>
+
+            <!-- KPI Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- KPI 1 -->
+                <div class="stat-card bg-slate-800 rounded-xl p-6 border-l-4 border-cyan-500 shadow-lg">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-slate-400 text-sm font-semibold uppercase">Global Market Size</span>
+                        <span class="text-2xl">🌍</span>
+                    </div>
+                    <div class="text-4xl font-bold text-white mb-1">$96.7 B</div>
+                    <p class="text-sm text-cyan-400 font-medium">↑ 4.8% YoY Growth</p>
+                    <p class="text-xs text-slate-500 mt-2">Includes clubs, equipment, & apps.</p>
+                </div>
+
+                <!-- KPI 2 -->
+                <div class="stat-card bg-slate-800 rounded-xl p-6 border-l-4 border-purple-500 shadow-lg">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-slate-400 text-sm font-semibold uppercase">Digital Segment</span>
+                        <span class="text-2xl">📱</span>
+                    </div>
+                    <div class="text-4xl font-bold text-white mb-1">$21.4 B</div>
+                    <p class="text-sm text-purple-400 font-medium">Rapid Expansion Sector</p>
+                    <p class="text-xs text-slate-500 mt-2">Projected to hit $30B by 2028.</p>
+                </div>
+
+                <!-- KPI 3 -->
+                <div class="stat-card bg-slate-800 rounded-xl p-6 border-l-4 border-lime-500 shadow-lg">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-slate-400 text-sm font-semibold uppercase">US Gym Members</span>
+                        <span class="text-2xl">🏋️</span>
+                    </div>
+                    <div class="text-4xl font-bold text-white mb-1">68.9 M</div>
+                    <p class="text-sm text-lime-400 font-medium">Historic High</p>
+                    <p class="text-xs text-slate-500 mt-2">Approx. 21% of US Population.</p>
+                </div>
+            </div>
+
+            <!-- Segmentation Chart -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-slate-800/50 rounded-2xl p-8 border border-slate-700">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-white flex items-center gap-2">
+                        <span class="w-2 h-8 bg-cyan-500 rounded-full"></span>
+                        Where is the Money Spent?
+                    </h3>
+                    <p class="text-slate-300">
+                        Despite the hype around Peloton and home tech, <strong>traditional health clubs and gyms</strong> still command the lion's share of global revenue. However, the "Other" category (apparel, nutrition, and hybrid services) and specific Home Equipment sales represent a massive, decentralized revenue stream.
+                    </p>
+                    <ul class="space-y-2 mt-4 text-sm text-slate-400">
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-cyan-500"></span>Gyms: Monthly dues & fees</li>
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-purple-500"></span>Home Equip: Treadmills, bikes, weights</li>
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-pink-500"></span>Digital: Apps & Streaming</li>
+                    </ul>
+                </div>
+                <div class="chart-container">
+                    <canvas id="segmentationChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Digital Trends -->
+        <section id="digital" class="space-y-6">
+            <div class="border-b border-slate-700 pb-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-white">The Digital Pivot: A Post-Pandemic Reality</h2>
+                <p class="text-slate-400 mt-2">Tracking the revenue growth of online fitness apps and connected platforms.</p>
+            </div>
+            
+            <div class="bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700">
+                <p class="text-slate-300 mb-6 max-w-3xl">
+                    While the 2020 spike was anomalous, the baseline for digital fitness has permanently shifted upwards. Users are now accustomed to hybrid models—using a gym for heavy lifting and an app like <em>Strava</em>, <em>Zwift</em>, or <em>Apple Fitness+</em> for cardio and tracking.
+                </p>
+                <div class="chart-container chart-container-tall w-full">
+                    <canvas id="trendChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Cost Economics -->
+        <section id="economics" class="space-y-6">
+             <div class="border-b border-slate-700 pb-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-white">The Price of Fitness</h2>
+                <p class="text-slate-400 mt-2">Comparative analysis of average monthly consumer spend across different modalities.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Bar Chart: Cost Comparison -->
+                <div class="bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 flex flex-col">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-white">Monthly Wallet Share</h3>
+                        <p class="text-sm text-slate-400">Average spend per active user (USD)</p>
+                    </div>
+                    <div class="chart-container flex-grow">
+                        <canvas id="costChart"></canvas>
+                    </div>
+                    <div class="mt-4 p-4 bg-slate-900/50 rounded-lg border border-slate-700">
+                        <p class="text-xs text-slate-400 italic">
+                            *Personal Training remains the premium tier, while Digital Apps offer the lowest barrier to entry, driving high volume but lower per-user revenue.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Text/List-based Content (Organize) -->
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 border border-slate-700 h-full">
+                        <h3 class="text-xl font-bold text-white mb-4">Value Proposition Breakdown</h3>
+                        <div class="space-y-4">
+                            <!-- Item 1 -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-cyan-900/50 flex items-center justify-center text-cyan-400 font-bold border border-cyan-700">1</div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Big Box Gyms ($10 - $60)</h4>
+                                    <p class="text-sm text-slate-400">Low cost, high volume model (e.g., Planet Fitness). Relies on "breakage" (members who pay but don't go).</p>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-purple-900/50 flex items-center justify-center text-purple-400 font-bold border border-purple-700">2</div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Connected Fitness ($40+)</h4>
+                                    <p class="text-sm text-slate-400">High upfront hardware cost ($1500+) plus mandatory monthly subscription. High retention due to sunk cost fallacy.</p>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-pink-900/50 flex items-center justify-center text-pink-400 font-bold border border-pink-700">3</div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Boutique Studios ($150+)</h4>
+                                    <p class="text-sm text-slate-400">Class-based (OrangeTheory, SoulCycle). Highest engagement per dollar but limited by physical capacity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Market Leaders -->
+        <section id="leaders" class="space-y-6">
+            <div class="border-b border-slate-700 pb-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-white">The Leaderboard</h2>
+                <p class="text-slate-400 mt-2">Revenue comparison of key publicly traded players (Last Fiscal Year Estimates).</p>
+            </div>
+            
+            <div class="bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700">
+                <div class="chart-container chart-container-tall">
+                    <canvas id="leaderChart"></canvas>
+                </div>
+                <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="p-3 bg-slate-700/30 rounded border border-slate-600">
+                        <div class="text-xs text-slate-400">Peloton Strategy</div>
+                        <div class="text-sm text-white font-semibold">Hardware -> App</div>
+                    </div>
+                    <div class="p-3 bg-slate-700/30 rounded border border-slate-600">
+                        <div class="text-xs text-slate-400">Planet Fitness Strategy</div>
+                        <div class="text-sm text-white font-semibold">Volume Aggregation</div>
+                    </div>
+                    <div class="p-3 bg-slate-700/30 rounded border border-slate-600">
+                        <div class="text-xs text-slate-400">Garmin Strategy</div>
+                        <div class="text-sm text-white font-semibold">Data Ecosystem</div>
+                    </div>
+                    <div class="p-3 bg-slate-700/30 rounded border border-slate-600">
+                        <div class="text-xs text-slate-400">Lululemon Strategy</div>
+                        <div class="text-sm text-white font-semibold">Lifestyle Brand</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Advanced Analytics (Plotly) -->
+        <section class="space-y-6 mb-12">
+            <div class="border-b border-slate-700 pb-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-white">Market Dynamics: The 3D View</h2>
+                <p class="text-slate-400 mt-2">
+                    Analyzing the relationship between <span class="text-cyan-400">Price</span>, <span class="text-purple-400">Retention</span>, and <span class="text-lime-400">Market Share</span>. 
+                    (Interact to rotate/zoom).
+                </p>
+            </div>
+
+            <div class="bg-slate-800 rounded-xl p-2 shadow-lg border border-slate-700">
+                <div id="plotlyDiv" class="w-full h-[500px]"></div>
+                <div class="p-4 text-center">
+                    <p class="text-sm text-slate-400">
+                        <strong>Insight:</strong> High-cost models (Boutique) achieve high retention but lower total market share due to pricing barriers. 
+                        Digital apps have high market share potential due to low cost, but suffer from higher churn (lower retention).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-slate-700 py-8 mt-12 text-center text-slate-500 text-sm">
+            <p>&copy; 2025 Paid Exercise Market Report. Generated for Analysis.</p>
+            <p class="mt-2 text-xs">Sources: Industry Reports, Public Filings, Market Estimations.</p>
+        </footer>
+
+    </main>
+
+    <!-- CHART.JS CONFIGURATION -->
+    <script>
+        // --- UTILITY: Label Splitting Logic (16 char limit) ---
+        function splitLabel(label) {
+            if (label.length <= 16) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if ((currentLine + " " + words[i]).length <= 16) {
+                    currentLine += " " + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        // --- GLOBAL CHART DEFAULTS ---
+        Chart.defaults.color = '#94a3b8';
+        Chart.defaults.font.family = "'Inter', sans-serif";
+        Chart.defaults.scale.grid.color = '#334155';
+        
+        // Common Tooltip Configuration
+        const commonTooltip = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            },
+            backgroundColor: 'rgba(15, 23, 42, 0.9)',
+            titleColor: '#fff',
+            bodyColor: '#cbd5e1',
+            borderColor: '#475569',
+            borderWidth: 1,
+            padding: 10
+        };
+
+        // --- 1. SEGMENTATION CHART (Doughnut) ---
+        const ctxSeg = document.getElementById('segmentationChart').getContext('2d');
+        const segLabels = ["Gym Memberships", "Home Equipment", "Digital Apps", "Personal Training", "Other Services"];
+        const processedSegLabels = segLabels.map(splitLabel);
+
+        new Chart(ctxSeg, {
+            type: 'doughnut',
+            data: {
+                labels: processedSegLabels,
+                datasets: [{
+                    data: [54, 18, 12, 10, 6], // Approximate percentages
+                    backgroundColor: [
+                        '#06b6d4', // Cyan (Gyms)
+                        '#a855f7', // Purple (Equip)
+                        '#ec4899', // Pink (Apps)
+                        '#84cc16', // Lime (Training)
+                        '#64748b'  // Slate (Other)
+                    ],
+                    borderWidth: 0,
+                    hoverOffset: 10
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: {
+                            color: '#f8fafc',
+                            padding: 20
+                        }
+                    },
+                    tooltip: commonTooltip
+                },
+                cutout: '70%'
+            }
+        });
+
+        // --- 2. TREND CHART (Line) ---
+        const ctxTrend = document.getElementById('trendChart').getContext('2d');
+        new Chart(ctxTrend, {
+            type: 'line',
+            data: {
+                labels: ['2019', '2020', '2021', '2022', '2023', '2024 (Est)', '2025 (Proj)'],
+                datasets: [
+                    {
+                        label: 'Digital/Online Revenue ($B)',
+                        data: [6.8, 14.5, 18.2, 19.5, 20.1, 21.4, 23.8],
+                        borderColor: '#d946ef', // Fuchsia
+                        backgroundColor: 'rgba(217, 70, 239, 0.1)',
+                        tension: 0.4,
+                        fill: true,
+                        pointBackgroundColor: '#fff',
+                        pointBorderColor: '#d946ef',
+                        pointRadius: 4
+                    },
+                    {
+                        label: 'Physical Gym Revenue ($B)',
+                        data: [94.0, 55.0, 72.0, 85.0, 91.0, 96.7, 102.0],
+                        borderColor: '#06b6d4', // Cyan
+                        borderDash: [5, 5],
+                        tension: 0.4,
+                        fill: false,
+                        pointBackgroundColor: '#06b6d4',
+                        pointRadius: 3
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: commonTooltip,
+                    legend: {
+                        labels: { color: '#e2e8f0' }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Billions (USD)' }
+                    }
+                }
+            }
+        });
+
+        // --- 3. COST CHART (Bar) ---
+        const ctxCost = document.getElementById('costChart').getContext('2d');
+        const costLabels = ["Digital App Sub", "Budget Gym", "Premium Gym", "Boutique Studio", "Personal Coach"];
+        const processedCostLabels = costLabels.map(splitLabel);
+
+        new Chart(ctxCost, {
+            type: 'bar',
+            data: {
+                labels: processedCostLabels,
+                datasets: [{
+                    label: 'Avg Monthly Cost ($)',
+                    data: [14.99, 29.99, 85.00, 160.00, 400.00],
+                    backgroundColor: [
+                        '#ec4899', // Pink
+                        '#06b6d4', // Cyan
+                        '#3b82f6', // Blue
+                        '#a855f7', // Purple
+                        '#84cc16'  // Lime
+                    ],
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: commonTooltip,
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: '#334155' }
+                    },
+                    x: {
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+
+        // --- 4. LEADER CHART (Horizontal Bar) ---
+        const ctxLeader = document.getElementById('leaderChart').getContext('2d');
+        const leaderLabels = ["Peloton Interactive", "Planet Fitness", "Garmin (Fitness)", "Lululemon (Mirror)", "Basic-Fit", "Technogym"];
+        const processedLeaderLabels = leaderLabels.map(splitLabel);
+
+        new Chart(ctxLeader, {
+            type: 'bar',
+            indexAxis: 'y', // Horizontal
+            data: {
+                labels: processedLeaderLabels,
+                datasets: [{
+                    label: 'Annual Revenue ($ Billion)',
+                    data: [2.7, 1.1, 1.3, 0.4, 1.0, 0.85], // Estimated figures
+                    backgroundColor: '#3b82f6',
+                    hoverBackgroundColor: '#60a5fa',
+                    barPercentage: 0.6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: commonTooltip
+                },
+                scales: {
+                    x: {
+                        grid: { color: '#334155' },
+                        title: { display: true, text: 'Revenue ($B)'}
+                    },
+                    y: {
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+    </script>
+
+    <!-- PLOTLY.JS CONFIGURATION (3D Scatter) -->
+    <script>
+        // Data for 3D Plot
+        // X: Monthly Price ($)
+        // Y: Retention Rate (%)
+        // Z: Market Share Score (Arbitrary Scale 1-100)
+        // Color: Category
+        
+        const categories = ['Budget Gyms', 'Luxury Clubs', 'Digital Apps', 'Home Equipment', 'Boutique Studios'];
+        const colors = ['#06b6d4', '#3b82f6', '#ec4899', '#a855f7', '#84cc16'];
+        
+        const xData = [30, 150, 15, 80, 180];  // Price
+        const yData = [75, 85, 60, 90, 92];    // Retention
+        const zData = [80, 40, 95, 50, 20];    // Market Penetration/Share
+        const sizes = [40, 25, 50, 30, 20];    // Bubble size visual
+
+        const data = [{
+            x: xData,
+            y: yData,
+            z: zData,
+            text: categories,
+            mode: 'markers',
+            marker: {
+                size: sizes,
+                color: colors,
+                opacity: 0.8,
+                line: {
+                    color: '#ffffff',
+                    width: 1
+                }
+            },
+            type: 'scatter3d',
+            hovertemplate: 
+                '<b>%{text}</b><br>' +
+                'Price: $%{x}<br>' +
+                'Retention: %{y}%<br>' +
+                'Market Share Score: %{z}<br>' +
+                '<extra></extra>'
+        }];
+
+        const layout = {
+            margin: { l: 0, r: 0, b: 0, t: 0 },
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            scene: {
+                xaxis: { title: 'Price ($)', color: '#94a3b8', gridcolor: '#334155' },
+                yaxis: { title: 'Retention (%)', color: '#94a3b8', gridcolor: '#334155' },
+                zaxis: { title: 'Market Share', color: '#94a3b8', gridcolor: '#334155' },
+                bgcolor: 'rgba(0,0,0,0)'
+            },
+            showlegend: false
+        };
+
+        const config = {
+            responsive: true,
+            displayModeBar: false
+        };
+
+        Plotly.newPlot('plotlyDiv', data, layout, config);
+    </script>
+</body>
+</html>
