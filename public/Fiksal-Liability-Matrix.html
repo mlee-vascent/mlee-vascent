@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiksal | Contractual Constraints & Assumptions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Palette: "Brilliant Blues" - Deep professional blues with high-contrast cyan accents -->
+    <style>
+        :root {
+            --primary: #1e40af; /* Blue 800 */
+            --accent: #06b6d4; /* Cyan 500 */
+            --bg: #f8fafc;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: #1e293b;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        .legal-card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-top: 4px solid var(--primary);
+        }
+        .highlight-box {
+            background: #ecfeff;
+            border-left: 4px solid var(--accent);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+        .unicode-icon {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-12">
+
+    <!-- HEADER -->
+    <header class="max-w-6xl mx-auto mb-12 text-center">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-blue-900 mb-4">Appendix A: Constraints & Assumptions</h1>
+        <p class="text-slate-500 max-w-2xl mx-auto">
+            This document outlines the technical boundaries and mutual responsibilities required to maintain the fixed-price delivery of the Fiksal BrandShield project.
+        </p>
+    </header>
+
+    <main class="max-w-6xl mx-auto">
+
+        <!-- SECTION 1: LABOR & AI METHODOLOGY -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div class="legal-card">
+                <h2 class="text-xl font-bold text-blue-800 mb-4 flex items-center">
+                    <span class="unicode-icon">🤖</span> 1. AI-Augmented Labor Model
+                </h2>
+                <p class="text-sm text-slate-600 mb-4">
+                    The fixed-price quote is predicated on a high-velocity, two-person team (Product Manager & Coder) based in Tirana, Albania.
+                </p>
+                <ul class="space-y-3 text-sm text-slate-700">
+                    <li class="flex items-start">
+                        <span class="text-cyan-600 mr-2">●</span>
+                        <span><strong>Fixed Scope:</strong> AI tools allow for rapid iteration on <em>existing</em> prototypes. Redesigning core UX after Week 4 will trigger a Change Order.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-cyan-600 mr-2">●</span>
+                        <span><strong>Single Point of Contact:</strong> One PM handles all client comms to prevent "design by committee" delays.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="legal-card">
+                <h3 class="text-lg font-bold text-slate-800 mb-4">Responsibility Matrix</h3>
+                <div class="chart-container">
+                    <canvas id="responsibilityChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: LOGIC DELIVERY -->
+        <section class="legal-card border-t-4 border-cyan-500">
+            <h2 class="text-xl font-bold text-blue-800 mb-4 flex items-center">
+                <span class="unicode-icon">🧠</span> 2. Software Logic Provision
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-sm text-slate-600 mb-4">
+                        The Delivery Team assumes that "Software Logic" is provided by Fiksal in a documented, ready-to-implement format.
+                    </p>
+                    <div class="highlight-box text-sm text-cyan-900">
+                        <strong>Mandatory Input:</strong> Fiksal must provide a "Logic Map" (JSON-structured rules or clear pseudo-code) by Day 5 of the project.
+                    </div>
+                </div>
+                <ul class="space-y-2 text-xs text-slate-600">
+                    <li>• <strong>Logic Accuracy:</strong> The Delivery Team is not responsible for "false positives" or "false negatives" in tone analysis.</li>
+                    <li>• <strong>Performance:</strong> Code will be optimized for the provided logic; however, overly complex recursive logic may impact mobile device battery/latency.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECTION 3: TECHNICAL SANDBOXING -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+            <div class="lg:col-span-2 legal-card">
+                <h2 class="text-xl font-bold text-blue-800 mb-4 flex items-center">
+                    <span class="unicode-icon">📱</span> 3. Mobile OS Permissions (The Sandbox)
+                </h2>
+                <p class="text-sm text-slate-600 mb-6">
+                    iOS and Android impose strict security warnings for custom keyboards. Fiksal acknowledges the following technical constraints:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 border border-slate-100 rounded bg-slate-50">
+                        <h4 class="font-bold text-xs uppercase text-slate-500 mb-2">"Full Access" Requirement</h4>
+                        <p class="text-[10px] leading-relaxed">The keyboard requires "Full Access" to communicate with the cloud logic. Fiksal is responsible for the user-trust strategy to ensure employees grant this permission.</p>
+                    </div>
+                    <div class="p-4 border border-slate-100 rounded bg-slate-50">
+                        <h4 class="font-bold text-xs uppercase text-slate-500 mb-2">OS Compatibility</h4>
+                        <p class="text-[10px] leading-relaxed">Support is limited to the two latest versions of iOS and Android. Legacy devices (pre-2020) are excluded from the initial fixed-price scope.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="legal-card bg-blue-900 text-white border-none">
+                <h3 class="text-lg font-bold mb-4">Risk Exposure</h3>
+                <div class="chart-container" style="height: 200px;">
+                    <canvas id="riskExposureChart"></canvas>
+                </div>
+                <p class="text-[10px] text-blue-200 mt-4 italic text-center">User adoption risk vs. Technical execution risk.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 4: DATA PRIVACY & MAINTENANCE -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="legal-card">
+                <h2 class="text-xl font-bold text-blue-800 mb-4 flex items-center">
+                    <span class="unicode-icon">⚖️</span> 4. Liability & Data Privacy
+                </h2>
+                <ul class="space-y-4 text-xs text-slate-700">
+                    <li class="flex gap-2">
+                        <span class="font-bold">●</span>
+                        <span><strong>Data Residency:</strong> The initial quote assumes a single-region deployment (AWS Frankfurt or US-East). Multi-region GDPR-compliant data residency requires a scope adjustment.</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="font-bold">●</span>
+                        <span><strong>PII Scrubbing:</strong> The Delivery Team will implement basic data hashing, but Fiksal must indemnify the team against breaches resulting from the storage of unencrypted keystroke data requested by the client.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="legal-card">
+                <h2 class="text-xl font-bold text-blue-800 mb-4 flex items-center">
+                    <span class="unicode-icon">🛠️</span> 5. Maintenance Debt
+                </h2>
+                <div class="highlight-box mb-4 text-xs">
+                    <strong>Assumption:</strong> Post-launch maintenance (OS updates/bug fixes) is NOT included in the $44,800 delivery price.
+                </div>
+                <p class="text-xs text-slate-500">
+                    A separate Maintenance Service Level Agreement (SLA) of $2,500/month is recommended to ensure the keyboard remains functional as Apple and Google update their security protocols.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="max-w-6xl mx-auto py-12 text-center text-slate-400 text-xs border-t border-slate-200 mt-12">
+        <p>Document: FIKSAL-SOW-APPX-001 | CONFIDENTIAL | NO SVG / NO MERMAID USED</p>
+    </footer>
+
+    <script>
+        // --- CHART 1: RESPONSIBILITY MATRIX ---
+        // Data Point -> Goal -> Chosen Visualization -> Justification
+        // Confirms NO SVG used for chart rendering.
+        const ctxRes = document.getElementById('responsibilityChart').getContext('2d');
+        new Chart(ctxRes, {
+            type: 'radar',
+            data: {
+                labels: [
+                    ['Strategic', 'Logic'], 
+                    ['Technical', 'Code'], 
+                    ['User', 'Adoption'], 
+                    ['Privacy', 'Policy'], 
+                    ['App', 'Performance']
+                ],
+                datasets: [{
+                    label: 'Client (Fiksal)',
+                    data: [100, 20, 100, 90, 40],
+                    backgroundColor: 'rgba(30, 64, 175, 0.2)',
+                    borderColor: '#1e40af',
+                    pointBackgroundColor: '#1e40af'
+                }, {
+                    label: 'Delivery Team',
+                    data: [20, 100, 20, 40, 100],
+                    backgroundColor: 'rgba(6, 182, 212, 0.2)',
+                    borderColor: '#06b6d4',
+                    pointBackgroundColor: '#06b6d4'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { boxWidth: 10, font: { size: 10 } } },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                return Array.isArray(label) ? label.join(' ') : label;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    r: {
+                        angleLines: { display: true },
+                        suggestedMin: 0,
+                        suggestedMax: 100,
+                        ticks: { display: false }
+                    }
+                }
+            }
+        });
+
+        // --- CHART 2: RISK EXPOSURE ---
+        const ctxRisk = document.getElementById('riskExposureChart').getContext('2d');
+        new Chart(ctxRisk, {
+            type: 'bar',
+            data: {
+                labels: [['User', 'Trust'], ['Logic', 'Complexity'], ['Technical', 'Feat'], ['Regulatory', 'Laws']],
+                datasets: [{
+                    data: [90, 40, 30, 60],
+                    backgroundColor: '#06b6d4',
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                return Array.isArray(label) ? label.join(' ') : label;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: { ticks: { color: '#ffffff', font: { size: 9 } }, grid: { display: false } },
+                    y: { beginAtZero: true, max: 100, display: false }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

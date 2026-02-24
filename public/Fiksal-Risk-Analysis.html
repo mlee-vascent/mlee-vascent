@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiksal | Critical Project Considerations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #ffffff;
+            color: #0f172a;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .risk-card {
+            border-left: 4px solid #ef4444;
+            background: #fef2f2;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+        }
+        .mitigation-card {
+            border-left: 4px solid #10b981;
+            background: #f0fdf4;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <header class="max-w-5xl mx-auto mb-16">
+        <h1 class="text-4xl font-extrabold mb-4 text-slate-900">Critical Considerations for Fiksal</h1>
+        <p class="text-slate-500 text-lg leading-relaxed">
+            While the AI-augmented delivery model is efficient, these four areas represent the "hidden friction" of building a real-time communication monitor. Ignoring these could lead to scope creep or legal liability.
+        </p>
+    </header>
+
+    <main class="max-w-5xl mx-auto space-y-16">
+
+        <!-- RISK 1: THE KEYBOARD SANDBOX -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-2xl font-bold mb-4">1. The "Full Access" Permission Hurdle</h2>
+                <p class="text-slate-600 mb-6">
+                    On iOS and Android, custom keyboards are "sandboxed." To send data to a server for analysis, the user must manually grant "Full Access." 
+                </p>
+                <div class="risk-card mb-4">
+                    <p class="text-xs font-bold text-red-700 uppercase mb-2">The Risk</p>
+                    <p class="text-sm text-red-900">System warnings tell the user: "This keyboard can record everything you type." This creates a massive friction point for employee adoption.</p>
+                </div>
+                <div class="mitigation-card">
+                    <p class="text-xs font-bold text-emerald-700 uppercase mb-2">The Solution</p>
+                    <p class="text-sm text-emerald-900">Include a "Trust Onboarding" design phase to explain data encryption and privacy. We must design for the <em>permission flow</em> as much as the app logic.</p>
+                </div>
+            </div>
+            <div class="glass-card p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                <h4 class="text-center font-bold text-slate-400 text-xs mb-4 uppercase">User Drop-off at Permission Screen</h4>
+                <div class="chart-container">
+                    <canvas id="permissionChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- RISK 2: LOGIC TRANSLATION -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <div class="bg-indigo-900 rounded-3xl p-8 text-white">
+                    <h3 class="text-xl font-bold mb-4">The "Logic vs. Code" Gap</h3>
+                    <p class="text-sm text-indigo-100 mb-4 italic">"I have the software logic" is the most dangerous phrase in a fixed-price contract.</p>
+                    <div class="space-y-4 text-xs">
+                        <div class="flex gap-3">
+                            <span class="text-cyan-400 font-bold">●</span>
+                            <p>Client logic is often a "Word Document" of rules, not a "JSON API."</p>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-cyan-400 font-bold">●</span>
+                            <p>Translating rules into high-performance, low-latency code is an engineering effort, not a simple copy-paste.</p>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-cyan-400 font-bold">●</span>
+                            <p><strong>Proposed Constraint:</strong> Define a "Logic Freeze" date after which any changes to rules are billed as extra.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-2xl font-bold mb-4">2. The Engineering of Ethics</h2>
+                <p class="text-slate-600">
+                    If Fiksal's logic is biased or buggy, the AI coder will simply build a "fast, buggy product." We need a dedicated phase for <strong>Logic Stress Testing</strong>.
+                </p>
+                <p class="text-slate-600 mt-4">
+                    Who is responsible if the app fails to flag a reputational threat? The contract must clarify that "Performance is dependent on Client-provided Logic."
+                </p>
+            </div>
+        </section>
+
+        <!-- RISK 3: DATA PRIVACY & GDPR -->
+        <section class="bg-slate-900 text-white rounded-3xl p-10">
+            <h2 class="text-2xl font-bold mb-8 text-center">3. The Keystroke Liability</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-3xl mb-2">🔒</div>
+                    <h4 class="font-bold mb-2">Data Residency</h4>
+                    <p class="text-[10px] text-slate-400">If Fiksal sells to a German company, the keystroke data cannot leave the EU. Our Albania team must architect for multi-region hosting from day one.</p>
+                </div>
+                <div>
+                    <div class="text-3xl mb-2">🕵️</div>
+                    <h4 class="font-bold mb-2">Encryption at Rest</h4>
+                    <p class="text-[10px] text-slate-400">Keystrokes must be hashed or processed in volatile memory. Storing "what an employee typed" in a database is a massive legal liability.</p>
+                </div>
+                <div>
+                    <div class="text-3xl mb-2">⚖️</div>
+                    <h4 class="font-bold mb-2">Employee Consent</h4>
+                    <p class="text-[10px] text-slate-400">The app requires a "Right to be Forgotten" feature to comply with GDPR/CCPA, even if it's a corporate tool.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RISK 4: MAINTENANCE -->
+        <section class="pb-20">
+            <h2 class="text-2xl font-bold mb-4">4. The "Keyboard Maintenance" Debt</h2>
+            <p class="text-slate-600 mb-8">
+                Operating system updates (iOS 18, 19, etc.) frequently break custom keyboard extensions for security reasons. A fixed-price proposal usually covers <em>delivery</em>, but Fiksal needs a <em>maintenance plan</em>.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 bg-amber-50 rounded-xl border border-amber-100">
+                    <h4 class="font-bold text-amber-900 mb-2">Post-Launch Support</h4>
+                    <p class="text-xs text-amber-800 leading-relaxed">
+                        We recommend offering a "Support Subscription" ($2,500/mo) to handle OS compatibility updates and API security patches. Without this, the app could become unusable 6 months after launch.
+                    </p>
+                </div>
+                <div class="p-6 bg-slate-100 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-2">AI Model Decay</h4>
+                    <p class="text-xs text-slate-800 leading-relaxed">
+                        Language evolves. Slang and corporate jargon change. Fiksal will need a way to "retrain" or update their logic without calling the engineer every week. We should build an <strong>Admin Logic Editor</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // CHART: Drop-off visualization
+        const ctxPerm = document.getElementById('permissionChart').getContext('2d');
+        new Chart(ctxPerm, {
+            type: 'bar',
+            data: {
+                labels: ['App Download', 'Keyboard Enable', 'Full Access Grant', 'Active Use'],
+                datasets: [{
+                    label: 'User Retention (%)',
+                    data: [100, 85, 30, 25],
+                    backgroundColor: ['#6366f1', '#818cf8', '#ef4444', '#10b981'],
+                    borderRadius: 10
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            title: function(items) { return items[0].label; }
+                        }
+                    }
+                },
+                scales: {
+                    y: { beginAtZero: true, max: 100, grid: { color: '#f1f5f9' } },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

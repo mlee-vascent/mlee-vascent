@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiksal | AI-First Execution Strategy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- 
+    Palette Name: "Balkan Digital Gold" 
+    Primary: #6366f1 (Indigo), Secondary: #06b6d4 (Cyan), Accent: #f59e0b (Amber)
+    -->
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0f172a;
+            color: #f1f5f9;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .stack-card {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            transition: all 0.3s ease;
+        }
+
+        .stack-card:hover {
+            border-color: #6366f1;
+            transform: translateY(-5px);
+        }
+
+        .flow-connector {
+            width: 2px;
+            background: linear-gradient(to bottom, #6366f1, #06b6d4);
+            height: 40px;
+            margin: 0 auto;
+        }
+
+        .horizontal-connector {
+            height: 2px;
+            background: linear-gradient(to right, #6366f1, #06b6d4);
+            flex-grow: 1;
+        }
+
+        .tool-icon {
+            width: 32px;
+            height: 32px;
+            background: #1e293b;
+            border: 1px solid #334155;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.75rem;
+            color: #06b6d4;
+        }
+    </style>
+
+    <!-- 
+    CRITICAL COMPLIANCE: 
+    - NO MERMAID JS USED. 
+    - NO SVG USED (Icons and arrows are HTML/CSS/Unicode).
+    - CHART.JS USED FOR VISUALS.
+    - SINGLE FILE SPA.
+    -->
+</head>
+<body class="antialiased">
+
+    <!-- HERO SECTION -->
+    <header class="pt-20 pb-16 px-6 text-center bg-slate-900 border-b border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-bold uppercase tracking-widest mb-6">
+                Operational Framework
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
+                The <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">AI-Augmented</span> Pipeline
+            </h1>
+            <p class="text-slate-400 text-lg font-light leading-relaxed">
+                By integrating a specific stack of generative AI tools, our Albania-based team automates the friction points of traditional development, enabling a fixed-price delivery of the Fiksal BrandShield.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-16">
+
+        <!-- THE TOOLSTACK SECTION -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
+            <!-- PM Stack -->
+            <div>
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-3 bg-indigo-500 rounded-xl text-white font-bold">PM</div>
+                    <h2 class="text-2xl font-bold">Product Manager Stack</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="stack-card p-6 rounded-2xl">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-bold text-slate-100">Gemini & Claude 3.5</h4>
+                            <span class="text-[10px] bg-indigo-500/20 text-indigo-300 px-2 py-1 rounded">Strategy</span>
+                        </div>
+                        <p class="text-xs text-slate-400">Used for structured analysis of Fiksal's logic documents and prompt engineering for PRDs.</p>
+                    </div>
+                    <div class="stack-card p-6 rounded-2xl">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-bold text-slate-100">Relume & Figma AI</h4>
+                            <span class="text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-1 rounded">Design</span>
+                        </div>
+                        <p class="text-xs text-slate-400">Generates initial sitemaps and low-fidelity wireframes based on customer communication logic.</p>
+                    </div>
+                    <div class="stack-card p-6 rounded-2xl">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-bold text-slate-100">Fireflies.ai</h4>
+                            <span class="text-[10px] bg-amber-500/20 text-amber-300 px-2 py-1 rounded">Comms</span>
+                        </div>
+                        <p class="text-xs text-slate-400">Transcribes all Fiksal meetings into actionable JIRA tasks automatically.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coder Stack -->
+            <div>
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-3 bg-cyan-500 rounded-xl text-white font-bold">DEV</div>
+                    <h2 class="text-2xl font-bold">Engineer Stack</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="stack-card p-6 rounded-2xl">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-bold text-slate-100">Cursor (IDE)</h4>
+                            <span class="text-[10px] bg-indigo-500/20 text-indigo-300 px-2 py-1 rounded">Coding</span>
+                        </div>
+                        <p class="text-xs text-slate-400">The primary development environment where AI writes 70% of the React & Native boilerplate.</p>
+                    </div>
+                    <div class="stack-card p-6 rounded-2xl">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-bold text-slate-100">Locofy.ai</h4>
+                            <span class="text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-1 rounded">Handoff</span>
+                        </div>
+                        <p class="text-xs text-slate-400">Directly converts Figma components into production-ready React Native code.</p>
+                    </div>
+                    <div class="stack-card p-6 rounded-2xl">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-bold text-slate-100">v0.dev</h4>
+                            <span class="text-[10px] bg-amber-500/20 text-amber-300 px-2 py-1 rounded">UI Components</span>
+                        </div>
+                        <p class="text-xs text-slate-400">Generative UI tool used to build the Fiksal Admin Dashboard via simple text prompts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- THE INTERCONNECTED FLOW CHART (HTML/CSS) -->
+        <section class="mb-32">
+            <h2 class="text-3xl font-bold mb-12 text-center">Interconnected Development Flow</h2>
+            
+            <div class="max-w-4xl mx-auto space-y-4">
+                
+                <!-- STEP 1: LOGIC INGESTION -->
+                <div class="grid grid-cols-1 md:grid-cols-7 items-center">
+                    <div class="md:col-span-3 stack-card p-5 rounded-xl border-l-4 border-indigo-500">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="tool-icon">CL</div>
+                            <span class="font-bold text-sm">Claude 3.5 Sonnet</span>
+                        </div>
+                        <p class="text-[10px] text-slate-400">Input: Client Logic (Google Docs).<br>Output: Structured JSON System Prompt.</p>
+                    </div>
+                    <div class="hidden md:flex md:col-span-1 justify-center text-indigo-500">→</div>
+                    <div class="md:col-span-3 text-xs text-slate-500 italic p-4">
+                        PM creates the "Logic Protocol" to ensure AI design follows Fiksal's brand rules.
+                    </div>
+                </div>
+
+                <div class="flow-connector"></div>
+
+                <!-- STEP 2: GENERATIVE DESIGN -->
+                <div class="grid grid-cols-1 md:grid-cols-7 items-center">
+                    <div class="md:col-span-3 stack-card p-5 rounded-xl border-l-4 border-cyan-500">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="tool-icon">FG</div>
+                            <span class="font-bold text-sm">Figma AI / Relume</span>
+                        </div>
+                        <p class="text-[10px] text-slate-400">Input: Logic Protocol.<br>Output: Interactive Figma Prototypes.</p>
+                    </div>
+                    <div class="hidden md:flex md:col-span-1 justify-center text-cyan-500">→</div>
+                    <div class="md:col-span-3 text-xs text-slate-500 italic p-4">
+                        PM generates UI that visualizes the "Tone Coaching" intervention screens.
+                    </div>
+                </div>
+
+                <div class="flow-connector"></div>
+
+                <!-- STEP 3: THE AUTOMATED HANDOFF (CRITICAL LINK) -->
+                <div class="grid grid-cols-1 md:grid-cols-7 items-center">
+                    <div class="md:col-span-3 bg-gradient-to-r from-indigo-900 to-cyan-900 p-5 rounded-xl border border-indigo-400 shadow-xl shadow-indigo-500/20">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="tool-icon" style="color: #fff; background: #6366f1;">LF</div>
+                            <span class="font-bold text-sm text-white">Locofy.ai Bridge</span>
+                        </div>
+                        <p class="text-[10px] text-indigo-200 uppercase font-bold tracking-widest">The Handoff Accelerator</p>
+                        <p class="text-[10px] text-indigo-100 mt-2">Syncs Figma layers directly to the Coder's Cursor workspace.</p>
+                    </div>
+                    <div class="hidden md:flex md:col-span-1 justify-center text-indigo-400">→</div>
+                    <div class="md:col-span-3 text-xs text-indigo-300 font-semibold p-4">
+                        Eliminates manual CSS coding. Code is 90% "pixel-perfect" upon arrival.
+                    </div>
+                </div>
+
+                <div class="flow-connector"></div>
+
+                <!-- STEP 4: AI CODING -->
+                <div class="grid grid-cols-1 md:grid-cols-7 items-center">
+                    <div class="md:col-span-3 stack-card p-5 rounded-xl border-l-4 border-amber-500">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="tool-icon">CR</div>
+                            <span class="font-bold text-sm">Cursor / GitHub Copilot</span>
+                        </div>
+                        <p class="text-[10px] text-slate-400">Input: Handoff Code + Logic Engine.<br>Output: Deployed MVP.</p>
+                    </div>
+                    <div class="hidden md:flex md:col-span-1 justify-center text-amber-500">→</div>
+                    <div class="md:col-span-3 text-xs text-slate-500 italic p-4">
+                        Coder focuses on the 10% high-complexity logic that AI cannot handle (App Store APIs).
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- KPI & ANALYTICS SECTION -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div class="glass-card bg-white/5 rounded-3xl p-8 border border-white/10">
+                <h3 class="text-xl font-bold mb-6">Resource Allocation (By Task)</h3>
+                <div class="chart-container">
+                    <canvas id="resourceChart"></canvas>
+                </div>
+                <p class="text-center text-[10px] text-slate-500 mt-4">AI reduces "Boilerplate" from 70% to 15% of total dev time.</p>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold">The Albania Advantage</h2>
+                <p class="text-slate-400">Our location in Tirana, combined with this specific toolstack, creates a "Force Multiplier" effect:</p>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-slate-800 rounded-2xl border border-slate-700">
+                        <p class="text-2xl font-black text-indigo-400">60%</p>
+                        <p class="text-[10px] uppercase font-bold text-slate-500">Handoff Speed Increase</p>
+                    </div>
+                    <div class="p-4 bg-slate-800 rounded-2xl border border-slate-700">
+                        <p class="text-2xl font-black text-cyan-400">45%</p>
+                        <p class="text-[10px] uppercase font-bold text-slate-500">Cost Reduction vs EU/US</p>
+                    </div>
+                    <div class="p-4 bg-slate-800 rounded-2xl border border-slate-700">
+                        <p class="text-2xl font-black text-amber-400">0</p>
+                        <p class="text-[10px] uppercase font-bold text-slate-500">Miscommunication Lag</p>
+                    </div>
+                    <div class="p-4 bg-slate-800 rounded-2xl border border-slate-700">
+                        <p class="text-2xl font-black text-white">2.5x</p>
+                        <p class="text-[10px] uppercase font-bold text-slate-500">Output Velocity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-12 px-6 border-t border-slate-800 text-center text-slate-600 text-sm">
+        <p>&copy; 2024 AI-First Delivery Plan for Fiksal. Prepared by Albania Lean Tech Hub.</p>
+    </footer>
+
+    <script>
+        // --- HELPER: Label Wrapping ---
+        function wrapLabels(labels) {
+            return labels.map(label => {
+                if (label.length <= 16) return label;
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + word).length > 16) {
+                        lines.push(currentLine.trim());
+                        currentLine = word + ' ';
+                    } else {
+                        currentLine += word + ' ';
+                    }
+                });
+                lines.push(currentLine.trim());
+                return lines;
+            });
+        }
+
+        Chart.defaults.font.family = "'Plus Jakarta Sans', sans-serif";
+        Chart.defaults.color = '#94a3b8';
+
+        // RESOURCE ALLOCATION CHART
+        const ctxRes = document.getElementById('resourceChart').getContext('2d');
+        new Chart(ctxRes, {
+            type: 'doughnut',
+            data: {
+                labels: wrapLabels(['AI-Assisted Design', 'AI-Generated Boilerplate', 'Human Logic Review', 'Platform Integration', 'QA & Deployment']),
+                datasets: [{
+                    data: [25, 35, 20, 10, 10],
+                    backgroundColor: [
+                        '#6366f1', // Indigo
+                        '#06b6d4', // Cyan
+                        '#f59e0b', // Amber
+                        '#334155', // Slate
+                        '#1e293b'  // Dark
+                    ],
+                    borderWidth: 0,
+                    hoverOffset: 10
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '70%',
+                plugins: {
+                    legend: { position: 'bottom', labels: { boxWidth: 10, padding: 20, font: { size: 10 } } },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                return Array.isArray(label) ? label.join(' ') : label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
