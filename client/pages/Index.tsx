@@ -87,6 +87,20 @@ export default function Index() {
           </div>
         </section>
 
+        <section className="w-full px-6 md:px-12 lg:px-[100px] py-9 flex flex-col items-center border-b border-gray-200">
+          <div className="w-full max-w-[880px] py-4 flex justify-center items-center">
+            <blockquote className="text-gray-500 text-center font-sora text-2xl md:text-[30px] font-bold leading-normal">
+              "It ain't what you don't know that gets you into trouble. It's
+              what you know for sure that just ain't so."
+            </blockquote>
+          </div>
+          <div className="w-full px-0 md:px-[100px] py-2 flex justify-end items-center">
+            <cite className="text-gray-500 text-right font-sora text-lg md:text-xl font-bold italic">
+              Mark Twain
+            </cite>
+          </div>
+        </section>
+
         <section className="w-full px-6 md:px-9 lg:px-[200px] py-9 md:py-9 flex flex-col md:flex-row justify-center items-center md:items-start gap-[50px] md:gap-6">
           <div className="flex-1 flex flex-col justify-center items-start gap-9 md:gap-6 md:px-4">
             <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
@@ -149,20 +163,6 @@ export default function Index() {
                 </Link>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section className="w-full px-6 md:px-12 lg:px-[100px] py-9 flex flex-col items-center border-b border-gray-200">
-          <div className="w-full max-w-[880px] py-4 flex justify-center items-center">
-            <blockquote className="text-gray-500 text-center font-sora text-2xl md:text-[30px] font-bold leading-normal">
-              "It ain't what you don't know that gets you into trouble. It's
-              what you know for sure that just ain't so."
-            </blockquote>
-          </div>
-          <div className="w-full px-0 md:px-[100px] py-2 flex justify-end items-center">
-            <cite className="text-gray-500 text-right font-sora text-lg md:text-xl font-bold italic">
-              Mark Twain
-            </cite>
           </div>
         </section>
 
