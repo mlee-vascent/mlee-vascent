@@ -142,7 +142,7 @@ export default function Index() {
                   accelerate your path to revenue.
                 </p>
                 <Link
-                  to="/gtm"
+                  to="/sales-ai"
                   className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center self-center md:self-center"
                 >
                   Learn More
