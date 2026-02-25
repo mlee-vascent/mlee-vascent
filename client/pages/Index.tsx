@@ -164,7 +164,7 @@ export default function Index() {
 
           <div className="flex flex-col justify-center items-start gap-9 md:gap-6 md:px-4">
             <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
-              Modern Sales Infrastructure, Built for Automation & Scale
+              AI Sales Infrastructure, Built for Automation & Scale
             </h2>
 
             <div className="flex flex-col md:flex-col items-center md:items-center justify-start gap-9 md:gap-6 w-full px-2 md:px-2">
