@@ -6,14 +6,37 @@ export default function GTM() {
   const ogImage =
     "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47bd8390907741749758f6c6206db0b1?format=webp&width=1200";
   const description =
-    "Design and implement scalable GTM systems that book more qualified meetings: buyer-intent data, LinkedIn automation, email sequencing, and AI-powered outreach to drive predictable growth.";
+    "AI-powered GTM strategy consulting that leverages platforms like SureRev to define positioning, messaging, and competitive strategy. Build aligned GTM plans that accelerate time-to-market.";
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "AI-Powered GTM Strategy Consulting",
+    description: description,
+    provider: {
+      "@type": "LocalBusiness",
+      name: "VerityAscent",
+      url: "https://verityascent.com",
+    },
+    areaServed: "US",
+    serviceType: [
+      "GTM Strategy Development",
+      "Product Positioning",
+      "Competitive Intelligence",
+      "Messaging Framework",
+      "Team Alignment",
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Seo
-        title="AI‑Powered Outreach & Go‑To‑Market Systems | VerityAscent"
+        title="AI-Powered GTM Strategy Consulting | VerityAscent"
         description={description}
         image={ogImage}
         canonicalPath="/gtm"
+        keywords="GTM strategy, go-to-market, AI positioning, product strategy, competitive positioning, SureRev, messaging, product-market fit"
+        structuredData={structuredData}
       />
       <Header />
 
@@ -22,12 +45,10 @@ export default function GTM() {
         <section className="w-full px-6 md:px-24 lg:px-[200px] py-16 flex flex-col items-center gap-3 bg-gradient-to-r from-[#00C9C9] to-[#00A6A6]">
           <div className="flex flex-col items-center w-full gap-6">
             <h1 className="text-[#F6F8FA] text-center font-sora text-3xl md:text-4xl lg:text-[56px] font-bold leading-[65px] md:leading-[65px] lg:leading-[65px]">
-              Scale Your Pipeline with AI-Powered Outreach
+              AI-Powered GTM Strategy That Drives Growth
             </h1>
             <p className="text-white text-center font-sora text-xl md:text-2xl lg:text-[30px] font-bold max-w-4xl">
-              Go-to-market strategy and automated outreach systems designed to
-              book more meetings, close more deals, and grow revenue without
-              adding headcount.
+              Define winning product positioning, competitive messaging, and aligned GTM plans using advanced AI tools. Move from uncertainty to clarity in weeks, not months.
             </p>
 
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-14 w-full md:w-auto mt-6 md:px-24">
@@ -37,7 +58,7 @@ export default function GTM() {
                 rel="noopener noreferrer"
                 className="w-full md:w-auto px-9 py-9 rounded-2xl border-2 border-[#E4F4F3] text-[#F9FAFB] text-center font-sora text-2xl md:text-[30px] font-bold"
               >
-                Book a Consultation
+                Book a Strategy Call
               </a>
               <a
                 href="/Matthew Lee Resume.pdf"
@@ -53,166 +74,53 @@ export default function GTM() {
         {/* Description */}
         <section className="w-full px-6 md:px-24 lg:px-[200px] py-12">
           <p className="text-gray-600 text-lg text-center md:text-left">
-            At VerityAscent, I help growing businesses and startups bring their
-            products to market faster and more effectively by combining proven
-            go-to-market strategy with modern AI-powered outreach automation. My
-            focus is simple: create predictable sales pipelines by setting up
-            systems that generate meetings, nurture prospects, and convert
-            opportunities all while freeing up your team to focus on closing
-            deals.
+            Building a winning GTM strategy doesn't have to be a months-long guessing game. By leveraging AI-powered platforms like SureRev combined with proven strategic frameworks, I help organizations rapidly define their ideal customer profiles, craft differentiated positioning, and create compelling messaging that resonates with buyers. The result: faster time-to-market, better cross-functional alignment, and a playbook your entire team can execute on.
           </p>
         </section>
 
-        {/* Why Section */}
+        {/* Why GTM Fails Section */}
         <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 bg-[#F6F8FA] flex flex-col items-center gap-12">
           <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
-            Why Manual Prospecting Doesn't Work Anymore
+            Why Traditional GTM Planning Falls Short
           </h2>
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
               <h3 className="text-gray-600 text-center font-sora text-2xl md:text-[30px] font-bold">
-                Slow & Expensive
+                Too Much Time
               </h3>
               <p className="text-gray-600 text-center text-lg">
-                SDR time wasted on manual tasks
+                Months of research, meetings, and iteration
               </p>
             </div>
             <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
               <h3 className="text-gray-600 text-center font-sora text-2xl md:text-[30px] font-bold">
-                Inconsistent Results
+                Misalignment
               </h3>
               <p className="text-gray-600 text-center text-lg">
-                Pipeline depends on luck
+                Sales, marketing, and product teams working from different playbooks
               </p>
             </div>
             <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
               <h3 className="text-gray-600 text-center font-sora text-2xl md:text-[30px] font-bold">
-                Scaling Challenges
+                Weak Execution
               </h3>
               <p className="text-gray-600 text-center text-lg">
-                Growth stalls without automation
+                Positioning and messaging don't translate to revenue growth
               </p>
             </div>
           </div>
         </section>
 
-        {/* Smarter Section */}
+        {/* The Solution Section */}
         <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 flex flex-col items-center gap-12">
           <h2 className="text-gray-600 text-center font-sora text-3xl md:text-[40px] font-bold">
-            A Smarter Way to Reach Your Market
+            The AI-Powered Approach
           </h2>
           <p className="text-gray-600 text-center font-sora text-xl md:text-2xl font-semibold max-w-4xl">
-            By combining go-to-market strategy with AI-powered outreach tools,
-            we help you create predictable, scalable sales pipelines that drive
-            consistent revenue growth.
+            What if you could compress months of GTM work into weeks? By combining advanced AI platforms with strategic expertise, we rapidly move from ambiguity to clarity.
           </p>
-        </section>
 
-        {/* Diagram Image */}
-        <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/8e9bc4cd4887240bcdf7bde27c3e40da35b7d603?width=2880"
-          alt="Go-to-market process diagram"
-          className="w-full h-auto"
-        />
-
-        {/* Implement Section */}
-        <section className="w-full px-6 md:px-24 lg:px-[180px] py-12 bg-[#F6F8FA] flex flex-col items-center gap-12">
-          <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
-            I Implement the Tools That Drive Growth
-          </h2>
-
-          {/* Row 1 */}
-          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
-                Trigify
-              </h3>
-              <p className="text-gray-600 text-center text-lg">
-                Actionable LinkedIn Signals
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
-                RB2B
-              </h3>
-              <p className="text-gray-600 text-center text-lg">
-                Cold Website Signals
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
-                Buyer Intent
-              </h3>
-              <p className="text-gray-600 text-center text-lg">
-                Keyword Search Signals
-              </p>
-            </div>
-          </div>
-
-          {/* Row 2 */}
-          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
-                Clay
-              </h3>
-              <p className="text-gray-600 text-center text-lg">
-                Data Enrichment & Automation
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
-                HeyReach
-              </h3>
-              <p className="text-gray-600 text-center text-lg">
-                LinkedIn Outreach & Nurturing
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
-                Reply
-              </h3>
-              <p className="text-gray-600 text-center text-lg">
-                LinkedIn & Email Sequencing
-              </p>
-            </div>
-          </div>
-
-          {/* Row 3 */}
-          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
-                Instantly
-              </h3>
-              <p className="text-gray-600 text-center text-lg">
-                Email Warmup & Sending
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
-                Apollo
-              </h3>
-              <p className="text-gray-600 text-center text-lg">
-                Data Enrichment & Sequencing
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
-                Outreach
-              </h3>
-              <p className="text-gray-600 text-center text-lg">
-                Enterprise Sales Automation
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* What You'll Get */}
-        <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 bg-[#F6F8FA] flex flex-col items-center gap-12">
-          <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
-            What You'll Get!
-          </h2>
-
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl">
             <div className="flex flex-col gap-4">
               <div className="flex items-start gap-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -225,7 +133,7 @@ export default function GTM() {
                   />
                 </svg>
                 <p className="text-gray-600 text-lg">
-                  More qualified meetings booked
+                  Clear ICP definition and account targeting
                 </p>
               </div>
               <div className="flex items-start gap-4">
@@ -239,7 +147,7 @@ export default function GTM() {
                   />
                 </svg>
                 <p className="text-gray-600 text-lg">
-                  Predictable pipeline growth
+                  Differentiated product positioning
                 </p>
               </div>
               <div className="flex items-start gap-4">
@@ -253,7 +161,7 @@ export default function GTM() {
                   />
                 </svg>
                 <p className="text-gray-600 text-lg">
-                  Reduced manual prospecting effort
+                  Compelling buyer-centric messaging
                 </p>
               </div>
               <div className="flex items-start gap-4">
@@ -267,18 +175,144 @@ export default function GTM() {
                   />
                 </svg>
                 <p className="text-gray-600 text-lg">
-                  Higher ROI from outreach campaigns
+                  Cross-functional alignment and buy-in
+                </p>
+              </div>
+              <div className="flex items-start gap-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M20 6L9 17L4 12"
+                    stroke="#00B279"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <p className="text-gray-600 text-lg">
+                  Competitive intelligence and analysis
+                </p>
+              </div>
+              <div className="flex items-start gap-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M20 6L9 17L4 12"
+                    stroke="#00B279"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <p className="text-gray-600 text-lg">
+                  Executable sales enablement assets
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
-              <p className="text-gray-600 text-center text-lg">
-                "Once we ramped up the outreach automation combined with the
-                buyer intent data, we actually had to pause things in order to
-                change our entire sales enablement strategy so our AE's could
-                better manage their time in qualified meetings!"
+            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md h-fit">
+              <p className="text-gray-600 text-center text-lg font-sora font-semibold">
+                AI tools like SureRev accelerate the GTM process by 40-60 hours. But the real magic happens when you combine them with strategic expertise—someone who understands market dynamics, competitive positioning, and how to translate analysis into revenue-generating actions.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Tools & Platforms Section */}
+        <section className="w-full px-6 md:px-24 lg:px-[180px] py-12 bg-[#F6F8FA] flex flex-col items-center gap-12">
+          <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
+            AI Platforms I Leverage
+          </h2>
+
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
+              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
+                SureRev
+              </h3>
+              <p className="text-gray-600 text-center text-lg">
+                AI-powered GTM OS for strategy, positioning, messaging, and competitive intelligence
+              </p>
+            </div>
+            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl border border-gray-200 bg-white shadow-md">
+              <h3 className="text-gray-600 font-sora text-2xl md:text-[30px] font-bold">
+                Strategic Frameworks
+              </h3>
+              <p className="text-gray-600 text-center text-lg">
+                Proven GTM methodologies combined with AI acceleration for faster results
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Process Section */}
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 flex flex-col items-center gap-12">
+          <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
+            The GTM Strategy Process
+          </h2>
+
+          <div className="w-full max-w-4xl">
+            <div className="space-y-8">
+              <div className="flex gap-6">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-orange-primary text-white font-bold text-lg">
+                    1
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-gray-600 font-sora text-2xl font-bold">
+                    Discovery & Analysis
+                  </h3>
+                  <p className="text-gray-600 text-lg">
+                    Deep dive into your market, customers, competitors, and product to inform strategy
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-6">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-orange-primary text-white font-bold text-lg">
+                    2
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-gray-600 font-sora text-2xl font-bold">
+                    AI-Powered Strategy Development
+                  </h3>
+                  <p className="text-gray-600 text-lg">
+                    Use SureRev and other AI tools to rapidly model ICPs, test positioning, and generate messaging variations
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-6">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-orange-primary text-white font-bold text-lg">
+                    3
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-gray-600 font-sora text-2xl font-bold">
+                    Alignment & Refinement
+                  </h3>
+                  <p className="text-gray-600 text-lg">
+                    Work with your cross-functional teams to align on strategy and refine based on feedback
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-6">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-orange-primary text-white font-bold text-lg">
+                    4
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-gray-600 font-sora text-2xl font-bold">
+                    Execution & Enablement
+                  </h3>
+                  <p className="text-gray-600 text-lg">
+                    Create sales enablement assets, messaging playbooks, and training to drive consistent execution
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -286,11 +320,10 @@ export default function GTM() {
         {/* CTA Section */}
         <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 flex flex-col items-center gap-12">
           <h2 className="text-gray-600 font-sora text-3xl md:text-[40px] font-bold text-center">
-            Ready To Scale Your Pipeline?
+            Ready to Define Your Winning GTM Strategy?
           </h2>
           <p className="text-gray-600 text-center text-lg max-w-[1004px] w-full">
-            Let's design your automated outreach engine and start booking more
-            meetings this month.
+            Let's discuss how AI-powered GTM strategy can accelerate your time-to-market and drive stronger alignment across your teams.
           </p>
           <a
             href="https://calendly.com/verityascent/30min"
@@ -298,7 +331,7 @@ export default function GTM() {
             rel="noopener noreferrer"
             className="px-6 py-6 rounded-2xl bg-orange-primary text-white font-sora text-xl md:text-2xl font-semibold"
           >
-            Book A Consultation
+            Schedule a Strategy Call
           </a>
         </section>
       </main>
