@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiksal Project Proposal | Lean AI-First Execution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Palette Name: "Balkan Tech Blue" - A high-contrast palette reflecting modern tech hubs in Albania. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #1E293B;
+        }
+       .chart-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            max-width: 600px;
+            margin: auto;
+        }
+       .step-node {
+            background: white;
+            border-left: 4px solid #0EA5E9;
+            padding: 1.25rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+        }
+       .step-node:hover {
+            transform: translateY(-2px);
+        }
+       .badge-albania {
+            background: linear-gradient(90deg, #e11d48 0%, #be123c 100%);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-slate-900 text-white pt-16 pb-20 px-6 relative overflow-hidden border-b border-slate-800">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="inline-block py-1 px-3 rounded-full bg-cyan-500/20 text-cyan-300 text-xs font-bold border border-cyan-500/50 uppercase tracking-widest">Lean Execution Proposal</span>
+                    <span class="badge-albania">Albania-Based Team</span>
+                </div>
+                <h1 class="text-5xl font-extrabold mb-6 leading-tight">Protecting the Fiksal Brand with <span class="text-cyan-400">Generative Speed</span></h1>
+                <p class="text-lg text-slate-400 mb-8 leading-relaxed">
+                    A high-efficiency development plan leveraging specialized talent in Albania and cutting-edge AI automation. Transforming customer logic into a production-ready communication ecosystem in record time.
+                </p>
+                <div class="flex flex-wrap gap-6">
+                    <div class="text-center">
+                        <span class="block text-3xl font-bold text-white">12</span>
+                        <span class="text-[10px] text-slate-500 uppercase tracking-widest">Week Sprints</span>
+                    </div>
+                    <div class="h-10 w-[1px] bg-slate-700 hidden sm:block"></div>
+                    <div class="text-center">
+                        <span class="block text-3xl font-bold text-white">2</span>
+                        <span class="text-[10px] text-slate-500 uppercase tracking-widest">AI-Augmented Pros</span>
+                    </div>
+                    <div class="h-10 w-[1px] bg-slate-700 hidden sm:block"></div>
+                    <div class="text-center text-cyan-400">
+                        <span class="block text-3xl font-bold italic">FIXED</span>
+                        <span class="text-[10px] text-slate-500 uppercase tracking-widest">Price Guarantee</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 backdrop-blur-sm">
+                <h3 class="text-lg font-semibold mb-4 text-cyan-400 flex items-center gap-2">
+                    <span class="text-2xl">⚡</span> Efficiency Gains (AI-Augmented vs. Standard)
+                </h3>
+                <div class="chart-container">
+                    <canvas id="efficiencyChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 -mt-10 relative z-10 pb-20">
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-white rounded-xl shadow-xl p-8 col-span-1 md:col-span-2 border border-slate-100">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+                    Lean Team Architecture
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                        <div class="text-2xl mb-2">🧑‍💼</div>
+                        <h4 class="font-bold text-slate-900">Lead Product Manager</h4>
+                        <p class="text-xs text-slate-500 mb-3">Tirana, Albania</p>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li>• Customer Success & Alignment</li>
+                            <li>• AI-Driven UI/UX (Figma Generation)</li>
+                            <li>• Prompt Engineering of Business Logic</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                        <div class="text-2xl mb-2">💻</div>
+                        <h4 class="font-bold text-slate-900">Senior Full-Stack Engineer</h4>
+                        <p class="text-xs text-slate-500 mb-3">Tirana, Albania</p>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li>• AI-Assisted Rapid Coding (Cursor/Copilot)</li>
+                            <li>• Mobile Keyboard & Backend Core</li>
+                            <li>• Logic Integration & Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-slate-100 italic text-sm text-slate-500">
+                    "By utilizing talent in Albania, we capitalize on a 40-50% cost differential compared to US/EU hubs, while AI-first workflows increase code delivery speed by 73%."
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-cyan-600 to-blue-700 rounded-xl shadow-lg p-8 text-white">
+                <h3 class="text-xl font-bold mb-4">Leveraging Client Logic</h3>
+                <p class="text-sm text-cyan-50 leading-relaxed mb-6">
+                    Because Fiksal provides the core software logic, we bypass the R&D phase. Our AI-augmented coder focuses exclusively on <strong>implementation</strong> and <strong>integration</strong>.
+                </p>
+                <div class="space-y-4 text-xs font-semibold">
+                    <div class="flex items-center gap-2 bg-white/10 p-2 rounded">
+                        <span>🚀</span> Faster Deployment Cycle
+                    </div>
+                    <div class="flex items-center gap-2 bg-white/10 p-2 rounded">
+                        <span>📉</span> Reduced Discovery Costs
+                    </div>
+                    <div class="flex items-center gap-2 bg-white/10 p-2 rounded">
+                        <span>🎯</span> Precise Logic Fidelity
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-slate-800 mb-4 text-center">System Integration Flow</h2>
+            <p class="text-slate-500 text-center mb-10 max-w-2xl mx-auto">A seamless path from user input to administrative insight.</p>
+
+            <div class="flex flex-col md:flex-row gap-4 items-stretch justify-between">
+                <div class="step-node flex-1 text-center">
+                    <div class="text-xs font-bold text-cyan-600 mb-1">01. INPUT</div>
+                    <h4 class="font-bold text-slate-800">Custom Keyboard</h4>
+                    <p class="text-[10px] text-slate-500 mt-2">iOS/Android extension captures keystrokes in real-time.</p>
+                </div>
+                <div class="flex items-center justify-center text-slate-300">→</div>
+                <div class="step-node flex-1 text-center bg-slate-50">
+                    <div class="text-xs font-bold text-blue-600 mb-1">02. ANALYSIS</div>
+                    <h4 class="font-bold text-slate-800">Client-Logic Engine</h4>
+                    <p class="text-[10px] text-slate-500 mt-2">Proprietary logic identifies tone mismatch or inappropriate language.</p>
+                </div>
+                <div class="flex items-center justify-center text-slate-300">→</div>
+                <div class="step-node flex-1 text-center">
+                    <div class="text-xs font-bold text-indigo-600 mb-1">03. INTERVENTION</div>
+                    <h4 class="font-bold text-slate-800">Tone Coaching</h4>
+                    <p class="text-[10px] text-slate-500 mt-2">AI suggests professional alternatives via keyboard overlay.</p>
+                </div>
+                <div class="flex items-center justify-center text-slate-300">→</div>
+                <div class="step-node flex-1 text-center">
+                    <div class="text-xs font-bold text-slate-600 mb-1">04. REPORTING</div>
+                    <h4 class="font-bold text-slate-800">Admin Dashboard</h4>
+                    <p class="text-[10px] text-slate-500 mt-2">Aggregate risk scores and sentiment trends for HR.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-xl overflow-hidden mb-16 border border-slate-100">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="p-10 border-r border-slate-100">
+                    <h2 class="text-2xl font-bold text-slate-800 mb-2">Project Roadmap</h2>
+                    <p class="text-sm text-slate-400 mb-8 italic">Weeks 1 - 12 (MVP Launch)</p>
+                    <div class="chart-container">
+                        <canvas id="timelineChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="p-10 bg-slate-50/50">
+                    <h2 class="text-2xl font-bold text-slate-800 mb-2">Fixed-Price Quote</h2>
+                    <p class="text-sm text-slate-400 mb-6 uppercase tracking-widest text-[10px] font-bold">Investment Breakdown</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex justify-between items-center py-2 border-b border-slate-200">
+                            <span class="text-sm font-medium text-slate-600">Product Management (AI Design)</span>
+                            <span class="text-sm font-bold text-slate-800">$14,400</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-slate-200">
+                            <span class="text-sm font-medium text-slate-600">Engineering (AI-Assisted Code)</span>
+                            <span class="text-sm font-bold text-slate-800">$19,200</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-slate-200">
+                            <span class="text-sm font-medium text-slate-600">Cloud Infrastructure Setup</span>
+                            <span class="text-sm font-bold text-slate-800">$2,500</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-slate-200">
+                            <span class="text-sm font-medium text-slate-600">QA & Store Deployment</span>
+                            <span class="text-sm font-bold text-slate-800">$4,800</span>
+                        </div>
+                        <div class="flex justify-between items-center py-4">
+                            <span class="text-lg font-bold text-slate-900">Total Fixed Price</span>
+                            <span class="text-3xl font-extrabold text-cyan-600">$40,900</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 bg-cyan-50 rounded-lg border border-cyan-100 flex items-start gap-3">
+                        <span class="text-cyan-500 font-bold">ⓘ</span>
+                        <p class="text-[10px] text-cyan-800 leading-relaxed">
+                            <strong>Basis:</strong> PM at $30/hr, Engineer at $40/hr. Timeline assumed at 12 weeks. AI-augmentation provides a 55% speed increase in boilerplate and UI coding. Logic provided by Fiksal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-500 py-12 text-center text-sm border-t border-slate-800">
+        <p>&copy; 2024 Project Proposal Prepared for Fiksal.</p>
+        <p class="mt-2 opacity-50">Confidential Lean Execution Plan</p>
+    </footer>
+
+    <script>
+        // Label wrapping logic
+        function wrapLabel(label, limit = 16) {
+            if (typeof label !== 'string') return label;
+            if (label.length <= limit) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + word).length > limit) {
+                    lines.push(currentLine.trim());
+                    currentLine = word + ' ';
+                } else {
+                    currentLine += word + ' ';
+                }
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        Chart.defaults.font.family = "'Inter', sans-serif";
+        Chart.defaults.color = '#94A3B8';
+
+        // EFFICIENCY CHART
+        new Chart(document.getElementById('efficiencyChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Product Design', 'Core Coding', 'Customer Comms', 'Testing Cycle'].map(l => wrapLabel(l)),
+                datasets: [{
+                    label: 'Standard Team',
+                    data: [45, 40, 55, 35],
+                    backgroundColor: '#334155'
+                }, {
+                    label: 'Fiksal AI-Augmented Team',
+                    data: [95, 92, 98, 88],
+                    backgroundColor: '#0EA5E9'
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { 
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                return Array.isArray(label) ? label.join(' ') : label;
+                            }
+                        }
+                    }
+                },
+                scales: { 
+                    x: { display: false }, 
+                    y: { grid: { display: false } } 
+                }
+            }
+        });
+
+        // TIMELINE CHART
+        new Chart(document.getElementById('timelineChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Design & UX', 'Keyboard Core', 'Web Dashboard', 'Testing', 'Launch'].map(l => wrapLabel(l)),
+                datasets: [
+                    {
+                        label: 'Delay',
+                        data: [0, 1, 3, 7, 11],
+                        backgroundColor: 'transparent'
+                    },
+                    {
+                        label: 'Weeks',
+                        data: [1, 2, 4, 4, 1],
+                        backgroundColor: ['#0EA5E9', '#2563EB', '#4F46E5', '#F59E0B', '#10B981'],
+                        borderRadius: 5
+                    }
+                ]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { 
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                return Array.isArray(label) ? label.join(' ') : label;
+                            },
+                            label: function(context) {
+                                if (context.datasetIndex === 0) return null;
+                                return `Duration: ${context.raw} Weeks`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: { stacked: true, title: { display: true, text: 'Project Timeline (Weeks)' }, grid: { color: '#F1F5F9' } },
+                    y: { stacked: true, grid: { display: false } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
