@@ -101,8 +101,8 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-9 lg:px-[200px] py-9 md:py-9 flex flex-col md:flex-row justify-center items-center md:items-start gap-[50px] md:gap-6">
-          <div className="flex-1 flex flex-col justify-center items-start gap-9 md:gap-6 md:px-4">
+        <section className="w-full px-6 md:px-9 lg:px-[200px] py-9 md:py-9 grid grid-cols-1 md:grid-cols-3 gap-9 md:gap-6">
+          <div className="flex flex-col justify-center items-start gap-9 md:gap-6 md:px-4">
             <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
               Designing Interfaces That <br />
               Feel Effortless
@@ -134,7 +134,35 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col justify-center items-start gap-9 md:gap-6 md:px-4">
+          <div className="flex flex-col justify-center items-start gap-9 md:gap-6 md:px-4">
+            <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
+              Go-To-Market Strategy That Works & Scales
+            </h2>
+
+            <div className="flex flex-col md:flex-col items-center md:items-center justify-start gap-9 md:gap-6 w-full px-2 md:px-2">
+              <div className="flex justify-center items-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F8ea03c0e968742f3979d72ade1d0f85f?format=webp&width=800&height=1200"
+                  alt="Go-To-Market Strategy"
+                  className="w-[200px] h-auto"
+                />
+              </div>
+
+              <div className="flex-1 flex flex-col justify-end items-center md:items-center gap-6 md:gap-6">
+                <p className="text-gray-500 text-base font-normal px-2 md:px-2 text-center md:text-left">
+                  Go-To-Market strategy has historically been a mystery. Hire marketing professionals and hope they get it right and transfer that knowledge to your sales team and customers. What if AI could turn the art into science, saving time and money?
+                </p>
+                <Link
+                  to="/sales-ai"
+                  className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center self-center md:self-center"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center items-start gap-9 md:gap-6 md:px-4">
             <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
               Modern Sales Infrastructure, Built for Automation & Scale
             </h2>
