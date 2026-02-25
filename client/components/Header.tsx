@@ -34,6 +34,12 @@ export default function Header() {
             Portfolio
           </Link>
           <Link
+            to="/gtm"
+            className="text-gray-600 text-lg font-normal hover:underline"
+          >
+            GTM
+          </Link>
+          <Link
             to="/sales-ai"
             className="text-gray-600 text-lg font-normal hover:underline"
           >
@@ -81,6 +87,13 @@ export default function Header() {
             onClick={() => setMobileMenuOpen(false)}
           >
             Portfolio
+          </Link>
+          <Link
+            to="/gtm"
+            className="text-gray-600 text-lg font-normal"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            GTM
           </Link>
           <Link
             to="/sales-ai"

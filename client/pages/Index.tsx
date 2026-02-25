@@ -153,7 +153,7 @@ export default function Index() {
                   Go-To-Market strategy has historically been a mystery. Hire marketing professionals and hope they get it right and transfer that knowledge to your sales team and customers. What if AI could turn the art into science, saving time and money?
                 </p>
                 <Link
-                  to="/sales-ai"
+                  to="/gtm"
                   className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center self-center md:self-center"
                 >
                   Learn More
