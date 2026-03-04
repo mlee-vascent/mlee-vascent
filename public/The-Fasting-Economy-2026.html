@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Fasting Paradigm: Health, Economics & Physiology</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40vh;
+    max-height: 450px;
+    min-height: 300px;
+}
+@media (min-width: 768px) {
+    .chart-container {
+        height: 50vh;
+    }
+}
+.glass-card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+</style>
+</head>
+<body class="antialiased pb-20">
+
+<header class="w-full bg-slate-900 border-b border-slate-700 py-12 px-6 sticky top-0 z-50 shadow-2xl">
+    <div class="max-w-6xl mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-500 mb-4 tracking-tight">THE FASTING PARADIGM</h1>
+        <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto font-light">An analytical breakdown of the health benefits, physiological mechanisms, side effects, and economic forces driving the global intermittent fasting trend.</p>
+    </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 space-y-16">
+
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="glass-card rounded-2xl p-8 flex flex-col items-center justify-center text-center shadow-lg transform transition hover:scale-105">
+            <span class="text-5xl font-black text-cyan-400 mb-2">24%</span>
+            <span class="text-slate-300 font-semibold uppercase tracking-wide text-sm">Of Adults Attempted IF in 2023</span>
+        </div>
+        <div class="glass-card rounded-2xl p-8 flex flex-col items-center justify-center text-center shadow-lg transform transition hover:scale-105">
+            <span class="text-5xl font-black text-fuchsia-400 mb-2">16:8</span>
+            <span class="text-slate-300 font-semibold uppercase tracking-wide text-sm">Most Popular Protocol Globally</span>
+        </div>
+        <div class="glass-card rounded-2xl p-8 flex flex-col items-center justify-center text-center shadow-lg transform transition hover:scale-105">
+            <span class="text-5xl font-black text-amber-400 mb-2">$4.1B</span>
+            <span class="text-slate-300 font-semibold uppercase tracking-wide text-sm">Projected Market Value by 2028</span>
+        </div>
+    </section>
+
+    <section class="glass-card rounded-3xl p-6 md:p-12 shadow-2xl">
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold text-white mb-4 border-l-4 border-emerald-500 pl-4">Physiological Timeline of Fasting</h2>
+            <p class="text-slate-300 text-lg">Understanding the human body's metabolic shift from glucose reliance to fat oxidation and cellular repair. This timeline illustrates the biological milestones achieved during a prolonged fasting state.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="bg-slate-800 rounded-xl p-6 border-t-4 border-cyan-500 relative overflow-hidden">
+                <div class="text-cyan-500 text-3xl mb-3">⏱️ 0-4 Hours</div>
+                <h3 class="text-xl font-bold text-white mb-2">Anabolic Phase</h3>
+                <p class="text-slate-400 text-sm">Blood sugar and insulin levels rise after the last meal. The body is focused on digestion, storing glycogen in the liver, and lipid synthesis.</p>
+            </div>
+            
+            <div class="bg-slate-800 rounded-xl p-6 border-t-4 border-amber-500 relative overflow-hidden">
+                <div class="text-amber-500 text-3xl mb-3">📉 4-16 Hours</div>
+                <h3 class="text-xl font-bold text-white mb-2">Catabolic Shift</h3>
+                <p class="text-slate-400 text-sm">Insulin drops drastically. The body exhausts liver glycogen stores and begins mobilizing fatty acids for energy. Glucagon levels rise.</p>
+            </div>
+            
+            <div class="bg-slate-800 rounded-xl p-6 border-t-4 border-fuchsia-500 relative overflow-hidden">
+                <div class="text-fuchsia-500 text-3xl mb-3">🔥 16-24 Hours</div>
+                <h3 class="text-xl font-bold text-white mb-2">Ketosis Onset</h3>
+                <p class="text-slate-400 text-sm">The liver begins converting stored fat into ketone bodies, which cross the blood-brain barrier to provide highly efficient fuel for the brain.</p>
+            </div>
+            
+            <div class="bg-slate-800 rounded-xl p-6 border-t-4 border-emerald-500 relative overflow-hidden">
+                <div class="text-emerald-500 text-3xl mb-3">🧬 24+ Hours</div>
+                <h3 class="text-xl font-bold text-white mb-2">Autophagy</h3>
+                <p class="text-slate-400 text-sm">Deep cellular repair begins. The body breaks down old, damaged proteins and misfolded cells to regenerate new, healthy cellular structures.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <section class="glass-card rounded-3xl p-6 md:p-10 shadow-2xl">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-white mb-3 border-l-4 border-cyan-400 pl-4">Health Benefits & Ailment Efficacy</h2>
+                <p class="text-slate-300 text-sm">Clinical studies show varied degrees of effectiveness for different health markers. This radar chart visualizes the scientifically backed impact scores of intermittent fasting on common modern ailments.</p>
+            </div>
+            <div class="chart-container">
+                <canvas id="benefitsRadarChart"></canvas>
+            </div>
+        </section>
+
+        <section class="glass-card rounded-3xl p-6 md:p-10 shadow-2xl">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-white mb-3 border-l-4 border-red-500 pl-4">Potential Negative Consequences</h2>
+                <p class="text-slate-300 text-sm">While beneficial for many, fasting presents risks. This breakdown illustrates the most commonly reported adverse symptoms during the initial two-week adaptation phase.</p>
+            </div>
+            <div class="chart-container">
+                <canvas id="negativesDoughnutChart"></canvas>
+            </div>
+        </section>
+        
+    </div>
+
+    <section class="glass-card rounded-3xl p-6 md:p-12 shadow-2xl">
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold text-white mb-4 border-l-4 border-amber-400 pl-4">Economic Forces & Market Drivers</h2>
+            <p class="text-slate-300 text-lg">The "non-consumption" diet presents a unique economic paradox. It suppresses revenue in traditional food and snack sectors while creating a booming digital ecosystem of tracking applications and metabolic optimization supplements.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            
+            <div class="chart-container">
+                <canvas id="marketLineChart"></canvas>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-slate-800 rounded-xl p-5 border-l-4 border-emerald-500">
+                    <h3 class="text-xl font-bold text-emerald-400 mb-2">▲ Primary Market Drivers</h3>
+                    <ul class="text-slate-300 space-y-2 text-sm">
+                        <li><span class="font-bold text-white">Digital Health Adoption:</span> Rise of tracking apps (Zero, Simple) offering premium subscriptions and personalized coaching.</li>
+                        <li><span class="font-bold text-white">Cost-Effectiveness:</span> Unlike expensive supplement-heavy diets, fasting is inherently free, increasing initial user adoption.</li>
+                        <li><span class="font-bold text-white">Corporate Wellness:</span> Employers subsidizing fasting and metabolic health apps to reduce long-term healthcare premiums.</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-slate-800 rounded-xl p-5 border-l-4 border-red-500">
+                    <h3 class="text-xl font-bold text-red-400 mb-2">▼ Industry Barriers</h3>
+                    <ul class="text-slate-300 space-y-2 text-sm">
+                        <li><span class="font-bold text-white">Food Industry Pushback:</span> Loss of revenue for the breakfast food and late-night snack market sectors.</li>
+                        <li><span class="font-bold text-white">Medical Skepticism:</span> Slow adoption by traditional healthcare providers due to lack of patentable, monetizable pharmaceutical interventions.</li>
+                        <li><span class="font-bold text-white">User Churn Rate:</span> High abandonment rate after 30 days due to lifestyle friction and social eating pressures.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center border-t border-slate-700 pt-10">
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-white mb-2 border-l-4 border-fuchsia-500 pl-4">Deconstructing the $4.1B Economy</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    While the act of fasting itself costs nothing, the surrounding ecosystem has rapidly monetized the behavioral and metabolic aspects of the practice. 
+                    The vast majority of consumer spending flows into digital tracking subscriptions and personalized premium content. 
+                    Simultaneously, a massive secondary market has emerged for electrolyte powders, specialized teas, and "fast-friendly" metabolic supplements designed to mitigate early side effects and curb hunger without breaking the fast.
+                </p>
+                <div class="bg-slate-800 rounded-xl p-4 flex justify-between items-center border border-slate-700">
+                    <span class="text-slate-400 font-semibold uppercase text-xs tracking-wider">Largest Growth Sector</span>
+                    <span class="text-cyan-400 font-bold">Digital Apps (45%)</span>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="marketBreakdownChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script>
+function wrapLabel(label) {
+    if (label.length <= 16) return label;
+    let words = label.split(' ');
+    let lines = [];
+    let currentLine = '';
+    for (let word of words) {
+        if ((currentLine + word).length > 16) {
+            if (currentLine) lines.push(currentLine.trim());
+            currentLine = word + ' ';
+        } else {
+            currentLine += word + ' ';
+        }
+    }
+    if (currentLine) lines.push(currentLine.trim());
+    return lines;
+}
+
+const tooltipConfig = {
+    tooltip: {
+        callbacks: {
+            title: function(tooltipItems) {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                } else {
+                    return label;
+                }
+            }
+        }
+    }
+};
+
+const commonOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    color: '#cbd5e1',
+    plugins: {
+        legend: {
+            labels: {
+                color: '#cbd5e1',
+                font: { family: 'Inter', size: 12 }
+            }
+        },
+        ...tooltipConfig
+    }
+};
+
+const benefitsLabelsRaw = [
+    "Insulin Resistance Improvement", 
+    "Weight & Visceral Fat Loss", 
+    "Cellular Autophagy Activation", 
+    "Systemic Inflammation Reduction", 
+    "Cognitive Decline Prevention", 
+    "Cardiovascular Health"
+];
+const benefitsLabels = benefitsLabelsRaw.map(wrapLabel);
+
+const ctxRadar = document.getElementById('benefitsRadarChart').getContext('2d');
+new Chart(ctxRadar, {
+    type: 'radar',
+    data: {
+        labels: benefitsLabels,
+        datasets: [{
+            label: 'Efficacy Score (0-100)',
+            data: [92, 88, 95, 78, 70, 82],
+            backgroundColor: 'rgba(6, 182, 212, 0.2)',
+            borderColor: '#06b6d4',
+            pointBackgroundColor: '#06b6d4',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: '#06b6d4',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        ...commonOptions,
+        scales: {
+            r: {
+                angleLines: { color: 'rgba(255, 255, 255, 0.1)' },
+                grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                pointLabels: { color: '#cbd5e1', font: { family: 'Inter', size: 11 } },
+                ticks: { display: false, min: 0, max: 100 }
+            }
+        }
+    }
+});
+
+const negativesLabelsRaw = [
+    "Lethargy and Fatigue", 
+    "Intense Hunger Cravings", 
+    "Headaches & Dehydration", 
+    "Irritability and Mood Swings", 
+    "Disordered Eating Triggers", 
+    "Sleep Disturbances"
+];
+const negativesLabels = negativesLabelsRaw.map(wrapLabel);
+
+const ctxDoughnut = document.getElementById('negativesDoughnutChart').getContext('2d');
+new Chart(ctxDoughnut, {
+    type: 'doughnut',
+    data: {
+        labels: negativesLabels,
+        datasets: [{
+            data: [30, 25, 20, 15, 6, 4],
+            backgroundColor: [
+                '#f59e0b',
+                '#ef4444',
+                '#8b5cf6',
+                '#06b6d4',
+                '#ec4899',
+                '#10b981'
+            ],
+            borderColor: '#0f172a',
+            borderWidth: 3
+        }]
+    },
+    options: {
+        ...commonOptions,
+        cutout: '65%',
+        plugins: {
+            ...commonOptions.plugins,
+            legend: {
+                position: 'right',
+                labels: { color: '#cbd5e1', font: { family: 'Inter', size: 11 } }
+            }
+        }
+    }
+});
+
+const marketLabelsRaw = ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025 Projected", "2026 Projected"];
+const marketLabels = marketLabelsRaw.map(wrapLabel);
+
+const ctxLine = document.getElementById('marketLineChart').getContext('2d');
+new Chart(ctxLine, {
+    type: 'line',
+    data: {
+        labels: marketLabels,
+        datasets: [{
+            label: 'Fasting App Market Value (Millions USD)',
+            data: [45, 80, 150, 220, 310, 400, 520, 680, 850],
+            borderColor: '#10b981',
+            backgroundColor: 'rgba(16, 185, 129, 0.1)',
+            fill: true,
+            tension: 0.4,
+            borderWidth: 3,
+            pointBackgroundColor: '#10b981',
+            pointRadius: 4
+        }]
+    },
+    options: {
+        ...commonOptions,
+        scales: {
+            y: {
+                beginAtZero: true,
+                grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                ticks: { color: '#cbd5e1' }
+            },
+            x: {
+                grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                ticks: { color: '#cbd5e1' }
+            }
+        }
+    }
+});
+
+const breakdownLabelsRaw = [
+    "Digital Apps & Subscriptions",
+    "Electrolytes & Supplements",
+    "Personalized Coaching",
+    "Fasting-Mimicking Meals"
+];
+const breakdownLabels = breakdownLabelsRaw.map(wrapLabel);
+
+const ctxBar = document.getElementById('marketBreakdownChart').getContext('2d');
+new Chart(ctxBar, {
+    type: 'bar',
+    data: {
+        labels: breakdownLabels,
+        datasets: [{
+            label: 'Market Spend (Billions USD)',
+            data: [1.84, 1.23, 0.61, 0.42],
+            backgroundColor: [
+                'rgba(6, 182, 212, 0.8)',
+                'rgba(245, 158, 11, 0.8)',
+                'rgba(139, 92, 246, 0.8)',
+                'rgba(16, 185, 129, 0.8)'
+            ],
+            borderColor: [
+                '#06b6d4',
+                '#f59e0b',
+                '#8b5cf6',
+                '#10b981'
+            ],
+            borderWidth: 1,
+            borderRadius: 4
+        }]
+    },
+    options: {
+        ...commonOptions,
+        indexAxis: 'y',
+        plugins: {
+            ...commonOptions.plugins,
+            legend: {
+                display: false
+            }
+        },
+        scales: {
+            x: {
+                beginAtZero: true,
+                grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                ticks: { color: '#cbd5e1' },
+                title: {
+                    display: true,
+                    text: 'Billions (USD)',
+                    color: '#94a3b8'
+                }
+            },
+            y: {
+                grid: { display: false },
+                ticks: { color: '#cbd5e1', font: { family: 'Inter', size: 12 } }
+            }
+        }
+    }
+});
+</script>
+</body>
+</html>
