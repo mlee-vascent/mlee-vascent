@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 import Seo from "@/components/Seo";
 
 export default function Ecommerce() {
@@ -17,746 +18,306 @@ export default function Ecommerce() {
       />
       <Header />
 
-      <main className="flex-1 flex flex-col items-center">
+      <main className="flex-1 flex flex-col">
         {/* Hero Section */}
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-9 md:py-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 bg-[rgba(168,220,219,0.5)]">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/66222ed966fd45c1c4d79deaf7dc3c373ef42828?width=838"
-            alt="LMScheckout Platform"
-            className="w-full md:w-[419px] h-auto md:h-[335px] rounded-xl object-cover border-0 outline-none ring-0 shadow-none"
-          />
-          <div className="flex flex-col justify-center items-start gap-4 max-w-[740px]">
-            <h1 className="text-gray-600 font-sora text-3xl md:text-4xl lg:text-[56px] font-bold !leading-[65px]">
-              LMScheckout: Enterprise Course Commerce Platform
-            </h1>
-            <h2 className="text-gray-600 font-sora text-xl md:text-2xl font-semibold">
-              UI/UX Design Case Study
-            </h2>
-          </div>
-        </section>
-
-        {/* Design Process Section */}
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-center gap-7">
-          <h2 className="text-gray-600 text-center font-sora text-2xl md:text-[30px] font-bold">
-            Design Process & Methodology
-          </h2>
-          <div className="text-gray-600 space-y-4">
-            <h3 className="font-sora text-xl md:text-2xl font-bold">
-              Discovery & Research Phase
-            </h3>
-            <p className="text-base md:text-lg">
-              Conducted comprehensive research across 30+ organizations to
-              understand the fragmented course commerce landscape. Engaged with
-              stakeholders from:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-sm md:text-base">
-              <li>
-                Higher Education Institutions struggling with rigid, outdated
-                payment systems that couldn't handle complex pricing models
-                (in-state/out-of-state, early bird, alumni discounts)
-              </li>
-              <li>
-                Non-profit Organizations needing donation integration alongside
-                course fees and membership-based pricing
-              </li>
-              <li>
-                Professional Associations requiring sophisticated
-                member/non-member pricing tiers and continuing education credit
-                tracking
-              </li>
-              <li>
-                SaaS Companies seeking to monetize product training and
-                certification programs
-              </li>
-              <li>
-                Corporate Training Providers demanding enterprise invoicing,
-                purchase orders, and bulk enrollment capabilities
-              </li>
-            </ul>
-            <p className="text-sm md:text-base">
-              <span className="font-bold">Key insight:</span> Organizations were
-              forcing course sales through generic e-commerce platforms or
-              expensive custom builds, resulting in manual enrollment processes,
-              poor user experience, and significant revenue leakage.
-              Off-the-shelf ecommerce platforms like Shopify and BigCommerce
-              lacked intelligent integrations with LMS platforms to automate
-              enrollments post sale. The market desperately needed a
-              purpose-built solution that understood the unique requirements of
-              selling educational content and could support on-demand, live
-              in-person or time-based courses without intense customization.
-            </p>
-          </div>
-        </section>
-
-        {/* Architecture Section */}
-        <div className="w-full flex justify-center items-center h-[200px] border-b border-gray-200 bg-gray-50 shadow-sm">
-          <h2 className="text-gray-700 text-center font-sora text-2xl md:text-[30px] font-bold px-4">
-            Architecture & Multi-Tenant Design Strategy
-          </h2>
-        </div>
-
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start gap-9">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/0a1abc0caf18a8b6749322d4e8b0a4816cdbc42e?width=2480"
-            alt="Architecture Diagram"
-            className="w-full h-auto"
-          />
-          <div className="text-gray-900 space-y-4">
-            <p className="text-base md:text-lg">
-              Designed a revolutionary three-layer architecture that balanced
-              standardization with customization:
-            </p>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">
-                Platform Layer (Consistent across all tenants)
-              </h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Core commerce engine handling transactions, tax calculation,
-                  and payment processing
-                </li>
-                <li>
-                  Universal integration framework for LMS and CRM connections
-                </li>
-                <li>
-                  Security and compliance infrastructure (PCI DSS, GDPR, FERPA)
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">
-                Configuration Layer (Tenant-specific settings)
-              </h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Visual brand customization (colors, fonts, logos, layouts)
-                </li>
-                <li>
-                  Business rule engine for pricing, discounts, and access
-                  control
-                </li>
-                <li>Category and label taxonomy for course organization</li>
-                <li>Payment gateway selection and configuration</li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">
-                Experience Layer (End-user facing)
-              </h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>Responsive storefront with tenant branding</li>
-                <li>Intelligent course catalog with faceted search</li>
-                <li>Streamlined checkout flow with saved payment methods</li>
-                <li>Self-service account management portal</li>
-              </ul>
-            </div>
-
-            <p className="text-sm md:text-base">
-              Created detailed user flows for 15 distinct personas across two
-              primary user types:
-              <br />
-              <span className="font-bold">Administrators:</span> Course
-              managers, finance teams, marketing managers, IT administrators
-              <br />
-              <span className="font-bold">Purchasers:</span> Individual
-              learners, corporate buyers, group coordinators, international
-              students
-            </p>
-
-            <h3 className="font-bold text-base md:text-lg">
-              Design System & Bootstrap Framework Implementation
-            </h3>
-            <p className="text-sm md:text-base">
-              Leveraged Bootstrap's responsive grid system while creating custom
-              components for educational commerce:
-            </p>
-
-            <div className="space-y-3">
-              <h4 className="font-bold text-base">
-                Photoshop Design Architecture
-              </h4>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Developed a comprehensive layer-based component library in
-                  Photoshop with smart objects for reusable elements
-                </li>
-                <li>
-                  Created 12-column grid templates at 5 breakpoints (xs: 576px,
-                  sm: 768px, md: 992px, lg: 1200px, xl: 1400px)
-                </li>
-                <li>
-                  Established organized layer groups with consistent naming
-                  conventions matching Bootstrap classes
-                </li>
-                <li>
-                  Built style guides with character and paragraph styles for
-                  typography consistency
-                </li>
-                <li>
-                  Utilized adjustment layers for non-destructive theme
-                  variations
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h4 className="font-bold text-base">
-                Illustrator Asset Creation
-              </h4>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Designed 300+ vector icons optimized for web with consistent
-                  24px grid
-                </li>
-                <li>
-                  Created scalable logos and graphics with multiple export
-                  formats (SVG, PNG, WebP)
-                </li>
-                <li>
-                  Developed illustration systems for empty states, onboarding,
-                  and success messages
-                </li>
-                <li>
-                  Built data visualization components for analytics dashboards
-                </li>
-                <li>
-                  Established symbol libraries for consistent UI elements across
-                  designs
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h4 className="font-bold text-base">
-                Bootstrap Customization & Theme Architecture
-              </h4>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Extended Bootstrap's Sass variables for tenant-specific
-                  theming
-                </li>
-                <li>
-                  Created 30+ custom Bootstrap components tailored for course
-                  commerce
-                </li>
-                <li>
-                  Designed responsive utility classes beyond Bootstrap defaults
-                </li>
-                <li>
-                  Implemented CSS custom properties for runtime theme switching
-                </li>
-                <li>
-                  Built theme templates leveraging Bootstrap's theming
-                  capabilities
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h4 className="font-bold text-base">
-                Responsive Design Specifications
-              </h4>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Mobile-First Approach: Designed at 375px base, scaling up
-                  through breakpoints
-                </li>
-                <li>
-                  Fluid Grid Layouts: Utilized Bootstrap's container-fluid for
-                  full-width designs
-                </li>
-                <li>
-                  Adaptive Components: Created multiple component variations per
-                  breakpoint
-                </li>
-                <li>
-                  Touch-Optimized: Ensured 44px minimum touch targets on mobile
-                </li>
-                <li>
-                  Progressive Enhancement: Core functionality at smallest
-                  breakpoint, enhanced features at larger sizes
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Technical Collaboration Section */}
-        <div className="w-full flex justify-center items-center h-[200px] border-b border-gray-200 bg-gray-50 shadow-sm">
-          <h2 className="text-gray-700 text-center font-sora text-2xl md:text-[30px] font-bold px-4">
-            Technical Collaboration (CakePHP & Postgres SQL)
-          </h2>
-        </div>
-
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start">
-          <div className="text-gray-600 space-y-4">
-            <p className="text-base md:text-lg">
-              Worked closely with development team to ensure designs aligned
-              with technical architecture:
-            </p>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">
-                CakePHP Template Structure
-              </h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Designed modular view elements that mapped to CakePHP's
-                  element structure
-                </li>
-                <li>
-                  Created layout templates corresponding to CakePHP layout files
-                </li>
-                <li>Specified component states for CakePHP's view cells</li>
-                <li>
-                  Documented form designs optimized for CakePHP's FormHelper
-                </li>
-                <li>
-                  Established naming conventions matching CakePHP's conventions
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">
-                PostgreSQL Data Visualization
-              </h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Designed dashboard interfaces that efficiently displayed
-                  complex PostgreSQL queries
-                </li>
-                <li>
-                  Created reporting layouts optimized for PostgreSQL's
-                  aggregation capabilities
-                </li>
-                <li>
-                  Built search interfaces leveraging PostgreSQL's full-text
-                  search
-                </li>
-                <li>
-                  Designed filtering systems utilizing PostgreSQL's JSONB
-                  capabilities for flexible schemas
-                </li>
-                <li>
-                  Specified pagination patterns for large dataset handling
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">Design Handoff Process</h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Exported pixel-perfect PSDs with organized layers matching
-                  CakePHP view structure
-                </li>
-                <li>
-                  Provided detailed redlines in Illustrator with spacing,
-                  sizing, and color specifications
-                </li>
-                <li>
-                  Created Bootstrap HTML/CSS prototypes as reference
-                  implementations
-                </li>
-                <li>Delivered sliced assets optimized for web performance</li>
-                <li>
-                  Maintained version-controlled design files synchronized with
-                  development sprints
-                </li>
-              </ul>
-            </div>
-
-            <h3 className="font-bold text-base md:text-lg mt-6">
-              White-Label Configuration Interface
-            </h3>
-            <p className="text-sm md:text-base">
-              Designed administrative tools enabling non-technical users to
-              customize their storefronts:
-            </p>
-
-            <div className="space-y-3">
-              <h4 className="font-bold text-base">Visual Theme Builder</h4>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Color Palette Editor: Photoshop mockups showing real-time
-                  preview
-                </li>
-                <li>Typography Selector: Bootstrap-compatible font stacks</li>
-                <li>
-                  Layout Composer: Drag-and-drop interface using Bootstrap's
-                  grid
-                </li>
-                <li>
-                  Logo Uploader: Smart cropping and sizing for various
-                  placements
-                </li>
-                <li>
-                  CSS Override Editor: Advanced users could add custom styles
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h4 className="font-bold text-base">Component Configuration</h4>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Designed interfaces for toggling Bootstrap components on/off
-                </li>
-                <li>
-                  Created visual controls for adjusting Bootstrap utilities
-                  (spacing, borders, shadows)
-                </li>
-                <li>
-                  Built preview system showing changes across device sizes
-                </li>
-                <li>Implemented accessibility checker for color contrast</li>
-              </ul>
-            </div>
-
-            <h3 className="font-bold text-base md:text-lg mt-6">
-              Integration Design & Workflow Automation
-            </h3>
-            <p className="text-sm md:text-base">
-              Designed seamless integration touchpoints that eliminated manual
-              processes:
-            </p>
-
-            <div className="space-y-3">
-              <h4 className="font-bold text-base">LMS Integration Interface</h4>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Visual mapping tool connecting LMScheckout products to LMS
-                  courses
-                </li>
-                <li>
-                  Enrollment rule builder with conditional logic (immediate,
-                  delayed, prerequisite-based)
-                </li>
-                <li>Bulk enrollment management dashboard</li>
-                <li>Real-time sync status monitoring</li>
-                <li>Error handling with automatic retry logic</li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h4 className="font-bold text-base">
-                Salesforce Integration Architecture
-              </h4>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Bi-directional data flow design for leads, contacts, and
-                  opportunities
-                </li>
-                <li>
-                  Custom object mapping for course products and enrollments
-                </li>
-                <li>Automated campaign attribution for marketing ROI</li>
-                <li>
-                  Revenue recognition workflows for subscription-based courses
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h4 className="font-bold text-base">
-                Payment Gateway Abstraction
-              </h4>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Unified checkout experience across Stripe, PayPal,
-                  Authorize.net, and others
-                </li>
-                <li>
-                  Smart payment method recommendations based on transaction type
-                </li>
-                <li>Stored payment token management with PCI compliance</li>
-                <li>Subscription and payment plan configuration</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Category & Access Control */}
-        <div className="w-full flex justify-center items-center h-[200px] border-b border-gray-200 bg-gray-50 shadow-sm">
-          <h2 className="text-gray-700 text-center font-sora text-2xl md:text-[30px] font-bold px-4">
-            Category & Access Control System
-          </h2>
-        </div>
-
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start">
-          <div className="text-gray-600 space-y-4">
-            <p className="text-base md:text-lg">
-              Engineered a sophisticated taxonomy system that solved complex
-              visibility requirements:
-            </p>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">
-                Multi-Dimensional Categorization
-              </h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>Hierarchical categories (up to 5 levels deep)</li>
-                <li>
-                  Cross-cutting labels for attributes (difficulty, duration,
-                  certification)
-                </li>
-                <li>
-                  Dynamic collections based on rules (New, Popular, Expiring
-                  Soon)
-                </li>
-                <li>Custom taxonomies per tenant</li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">Access Control Matrix</h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Role-based visibility (public, member, premium, custom roles)
-                </li>
-                <li>Time-based access (early access, embargo periods)</li>
-                <li>Geographic restrictions for compliance</li>
-                <li>Prerequisite course requirements</li>
-                <li>Bundle and pathway configurations</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Prototyping & Usability Testing */}
-        <div className="w-full flex justify-center items-center h-[200px] border-b border-gray-200 bg-gray-50 shadow-sm">
-          <h2 className="text-gray-700 text-center font-sora text-2xl md:text-[30px] font-bold px-4">
-            Prototyping & Usability Testing
-          </h2>
-        </div>
-
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start">
-          <div className="text-gray-600 space-y-4">
-            <p className="text-base md:text-lg">
-              Conducted extensive testing across multiple phases:
-            </p>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">
-                Alpha Testing (Pre-launch)
-              </h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>Created clickable prototypes using Bootstrap HTML/CSS</li>
-                <li>50+ hours of moderated usability testing</li>
-                <li>
-                  A/B testing on checkout flow variations achieving 34%
-                  conversion improvement
-                </li>
-                <li>Card sorting exercises for optimal category structures</li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">
-                Beta Program (Soft launch)
-              </h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>10 pilot customers across different sectors</li>
-                <li>500+ end-user transactions monitored</li>
-                <li>Iterative improvements based on real-world usage</li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">Post-Launch Optimization</h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>Heatmap analysis revealing interaction patterns</li>
-                <li>Funnel analysis identifying drop-off points</li>
-                <li>Continuous multivariate testing on product pages</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Key Design Innovations */}
-        <div className="w-full flex justify-center items-center h-[200px] border-b border-gray-200 bg-gray-50 shadow-sm">
-          <h2 className="text-gray-700 text-center font-sora text-2xl md:text-[30px] font-bold px-4">
-            Key Design Innovations
-          </h2>
-        </div>
-
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start">
-          <div className="text-gray-600 space-y-4">
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">Smart Checkout Flow</h3>
-              <p className="text-sm md:text-base">
-                Designed an adaptive checkout that morphs based on context:
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-16 md:py-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+            <div className="flex flex-col gap-6">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-8 rounded-full bg-orange-primary"></div>
+                <span className="text-orange-primary font-semibold uppercase tracking-wider text-sm">Case Study</span>
+              </div>
+              <h1 className="text-gray-600 font-sora text-5xl md:text-6xl font-bold leading-tight">
+                LMScheckout
+              </h1>
+              <p className="text-gray-500 text-xl md:text-2xl font-light">
+                Enterprise Course Commerce Platform
               </p>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>Single course: Streamlined 2-step process</li>
-                <li>Multiple courses: Shopping cart with bulk actions</li>
-                <li>Subscription: Recurring billing configuration</li>
-                <li>Corporate: PO and invoicing options</li>
-                <li>International: Currency conversion and tax handling</li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">Responsive Catalog System</h3>
-              <p className="text-sm md:text-base">
-                Created an intelligent course catalog that adapts to content
-                volume:
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Led the end-to-end design of a revolutionary white-label ecommerce platform that automates course sales and enrollments across diverse sectors—from higher education to corporate training.
               </p>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>&lt;10 courses: Showcase layout with rich media</li>
-                <li>10-50 courses: Filterable grid with quick view</li>
-                <li>50-500 courses: Faceted search with advanced filters</li>
-                <li>500+ courses: AI-powered recommendations and search</li>
-              </ul>
+              <div className="grid grid-cols-3 gap-6 pt-6">
+                <div className="flex flex-col gap-2">
+                  <p className="text-gray-500 text-sm uppercase tracking-wider font-semibold">Industry</p>
+                  <p className="text-gray-600 font-semibold">EdTech</p>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <p className="text-gray-500 text-sm uppercase tracking-wider font-semibold">Role</p>
+                  <p className="text-gray-600 font-semibold">Design Lead</p>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <p className="text-gray-500 text-sm uppercase tracking-wider font-semibold">Timeline</p>
+                  <p className="text-gray-600 font-semibold">18 months</p>
+                </div>
+              </div>
             </div>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">
-                Mobile-First Administration
-              </h3>
-              <p className="text-sm md:text-base">
-                Designed administrative interfaces optimized for mobile devices
-                using Bootstrap's responsive utilities:
-              </p>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>Course publication on-the-go</li>
-                <li>Order management from phones</li>
-                <li>Real-time enrollment notifications</li>
-                <li>Quick price adjustments</li>
-              </ul>
+            <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-50 to-teal-50 aspect-square flex items-center justify-center">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/66222ed966fd45c1c4d79deaf7dc3c373ef42828?width=838"
+                alt="LMScheckout Platform"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </section>
 
-        {/* Measurable Outcomes */}
-        <div className="w-full flex justify-center items-center h-[200px] border-b border-gray-200 bg-gray-50 shadow-sm">
-          <h2 className="text-gray-700 text-center font-sora text-2xl md:text-[30px] font-bold px-4">
-            Measurable Outcomes
-          </h2>
-        </div>
-
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start">
-          <div className="text-gray-600 space-y-4">
-            <p className="text-base md:text-lg">
-              From launch through first year of profitability:
-            </p>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">Platform Metrics</h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>30+ organizations onboarded in first 12 months</li>
-                <li>$500k ARR processed in first year</li>
-                <li>50k+ course enrollments automated</li>
-                <li>99.98% uptime maintained</li>
-              </ul>
+        {/* Challenge Section */}
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-16 md:py-24 border-t border-gray-200">
+          <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-gray-600 font-sora text-4xl font-bold">The Challenge</h2>
+              <div className="w-12 h-1 bg-orange-primary rounded-full"></div>
             </div>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">User Experience Metrics</h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  68% improvement in checkout conversion vs. previous solutions
-                </li>
-                <li>4.8/5 user satisfaction score across 100+ reviews</li>
-                <li>73% reduction in support tickets related to enrollment</li>
-                <li>
-                  89% of administrators successfully configured platform without
-                  support
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h3 className="font-bold text-base">Business Impact</h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  18-month path to profitability (6 months ahead of projection)
-                </li>
-                <li>
-                  127% net revenue growth in year two indicating strong
-                  product-market fit
-                </li>
-                <li>23% revenue growth impact from additional services</li>
-                <li>Company acquired at a 10X ROI</li>
-              </ul>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Organizations were forcing course sales through generic e-commerce platforms or expensive custom builds, resulting in manual enrollment processes, poor user experience, and significant revenue leakage.
+              </p>
+              <div className="space-y-4">
+                <div className="flex gap-4">
+                  <span className="text-orange-primary font-bold text-2xl flex-shrink-0">→</span>
+                  <p className="text-gray-600"><span className="font-semibold">30+ organizations</span> researched to understand pain points</p>
+                </div>
+                <div className="flex gap-4">
+                  <span className="text-orange-primary font-bold text-2xl flex-shrink-0">→</span>
+                  <p className="text-gray-600"><span className="font-semibold">Multiple verticals</span> including higher ed, nonprofits, corporate training</p>
+                </div>
+                <div className="flex gap-4">
+                  <span className="text-orange-primary font-bold text-2xl flex-shrink-0">→</span>
+                  <p className="text-gray-600">Market needed a <span className="font-semibold">purpose-built solution</span> for educational commerce</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Reflection & Impact */}
-        <div className="w-full flex justify-center items-center h-[200px] border-b border-gray-200 bg-gray-50 shadow-sm">
-          <h2 className="text-gray-700 text-center font-sora text-2xl md:text-[30px] font-bold px-4">
-            Reflection & Impact
-          </h2>
-        </div>
-
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 flex flex-col items-start gap-9">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/e9270be75c5c7c77cc6938a664134ffa37bb87be?width=2480"
-            alt="Reflection Image"
-            className="w-full h-auto"
-          />
-          <div className="text-gray-600 space-y-4">
-            <p className="text-base md:text-lg">
-              LMScheckout demonstrates my ability to design complex,
-              enterprise-grade platforms using established frameworks while
-              pushing creative boundaries. Working within Bootstrap's
-              constraints while creating a unique, customizable experience
-              taught me the value of systematic design thinking. The
-              Photoshop-to-CakePHP workflow I established became a model for
-              efficient design-to-development handoff.
-            </p>
-
-            <div className="space-y-2">
-              <h3 className="font-bold text-base md:text-lg">
-                The success stemmed from:
-              </h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Mastery of Bootstrap's responsive framework to create flexible
-                  layouts
-                </li>
-                <li>
-                  Efficient use of Photoshop and Illustrator for scalable design
-                  systems
-                </li>
-                <li>
-                  Deep understanding of CakePHP's MVC architecture in design
-                  decisions
-                </li>
-                <li>
-                  Optimization of designs for PostgreSQL's powerful data
-                  capabilities
-                </li>
-              </ul>
+        {/* Solution Section */}
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-16 md:py-24 bg-gray-50 border-t border-gray-200">
+          <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-gray-600 font-sora text-4xl font-bold">The Solution</h2>
+              <div className="w-12 h-1 bg-orange-primary rounded-full"></div>
             </div>
-
-            <div className="space-y-2">
-              <h3 className="font-bold text-base md:text-lg">
-                This project showcases my expertise in:
-              </h3>
-              <ul className="list-disc pl-6 space-y-1 text-sm md:text-base">
-                <li>
-                  Enterprise design using established frameworks (Bootstrap)
-                </li>
-                <li>Professional design tools (Photoshop, Illustrator)</li>
-                <li>Technical collaboration with CakePHP developers</li>
-                <li>Database-conscious interface design</li>
-                <li>Multi-tenant architecture visualization</li>
-                <li>Scaling design from concept to profitability</li>
-              </ul>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="flex flex-col gap-4 p-8 bg-white rounded-xl border border-gray-200">
+                <h3 className="text-gray-600 font-sora text-2xl font-bold">Multi-Tenant Architecture</h3>
+                <p className="text-gray-600">Three-layer design balancing standardization with customization across all tenant organizations</p>
+              </div>
+              <div className="flex flex-col gap-4 p-8 bg-white rounded-xl border border-gray-200">
+                <h3 className="text-gray-600 font-sora text-2xl font-bold">Design System</h3>
+                <p className="text-gray-600">Bootstrap-based component library with 30+ custom components tailored for course commerce</p>
+              </div>
+              <div className="flex flex-col gap-4 p-8 bg-white rounded-xl border border-gray-200">
+                <h3 className="text-gray-600 font-sora text-2xl font-bold">Smart Integration</h3>
+                <p className="text-gray-600">Automated workflows connecting storefronts to LMS, CRM, and payment systems</p>
+              </div>
             </div>
+          </div>
+        </section>
 
-            <p className="text-base md:text-lg">
-              LMScheckout has become the preferred course commerce platform for
-              organizations seeking to professionalize their online education
-              delivery, validating that thoughtful design within technical
-              constraints can create exceptional user experiences.
+        {/* Architecture Deep Dive */}
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-16 md:py-24 border-t border-gray-200">
+          <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-gray-600 font-sora text-4xl font-bold">Architecture & Design</h2>
+              <div className="w-12 h-1 bg-orange-primary rounded-full"></div>
+            </div>
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/0a1abc0caf18a8b6749322d4e8b0a4816cdbc42e?width=2480"
+              alt="Architecture Diagram"
+              className="w-full h-auto rounded-2xl border border-gray-200"
+            />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+              <div className="flex flex-col gap-4">
+                <h3 className="text-gray-600 font-sora text-xl font-bold">Platform Layer</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex gap-2"><span className="text-orange-primary">•</span><span>Core commerce engine</span></li>
+                  <li className="flex gap-2"><span className="text-orange-primary">•</span><span>LMS/CRM integration</span></li>
+                  <li className="flex gap-2"><span className="text-orange-primary">•</span><span>Security infrastructure</span></li>
+                </ul>
+              </div>
+              <div className="flex flex-col gap-4">
+                <h3 className="text-gray-600 font-sora text-xl font-bold">Configuration Layer</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex gap-2"><span className="text-orange-primary">•</span><span>Brand customization</span></li>
+                  <li className="flex gap-2"><span className="text-orange-primary">•</span><span>Business rules</span></li>
+                  <li className="flex gap-2"><span className="text-orange-primary">•</span><span>Payment setup</span></li>
+                </ul>
+              </div>
+              <div className="flex flex-col gap-4">
+                <h3 className="text-gray-600 font-sora text-xl font-bold">Experience Layer</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex gap-2"><span className="text-orange-primary">•</span><span>Responsive storefront</span></li>
+                  <li className="flex gap-2"><span className="text-orange-primary">•</span><span>Smart catalog</span></li>
+                  <li className="flex gap-2"><span className="text-orange-primary">•</span><span>Account management</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Key Innovations */}
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-16 md:py-24 bg-gradient-to-br from-orange-50 to-orange-100/30 border-t border-gray-200">
+          <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-gray-600 font-sora text-4xl font-bold">Key Innovations</h2>
+              <div className="w-12 h-1 bg-orange-primary rounded-full"></div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="flex flex-col gap-4 p-8 bg-white rounded-xl border border-gray-200">
+                <h3 className="text-gray-600 font-sora text-2xl font-bold">Adaptive Checkout</h3>
+                <p className="text-gray-600 mb-4">Morphs based on context to streamline conversion:</p>
+                <ul className="space-y-2 text-gray-600 text-sm">
+                  <li className="flex gap-2"><span className="text-orange-primary font-bold">→</span><span>Single course: 2-step flow</span></li>
+                  <li className="flex gap-2"><span className="text-orange-primary font-bold">→</span><span>Multiple courses: Shopping cart</span></li>
+                  <li className="flex gap-2"><span className="text-orange-primary font-bold">→</span><span>Corporate: PO handling</span></li>
+                  <li className="flex gap-2"><span className="text-orange-primary font-bold">→</span><span>International: Tax & currency</span></li>
+                </ul>
+                <div className="pt-4 mt-4 border-t border-gray-200">
+                  <p className="text-orange-primary font-semibold text-lg">68% conversion improvement</p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-4 p-8 bg-white rounded-xl border border-gray-200">
+                <h3 className="text-gray-600 font-sora text-2xl font-bold">Smart Catalog</h3>
+                <p className="text-gray-600 mb-4">Scales intelligently with content volume:</p>
+                <ul className="space-y-2 text-gray-600 text-sm">
+                  <li className="flex gap-2"><span className="text-orange-primary font-bold">→</span><span>&lt;10 courses: Showcase</span></li>
+                  <li className="flex gap-2"><span className="text-orange-primary font-bold">→</span><span>10-50: Filterable grid</span></li>
+                  <li className="flex gap-2"><span className="text-orange-primary font-bold">→</span><span>50-500: Faceted search</span></li>
+                  <li className="flex gap-2"><span className="text-orange-primary font-bold">→</span><span>500+: AI recommendations</span></li>
+                </ul>
+                <div className="pt-4 mt-4 border-t border-gray-200">
+                  <p className="text-orange-primary font-semibold text-lg">30+ organizations onboarded</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Results Section */}
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-16 md:py-24 border-t border-gray-200">
+          <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-gray-600 font-sora text-4xl font-bold">Measurable Results</h2>
+              <div className="w-12 h-1 bg-orange-primary rounded-full"></div>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="flex flex-col gap-2 p-6 bg-gradient-to-br from-blue-50 to-blue-100/30 rounded-xl border border-blue-200">
+                <p className="text-3xl md:text-4xl font-bold text-blue-600">$500k</p>
+                <p className="text-gray-600 font-semibold">ARR Year 1</p>
+              </div>
+              <div className="flex flex-col gap-2 p-6 bg-gradient-to-br from-green-50 to-green-100/30 rounded-xl border border-green-200">
+                <p className="text-3xl md:text-4xl font-bold text-green-600">50k+</p>
+                <p className="text-gray-600 font-semibold">Course Enrollments</p>
+              </div>
+              <div className="flex flex-col gap-2 p-6 bg-gradient-to-br from-purple-50 to-purple-100/30 rounded-xl border border-purple-200">
+                <p className="text-3xl md:text-4xl font-bold text-purple-600">4.8/5</p>
+                <p className="text-gray-600 font-semibold">User Satisfaction</p>
+              </div>
+              <div className="flex flex-col gap-2 p-6 bg-gradient-to-br from-orange-50 to-orange-100/30 rounded-xl border border-orange-200">
+                <p className="text-3xl md:text-4xl font-bold text-orange-600">10X</p>
+                <p className="text-gray-600 font-semibold">ROI on Exit</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Process Section */}
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-16 md:py-24 bg-gray-50 border-t border-gray-200">
+          <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-gray-600 font-sora text-4xl font-bold">Design Process</h2>
+              <div className="w-12 h-1 bg-orange-primary rounded-full"></div>
+            </div>
+            <div className="space-y-8">
+              <div className="flex gap-8 md:gap-12">
+                <div className="flex flex-col items-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-orange-primary text-white font-sora font-bold text-xl flex items-center justify-center">1</div>
+                  <div className="w-1 h-24 bg-orange-primary mt-4 hidden md:block"></div>
+                </div>
+                <div className="flex flex-col gap-2 pt-2">
+                  <h3 className="text-gray-600 font-sora text-2xl font-bold">Research & Discovery</h3>
+                  <p className="text-gray-600">Conducted comprehensive research across 30+ organizations across higher education, nonprofits, associations, SaaS companies, and corporate training.</p>
+                </div>
+              </div>
+              <div className="flex gap-8 md:gap-12">
+                <div className="flex flex-col items-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-orange-primary text-white font-sora font-bold text-xl flex items-center justify-center">2</div>
+                  <div className="w-1 h-24 bg-orange-primary mt-4 hidden md:block"></div>
+                </div>
+                <div className="flex flex-col gap-2 pt-2">
+                  <h3 className="text-gray-600 font-sora text-2xl font-bold">Architecture Design</h3>
+                  <p className="text-gray-600">Designed three-layer architecture with platform, configuration, and experience layers supporting 15 distinct user personas.</p>
+                </div>
+              </div>
+              <div className="flex gap-8 md:gap-12">
+                <div className="flex flex-col items-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-orange-primary text-white font-sora font-bold text-xl flex items-center justify-center">3</div>
+                  <div className="w-1 h-24 bg-orange-primary mt-4 hidden md:block"></div>
+                </div>
+                <div className="flex flex-col gap-2 pt-2">
+                  <h3 className="text-gray-600 font-sora text-2xl font-bold">System Design</h3>
+                  <p className="text-gray-600">Created comprehensive design system leveraging Bootstrap with 30+ custom components, responsive utilities, and theme architecture.</p>
+                </div>
+              </div>
+              <div className="flex gap-8 md:gap-12">
+                <div className="flex flex-col items-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-orange-primary text-white font-sora font-bold text-xl flex items-center justify-center">4</div>
+                </div>
+                <div className="flex flex-col gap-2 pt-2">
+                  <h3 className="text-gray-600 font-sora text-2xl font-bold">Testing & Optimization</h3>
+                  <p className="text-gray-600">Conducted 50+ hours of usability testing, A/B tested checkout flows, and iterated based on real-world usage from 10 pilot customers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Reflection Section */}
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-16 md:py-24 border-t border-gray-200">
+          <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-gray-600 font-sora text-4xl font-bold">What This Taught Me</h2>
+              <div className="w-12 h-1 bg-orange-primary rounded-full"></div>
+            </div>
+            <p className="text-gray-600 text-lg leading-relaxed max-w-3xl">
+              LMScheckout demonstrated my ability to design complex, enterprise-grade platforms using established frameworks while pushing creative boundaries. Working within Bootstrap's constraints while creating a unique, customizable experience taught me the value of systematic design thinking. The success came from mastery of responsive frameworks, efficient handoff workflows, deep technical collaboration, and understanding how to optimize designs for the underlying database architecture.
             </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="flex flex-col gap-4 p-8 bg-blue-50 rounded-xl border border-blue-200">
+                <h3 className="text-blue-900 font-sora text-xl font-bold">Design Expertise</h3>
+                <ul className="space-y-2 text-blue-800">
+                  <li className="flex gap-2"><span className="text-blue-600 font-bold">→</span><span>Enterprise design systems</span></li>
+                  <li className="flex gap-2"><span className="text-blue-600 font-bold">→</span><span>Multi-tenant architecture</span></li>
+                  <li className="flex gap-2"><span className="text-blue-600 font-bold">→</span><span>Responsive scaling</span></li>
+                </ul>
+              </div>
+              <div className="flex flex-col gap-4 p-8 bg-green-50 rounded-xl border border-green-200">
+                <h3 className="text-green-900 font-sora text-xl font-bold">Technical Collaboration</h3>
+                <ul className="space-y-2 text-green-800">
+                  <li className="flex gap-2"><span className="text-green-600 font-bold">→</span><span>CakePHP integration</span></li>
+                  <li className="flex gap-2"><span className="text-green-600 font-bold">→</span><span>PostgreSQL optimization</span></li>
+                  <li className="flex gap-2"><span className="text-green-600 font-bold">→</span><span>Framework mastery</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Navigation */}
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-16 md:py-24 border-t border-gray-200">
+          <div className="flex flex-col md:flex-row gap-6 justify-between">
+            <Link
+              to="/portfolio"
+              className="px-6 py-3 rounded-xl border-2 border-gray-300 text-gray-600 font-semibold hover:border-gray-400 transition-colors text-center"
+            >
+              ← Back to Portfolio
+            </Link>
+            <Link
+              to="/mobile-app"
+              className="px-6 py-3 rounded-xl bg-orange-primary text-white font-semibold hover:bg-orange-600 transition-colors text-center"
+            >
+              Next Case Study →
+            </Link>
           </div>
         </section>
       </main>

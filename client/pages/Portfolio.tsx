@@ -19,194 +19,166 @@ export default function Portfolio() {
       />
       <Header />
 
-      <main className="flex-1 flex flex-col items-center gap-12">
+      <main className="flex-1 flex flex-col">
         {/* Hero Section */}
-        <section className="relative w-full px-6 md:px-12 lg:px-0 py-7 md:py-7 lg:py-7 flex flex-col items-center gap-6 md:gap-12 shadow-md overflow-hidden border-b border-teal-300">
-          <div
-            className="absolute inset-0 z-0"
-            style={{
-              backgroundImage:
-                "url('https://api.builder.io/api/v1/image/assets/TEMP/cfc7b32d3bd84e2431b8ac9f31332e7430c2402d?width=2880')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          />
-
-          <div className="relative z-10 flex flex-col items-center gap-6 md:gap-12">
-            <h1
-              className="text-gray-600 font-sora text-4xl md:text-5xl lg:text-[56px] font-bold text-center"
-              style={{ textShadow: "1px 4px 4px rgba(255, 255, 255, 0.90)" }}
-            >
-              Portfolio
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-20 md:py-28 flex flex-col items-center gap-8">
+          <div className="flex flex-col items-center gap-4 text-center max-w-3xl">
+            <h1 className="text-gray-600 font-sora text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              Featured Work
             </h1>
+            <p className="text-gray-500 text-xl md:text-2xl font-light">
+              A collection of strategic product design, GTM strategy, and user experience projects that drive growth
+            </p>
+          </div>
+          <div className="pt-4">
             <SocialLinks />
           </div>
         </section>
 
-        {/* Mobile/Fitleaguer */}
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-0 lg:py-0 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
-          <div className="flex flex-col items-center gap-4 w-full md:w-auto md:px-12">
-            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold">
-              Mobile
-            </h3>
-            <Link to="/mobile-app">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/a5adbe45e624f8ee20f1574359c4a9e64824bcdb?width=590"
-                alt="Mobile project"
-                className="w-[295px] h-[295px] rounded-full border-0 ring-0 outline-none shadow-none hover:opacity-80 transition-opacity cursor-pointer"
-              />
-            </Link>
-          </div>
-
-          <div className="flex-1 max-w-[451px] flex flex-col gap-6">
-            <h2 className="text-gray-600 font-sora text-2xl font-semibold">
-              Fitleaguer: Fitness League Management & Gamification App
-            </h2>
-            <p className="text-gray-600 text-lg">UI/UX Design Case Study</p>
-            <p className="text-gray-600 text-base font-normal">
-              Project Overview:
-            </p>
-            <p className="text-gray-600 text-sm">
-              Leading the end-to-end design of Fitleaguer, a pre-seed
-              competitive fitness platform currently in stealth mode. The
-              challenge is creating an engaging experience that seamlessly
-              blends fitness tracking, competitive gaming, and financial
-              transactions while building a B2B2C marketplace that empowers
-              fitness professionals to monetize their communities through
-              organized competition.
-            </p>
+        {/* Portfolio Grid */}
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 md:py-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            {/* Card 1: Mobile App */}
             <Link
               to="/mobile-app"
-              className="px-4 py-4 rounded-xl bg-orange-primary text-white text-lg self-start text-center"
+              className="group flex flex-col gap-6 cursor-pointer transition-all duration-300 hover:-translate-y-2"
             >
-              Read More
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-cyan-50 aspect-square">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/a5adbe45e624f8ee20f1574359c4a9e64824bcdb?width=590"
+                  alt="Fitleaguer Mobile App"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-6">
+                  <span className="text-white font-sora font-semibold text-lg">View Case Study →</span>
+                </div>
+              </div>
+              <div className="flex flex-col gap-3">
+                <div className="inline-flex gap-2 items-center">
+                  <span className="text-orange-primary font-semibold text-sm uppercase tracking-wider">Mobile App</span>
+                  <div className="w-1.5 h-1.5 rounded-full bg-orange-primary"></div>
+                  <span className="text-gray-500 text-sm">UI/UX Design</span>
+                </div>
+                <h2 className="text-gray-600 font-sora text-2xl md:text-3xl font-bold leading-tight group-hover:text-orange-primary transition-colors">
+                  Fitleaguer
+                </h2>
+                <p className="text-gray-500 text-base leading-relaxed">
+                  Building an engaging fitness gamification platform that seamlessly blends tracking, competition, and commerce in a B2B2C marketplace.
+                </p>
+              </div>
             </Link>
-          </div>
-        </section>
 
-        {/* Ecommerce/LMScheckout */}
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-0 lg:py-0 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
-          <div className="flex flex-col items-center gap-4 w-full md:w-auto md:px-12">
-            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold">
-              Ecommerce
-            </h3>
-            <Link to="/ecommerce">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/56cd0093b869dd4913d08def33d1e228a2fd03c8?width=590"
-                alt="Ecommerce project"
-                className="w-[295px] h-[295px] rounded-full border-0 ring-0 outline-none shadow-none hover:opacity-80 transition-opacity cursor-pointer"
-              />
-            </Link>
-          </div>
-
-          <div className="flex-1 max-w-[451px] flex flex-col gap-6">
-            <h2 className="text-gray-600 font-sora text-2xl font-semibold">
-              LMScheckout: Enterprise Course Ecommerce Platform
-            </h2>
-            <p className="text-gray-600 text-lg">UI/UX Design Case Study</p>
-            <p className="text-gray-600 text-base font-normal">
-              Project Overview:
-            </p>
-            <p className="text-gray-600 text-sm">
-              Led the end-to-end design of LMScheckout, a multi-tenant ecommerce
-              platform that revolutionizes how organizations sell and deliver
-              online courses, from initial concept through launch and
-              profitability. The challenge was creating a white-label solution
-              flexible enough to serve diverse sectors, higher education,
-              non-profits, associations, SaaS companies, and corporate training,
-              while maintaining seamless integration with existing LMS and CRM
-              ecosystems.
-            </p>
+            {/* Card 2: Ecommerce */}
             <Link
               to="/ecommerce"
-              className="px-4 py-4 rounded-xl bg-orange-primary text-white text-lg self-start text-center"
+              className="group flex flex-col gap-6 cursor-pointer transition-all duration-300 hover:-translate-y-2"
             >
-              Read More
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 aspect-square">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/56cd0093b869dd4913d08def33d1e228a2fd03c8?width=590"
+                  alt="LMScheckout Ecommerce"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-6">
+                  <span className="text-white font-sora font-semibold text-lg">View Case Study →</span>
+                </div>
+              </div>
+              <div className="flex flex-col gap-3">
+                <div className="inline-flex gap-2 items-center">
+                  <span className="text-orange-primary font-semibold text-sm uppercase tracking-wider">Ecommerce</span>
+                  <div className="w-1.5 h-1.5 rounded-full bg-orange-primary"></div>
+                  <span className="text-gray-500 text-sm">Platform Design</span>
+                </div>
+                <h2 className="text-gray-600 font-sora text-2xl md:text-3xl font-bold leading-tight group-hover:text-orange-primary transition-colors">
+                  LMScheckout
+                </h2>
+                <p className="text-gray-500 text-base leading-relaxed">
+                  Enterprise course commerce platform serving diverse sectors with flexible multi-tenant architecture and seamless integrations.
+                </p>
+              </div>
             </Link>
-          </div>
-        </section>
 
-        {/* Salesforce/EnlightenCRM */}
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-0 lg:py-0 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
-          <div className="flex flex-col items-center gap-4 w-full md:w-auto md:px-12">
-            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold">
-              Salesforce ISV
-            </h3>
-            <Link to="/salesforce">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/d699e84979aa8f2a0f419fa76a75792fce7bbf68?width=590"
-                alt="Salesforce project"
-                className="w-[295px] h-[295px] rounded-full border-0 ring-0 outline-none shadow-none hover:opacity-80 transition-opacity cursor-pointer"
-              />
-            </Link>
-          </div>
-
-          <div className="flex-1 max-w-[451px] flex flex-col gap-6">
-            <h2 className="text-gray-600 font-sora text-2xl font-semibold">
-              EnlightenCRM: Salesforce-Native Learning Management Solution
-            </h2>
-            <p className="text-gray-600 text-lg">UI/UX Design Case Study</p>
-            <p className="text-gray-600 text-base font-normal">
-              Project Overview:
-            </p>
-            <p className="text-gray-600 text-sm">
-              Led design of EnlightenCRM, a native Salesforce learning
-              management solution that transforms how organizations deliver
-              training directly within their CRM ecosystem, from ideation
-              through strategic customer collaboration and ultimately to
-              AppExchange certification and market success. The challenge was
-              creating a seamless learning experience that felt native to
-              Salesforce while maintaining continuity with existing LMS
-              capabilities for sales enablement and partner education.
-            </p>
+            {/* Card 3: Salesforce */}
             <Link
               to="/salesforce"
-              className="px-4 py-4 rounded-xl bg-orange-primary text-white text-lg self-start text-center"
+              className="group flex flex-col gap-6 cursor-pointer transition-all duration-300 hover:-translate-y-2"
             >
-              Read More
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-50 to-blue-50 aspect-square">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/d699e84979aa8f2a0f419fa76a75792fce7bbf68?width=590"
+                  alt="EnlightenCRM Salesforce"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-6">
+                  <span className="text-white font-sora font-semibold text-lg">View Case Study →</span>
+                </div>
+              </div>
+              <div className="flex flex-col gap-3">
+                <div className="inline-flex gap-2 items-center">
+                  <span className="text-orange-primary font-semibold text-sm uppercase tracking-wider">Salesforce ISV</span>
+                  <div className="w-1.5 h-1.5 rounded-full bg-orange-primary"></div>
+                  <span className="text-gray-500 text-sm">Native Design</span>
+                </div>
+                <h2 className="text-gray-600 font-sora text-2xl md:text-3xl font-bold leading-tight group-hover:text-orange-primary transition-colors">
+                  EnlightenCRM
+                </h2>
+                <p className="text-gray-500 text-base leading-relaxed">
+                  Salesforce-native learning management solution that transforms enterprise training while maintaining CRM ecosystem continuity.
+                </p>
+              </div>
+            </Link>
+
+            {/* Card 4: Corporate Website */}
+            <Link
+              to="/portfolio/website"
+              className="group flex flex-col gap-6 cursor-pointer transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 aspect-square">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/9619c109db62dd801d49ac16c6a0030ae285f65a?width=590"
+                  alt="Envisiontel Website"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-6">
+                  <span className="text-white font-sora font-semibold text-lg">View Case Study →</span>
+                </div>
+              </div>
+              <div className="flex flex-col gap-3">
+                <div className="inline-flex gap-2 items-center">
+                  <span className="text-orange-primary font-semibold text-sm uppercase tracking-wider">Website</span>
+                  <div className="w-1.5 h-1.5 rounded-full bg-orange-primary"></div>
+                  <span className="text-gray-500 text-sm">WordPress Design</span>
+                </div>
+                <h2 className="text-gray-600 font-sora text-2xl md:text-3xl font-bold leading-tight group-hover:text-orange-primary transition-colors">
+                  Envisiontel
+                </h2>
+                <p className="text-gray-500 text-base leading-relaxed">
+                  Comprehensive corporate website communicating dual value propositions for custom eLearning services and SaaS learning platform.
+                </p>
+              </div>
             </Link>
           </div>
         </section>
 
-        {/* Corporate Website/Envisiontel */}
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:pt-0 md:pb-12 lg:pt-0 lg:pb-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
-          <div className="flex flex-col items-center gap-4 w-full md:w-auto md:px-12">
-            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold">
-              Corporate Website
-            </h3>
-            <Link to="/portfolio/website">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/9619c109db62dd801d49ac16c6a0030ae285f65a?width=590"
-                alt="Corporate Website project"
-                className="w-[295px] h-[295px] rounded-full border-0 ring-0 outline-none shadow-none hover:opacity-80 transition-opacity cursor-pointer"
-              />
-            </Link>
-          </div>
-
-          <div className="flex-1 max-w-[451px] flex flex-col gap-6">
-            <h2 className="text-gray-600 font-sora text-2xl font-semibold">
-              Envisiontel Corporate Website: WordPress Design & Deployment
-            </h2>
-            <p className="text-gray-600 text-lg">UI/UX Design Case Study</p>
-            <p className="text-gray-600 text-base font-normal">
-              Project Overview:
-            </p>
-            <p className="text-gray-600 text-sm">
-              Led the complete design and development of www.envisiontel.com, a
-              comprehensive WordPress-based corporate website for an eLearning
-              content and SaaS technology company. The challenge was creating a
-              digital presence that effectively communicated dual value
-              propositions, custom eLearning content development services and
-              SaaS-based proprietary learning management software, while
-              establishing Envisiontel as a trusted partner for organizations
-              building effective online training programs.
-            </p>
-            <Link
-              to="/portfolio/website"
-              className="px-4 py-4 rounded-xl bg-orange-primary text-white text-lg self-start text-center"
+        {/* CTA Section */}
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-16 md:py-24">
+          <div className="flex flex-col items-center gap-8 text-center max-w-3xl mx-auto">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-gray-600 font-sora text-4xl md:text-5xl font-bold">
+                Ready to Transform Your Product?
+              </h2>
+              <p className="text-gray-500 text-lg md:text-xl">
+                Let's discuss how strategic design and GTM expertise can accelerate your growth.
+              </p>
+            </div>
+            <a
+              href="https://calendly.com/verityascent/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 rounded-2xl bg-orange-primary text-white font-sora text-lg font-semibold hover:bg-orange-600 transition-colors"
             >
-              Read More
-            </Link>
+              Schedule a Discovery Call
+            </a>
           </div>
         </section>
       </main>
