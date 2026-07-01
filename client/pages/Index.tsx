@@ -299,7 +299,8 @@ export default function Index() {
           </p>
         </section>
 
-        <section className="w-full px-6 md:px-[44px] lg:px-[200px] py-8 md:py-12 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 md:py-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <Link
             to="/ecommerce"
             className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 aspect-square cursor-pointer"
@@ -359,6 +360,7 @@ export default function Index() {
               <p className="text-white/80 text-sm mt-2">Mobile App</p>
             </div>
           </Link>
+          </div>
         </section>
 
         <section className="w-full px-6 md:px-12 lg:px-0 py-12 md:py-12 flex flex-col items-center gap-5">
