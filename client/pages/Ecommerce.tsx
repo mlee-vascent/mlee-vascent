@@ -53,7 +53,7 @@ export default function Ecommerce() {
             </div>
             <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-50 to-teal-50 w-full h-96 flex items-center justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/66222ed966fd45c1c4d79deaf7dc3c373ef42828?width=838"
+                src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fcf7345f61c534fdfb2aba7b052bd42bf?format=webp&width=800&height=1200"
                 alt="LMScheckout Platform"
                 className="w-full h-full object-cover"
               />
