@@ -70,7 +70,7 @@ export default function WebsiteProject() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <p className="text-gray-600 text-lg leading-relaxed">
-                Envisiontel offered two distinct services that appealed to different buyer personas—custom eLearning content development and a proprietary learning management platform. The challenge was creating a single digital experience that communicated both value propositions without confusing the market.
+                Envisiontel offered two distinct services that appealed to different buyer personas; custom eLearning content development and a proprietary learning management platform. The challenge was creating a single digital experience that communicated both value propositions without confusing the market.
               </p>
               <div className="space-y-4">
                 <div className="flex gap-4">
