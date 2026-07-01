@@ -153,22 +153,22 @@ export default function Salesforce() {
               <h2 className="text-gray-600 font-sora text-4xl md:text-5xl font-bold">Business Outcomes</h2>
               <div className="w-12 h-1.5 bg-orange-primary rounded-full"></div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="flex flex-col gap-2 p-6 bg-white rounded-xl border border-gray-200">
-                <p className="text-3xl font-bold text-blue-600">50%</p>
-                <p className="text-gray-600 font-semibold">Training Efficiency</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 w-full">
+              <div className="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-xl border border-gray-200 min-h-[120px] md:min-h-[140px] justify-center">
+                <p className="text-2xl md:text-3xl font-bold text-blue-600 leading-tight break-words">50%</p>
+                <p className="text-gray-600 font-semibold text-xs md:text-sm line-clamp-2">Training Efficiency</p>
               </div>
-              <div className="flex flex-col gap-2 p-6 bg-white rounded-xl border border-gray-200">
-                <p className="text-3xl font-bold text-green-600">Enterprise</p>
-                <p className="text-gray-600 font-semibold">Fortune 500 Clients</p>
+              <div className="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-xl border border-gray-200 min-h-[120px] md:min-h-[140px] justify-center">
+                <p className="text-xl md:text-3xl font-bold text-green-600 leading-tight break-words">Enterprise</p>
+                <p className="text-gray-600 font-semibold text-xs md:text-sm line-clamp-2">Fortune 500 Clients</p>
               </div>
-              <div className="flex flex-col gap-2 p-6 bg-white rounded-xl border border-gray-200">
-                <p className="text-3xl font-bold text-purple-600">AppExchange</p>
-                <p className="text-gray-600 font-semibold">Certified</p>
+              <div className="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-xl border border-gray-200 min-h-[120px] md:min-h-[140px] justify-center">
+                <p className="text-xl md:text-3xl font-bold text-purple-600 leading-tight break-words">AppExchange</p>
+                <p className="text-gray-600 font-semibold text-xs md:text-sm line-clamp-2">Certified</p>
               </div>
-              <div className="flex flex-col gap-2 p-6 bg-white rounded-xl border border-gray-200">
-                <p className="text-3xl font-bold text-orange-600">1000+</p>
-                <p className="text-gray-600 font-semibold">Partner Users</p>
+              <div className="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-xl border border-gray-200 min-h-[120px] md:min-h-[140px] justify-center">
+                <p className="text-2xl md:text-3xl font-bold text-orange-600 leading-tight break-words">1000+</p>
+                <p className="text-gray-600 font-semibold text-xs md:text-sm line-clamp-2">Partner Users</p>
               </div>
             </div>
           </div>
