@@ -37,7 +37,7 @@ export default function Portfolio() {
 
         {/* Portfolio Grid */}
         <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 md:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
             {/* Card 1: Mobile App */}
             <Link
               to="/mobile-app"
