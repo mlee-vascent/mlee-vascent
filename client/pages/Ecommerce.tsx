@@ -34,7 +34,7 @@ export default function Ecommerce() {
                 Enterprise Course Commerce Platform
               </p>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Led the end-to-end design of a revolutionary white-label ecommerce platform that automates course sales and enrollments across diverse sectors—from higher education to corporate training.
+                Led the end-to-end design of a revolutionary white-label ecommerce platform that automates course sales and enrollments across diverse sectors, from higher education to corporate training.
               </p>
               <div className="grid grid-cols-3 gap-6 pt-6">
                 <div className="flex flex-col gap-2">
