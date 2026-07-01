@@ -159,11 +159,11 @@ export default function Salesforce() {
                 <p className="text-gray-600 font-semibold text-xs md:text-sm line-clamp-2">Training Efficiency</p>
               </div>
               <div className="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-xl border border-gray-200 min-h-[120px] md:min-h-[140px] justify-center">
-                <p className="text-xl md:text-3xl font-bold text-green-600 leading-tight break-words">Enterprise</p>
+                <p className="text-lg md:text-3xl font-bold text-green-600 leading-tight whitespace-nowrap">Enterprise</p>
                 <p className="text-gray-600 font-semibold text-xs md:text-sm line-clamp-2">Fortune 500 Clients</p>
               </div>
               <div className="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-xl border border-gray-200 min-h-[120px] md:min-h-[140px] justify-center">
-                <p className="text-xl md:text-3xl font-bold text-purple-600 leading-tight break-words">AppExchange</p>
+                <p className="text-lg md:text-3xl font-bold text-purple-600 leading-tight whitespace-nowrap">AppExchange</p>
                 <p className="text-gray-600 font-semibold text-xs md:text-sm line-clamp-2">Certified</p>
               </div>
               <div className="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-xl border border-gray-200 min-h-[120px] md:min-h-[140px] justify-center">
