@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare vs. Wellness: Economic Comparison</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- 
+    SOURCE MATERIAL ANALYSIS & PLAN:
+    
+    1. Narrative: The infographic tells the story of two diverging yet related markets. It starts by contrasting the sheer financial scale of Traditional Healthcare (Sick Care) against the booming Health & Wellness (Well Care) market. It then dives into the composition of these markets, showing that while Healthcare is dominated by hospital care and pharma, Wellness is driven by fitness and nutrition. Finally, it compares the financial rewards for professionals in both fields.
+
+    2. Visualization Choices (NO SVG/MERMAID):
+       - Market Size Comparison -> Bar Chart (Chart.js) -> Best for comparing two distinct aggregate values.
+       - Sector Breakdown -> Donut Charts (Chart.js) -> Standard for showing percentage composition.
+       - Top Earners -> Horizontal Bar Chart (Chart.js) -> Allows for readable labels (names of professions) and comparison of salary magnitude.
+       - Spending Trends -> Plotly Bubble Chart (Canvas) -> To show relationship between growth rate and market size.
+       - Integration Flow -> HTML/CSS Grid -> structured layout for qualitative process without forbidden libraries.
+
+    3. Palette: "Clinical vs. Organic"
+       - Healthcare: #1E3A8A (Blue-900), #3B82F6 (Blue-500)
+       - Wellness: #059669 (Emerald-600), #84CC16 (Lime-500)
+    -->
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F3F4F6; /* Gray-100 */
+            color: #1F2937; /* Gray-800 */
+        }
+
+        /* Chart Container Styling - Responsive Boundaries */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 650px; /* Constrain width for readability */
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px; /* Default height */
+            max-height: 450px;
+        }
+
+        @media (max-width: 640px) {
+            .chart-container {
+                height: 300px;
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Process Flow Arrows without SVG */
+        .arrow-right {
+            width: 0; 
+            height: 0; 
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 15px solid #9CA3AF;
+        }
+        .arrow-down {
+            width: 0; 
+            height: 0; 
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 15px solid #9CA3AF;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white py-12 px-4 shadow-lg">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Sick Care vs. Well Care</h1>
+            <p class="text-xl md:text-2xl text-slate-300 font-light max-w-3xl mx-auto">
+                A comparative economic analysis of the Traditional US Healthcare System and the emerging Health & Wellness Economy.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 gap-12">
+
+        <!-- SECTION 1: MARKET MAGNITUDE -->
+        <section>
+            <div class="mb-6 border-l-4 border-blue-600 pl-4">
+                <h2 class="text-3xl font-bold text-slate-800">The Trillion Dollar Gap</h2>
+                <p class="mt-2 text-lg text-slate-600">
+                    While the Wellness economy is booming, it is still dwarfed by the massive scale of traditional healthcare spending. The US Healthcare system, driven by insurance and hospital care, commands trillions annually, whereas the Wellness market (consumer-driven) operates in the billions.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                <h3 class="text-xl font-semibold text-slate-700 mb-4 text-center">Total Market Valuation (Estimated Annual US)</h3>
+                <div class="chart-container">
+                    <canvas id="marketSizeChart"></canvas>
+                </div>
+                <div class="mt-4 text-sm text-slate-500 text-center italic">
+                    Source: CMS.gov (NHE) & Global Wellness Institute (US Data Estimates)
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: SECTOR BREAKDOWN -->
+        <section>
+            <div class="mb-6 border-l-4 border-emerald-500 pl-4">
+                <h2 class="text-3xl font-bold text-slate-800">Where the Money Flows</h2>
+                <p class="mt-2 text-lg text-slate-600">
+                    How is revenue distributed? Traditional healthcare spending is heavily concentrated in hospital care and physician services. In contrast, the wellness dollar is spent primarily on physical activity, personal care, and nutrition.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Healthcare Card -->
+                <div class="bg-white rounded-xl shadow-md p-6 border-t-4 border-blue-600">
+                    <h3 class="text-xl font-semibold text-blue-900 mb-2 text-center">Traditional Healthcare Breakdown</h3>
+                    <p class="text-sm text-slate-500 mb-4 text-center">Distribution of National Health Expenditures</p>
+                    <div class="chart-container h-80">
+                        <canvas id="healthcareSectorChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Wellness Card -->
+                <div class="bg-white rounded-xl shadow-md p-6 border-t-4 border-emerald-500">
+                    <h3 class="text-xl font-semibold text-emerald-900 mb-2 text-center">Health & Wellness Breakdown</h3>
+                    <p class="text-sm text-slate-500 mb-4 text-center">Distribution of Wellness Economy Revenue</p>
+                    <div class="chart-container h-80">
+                        <canvas id="wellnessSectorChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: TOP EARNERS -->
+        <section>
+            <div class="mb-6 border-l-4 border-indigo-600 pl-4">
+                <h2 class="text-3xl font-bold text-slate-800">The Price of Expertise</h2>
+                <p class="mt-2 text-lg text-slate-600">
+                    A look at the financial incentives for professionals. Specialized medicine commands the highest salaries due to education requirements and insurance reimbursement models. Wellness earnings are more variable, often dependent on business ownership or celebrity clientele.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                <h3 class="text-xl font-semibold text-slate-700 mb-6 text-center">Average Annual Compensation: Top Earning Roles</h3>
+                <div class="chart-container" style="height: 400px; max-height: 500px;">
+                    <canvas id="salaryChart"></canvas>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <span class="font-bold text-blue-800">Medical Insight:</span>
+                        <p class="text-sm text-blue-700">Specialists like Orthopedic Surgeons and Cardiologists top the list, reflecting 10+ years of training and high liability.</p>
+                    </div>
+                    <div class="bg-emerald-50 p-4 rounded-lg">
+                        <span class="font-bold text-emerald-800">Wellness Insight:</span>
+                        <p class="text-sm text-emerald-700">High variance. While the average nutritionist earns ~$70k, top private wellness coaches and corporate directors can exceed $150k.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: THE FUTURE LANDSCAPE (PLOTLY) -->
+        <section>
+            <div class="mb-6 border-l-4 border-purple-500 pl-4">
+                <h2 class="text-3xl font-bold text-slate-800">Market Dynamics & Growth</h2>
+                <p class="mt-2 text-lg text-slate-600">
+                    Comparing growth momentum. While Healthcare is massive, the Wellness sector is seeing explosive growth in specific niches like "Health Tech" and "Personalized Nutrition."
+                </p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                <div id="plotlyGrowthChart" class="w-full h-96"></div>
+                <p class="mt-4 text-sm text-slate-500 text-center">
+                    Bubble Size = Relative Market Volume. X-Axis = Projected Annual Growth Rate.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 5: THE CONVERGENCE (PROCESS FLOW) -->
+        <section class="mb-12">
+             <div class="mb-6 border-l-4 border-slate-600 pl-4">
+                <h2 class="text-3xl font-bold text-slate-800">The Convergence</h2>
+                <p class="mt-2 text-lg text-slate-600">
+                    The siloed walls are breaking down. Traditional providers are beginning to "prescribe" wellness, while wellness providers are seeking clinical validation.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-8">
+                <!-- Flex container for the flow -->
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4 relative">
+                    
+                    <!-- Step 1 -->
+                    <div class="flex-1 bg-blue-100 border border-blue-200 p-6 rounded-lg text-center z-10 w-full">
+                        <div class="text-3xl mb-2">🏥</div>
+                        <h4 class="font-bold text-blue-900">Patient Data</h4>
+                        <p class="text-sm text-blue-800">Clinical diagnostics & history</p>
+                    </div>
+
+                    <!-- Arrow -->
+                    <div class="hidden md:block arrow-right"></div>
+                    <div class="block md:hidden arrow-down"></div>
+
+                    <!-- Step 2 -->
+                    <div class="flex-1 bg-purple-100 border border-purple-200 p-6 rounded-lg text-center z-10 w-full">
+                        <div class="text-3xl mb-2">🤝</div>
+                        <h4 class="font-bold text-purple-900">Integrative Care</h4>
+                        <p class="text-sm text-purple-800">MDs & Health Coaches collaborate</p>
+                    </div>
+
+                    <!-- Arrow -->
+                    <div class="hidden md:block arrow-right"></div>
+                    <div class="block md:hidden arrow-down"></div>
+
+                    <!-- Step 3 -->
+                    <div class="flex-1 bg-emerald-100 border border-emerald-200 p-6 rounded-lg text-center z-10 w-full">
+                        <div class="text-3xl mb-2">🏃</div>
+                        <h4 class="font-bold text-emerald-900">Lifestyle Rx</h4>
+                        <p class="text-sm text-emerald-800">Nutrition & Movement as medicine</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center text-slate-400 py-8 border-t border-slate-200">
+            <p>&copy; 2026 Health Market Analytics. All data presented for illustrative purposes.</p>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript for Charts -->
+    <script>
+        // --- UTILITY FUNCTION: Label Wrapping ---
+        // Splits long strings into arrays of strings for Chart.js
+        function splitLabel(str, maxLen = 16) {
+            if (str.length <= maxLen) return str;
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if (currentLine.length + 1 + words[i].length <= maxLen) {
+                    currentLine += ' ' + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        // --- UTILITY: Common Tooltip Configuration ---
+        const commonTooltip = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        // --- 1. Market Size Chart (Bar) ---
+        const ctxMarket = document.getElementById('marketSizeChart').getContext('2d');
+        const rawLabelsMarket = ['Traditional Healthcare (US)', 'Health & Wellness (US Estimate)'];
+        const processedLabelsMarket = rawLabelsMarket.map(l => splitLabel(l));
+
+        new Chart(ctxMarket, {
+            type: 'bar',
+            data: {
+                labels: processedLabelsMarket,
+                datasets: [{
+                    label: 'Market Size (Billions USD)',
+                    data: [4500, 1200], // Approx 4.5T vs 1.2T (Broad definition)
+                    backgroundColor: ['#1E3A8A', '#10B981'],
+                    borderRadius: 8,
+                    barPercentage: 0.6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: commonTooltip
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Billions USD' }
+                    }
+                }
+            }
+        });
+
+        // --- 2. Healthcare Sector Breakdown (Donut) ---
+        const ctxHealthSector = document.getElementById('healthcareSectorChart').getContext('2d');
+        const rawLabelsHS = ['Hospital Care', 'Physician Services', 'Prescription Drugs', 'Admin & Insurance', 'Other Care'];
+        const processedLabelsHS = rawLabelsHS.map(l => splitLabel(l));
+
+        new Chart(ctxHealthSector, {
+            type: 'doughnut',
+            data: {
+                labels: processedLabelsHS,
+                datasets: [{
+                    data: [31, 20, 10, 8, 31], // Source: Approx distribution NHE
+                    backgroundColor: ['#1E3A8A', '#2563EB', '#60A5FA', '#93C5FD', '#BFDBFE'],
+                    borderWidth: 2,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'right', labels: { boxWidth: 12, font: {size: 11} } },
+                    tooltip: commonTooltip
+                }
+            }
+        });
+
+        // --- 3. Wellness Sector Breakdown (Donut) ---
+        const ctxWellnessSector = document.getElementById('wellnessSectorChart').getContext('2d');
+        const rawLabelsWS = ['Physical Activity', 'Personal Care & Beauty', 'Healthy Eating & Nutrition', 'Wellness Tourism', 'Preventative Med'];
+        const processedLabelsWS = rawLabelsWS.map(l => splitLabel(l));
+
+        new Chart(ctxWellnessSector, {
+            type: 'doughnut',
+            data: {
+                labels: processedLabelsWS,
+                datasets: [{
+                    data: [28, 25, 20, 15, 12], // Approximate proportional breakdown
+                    backgroundColor: ['#064E3B', '#059669', '#10B981', '#34D399', '#6EE7B7'],
+                    borderWidth: 2,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'right', labels: { boxWidth: 12, font: {size: 11} } },
+                    tooltip: commonTooltip
+                }
+            }
+        });
+
+        // --- 4. Top Earners (Horizontal Bar) ---
+        const ctxSalary = document.getElementById('salaryChart').getContext('2d');
+        
+        // Data structure
+        const salaryData = [
+            { label: 'Orthopedic Surgeon', val: 511000, type: 'Health' },
+            { label: 'Cardiologist', val: 459000, type: 'Health' },
+            { label: 'Anesthesiologist', val: 398000, type: 'Health' },
+            { label: 'Corporate Wellness Dir', val: 125000, type: 'Wellness' },
+            { label: 'Private Wellness Coach (Top)', val: 110000, type: 'Wellness' },
+            { label: 'Clinical Nutritionist', val: 78000, type: 'Wellness' }
+        ];
+
+        const processedLabelsSalary = salaryData.map(d => splitLabel(d.label, 20));
+        const bgColorsSalary = salaryData.map(d => d.type === 'Health' ? '#3B82F6' : '#84CC16');
+
+        new Chart(ctxSalary, {
+            type: 'bar',
+            data: {
+                labels: processedLabelsSalary,
+                datasets: [{
+                    label: 'Avg Annual Salary ($)',
+                    data: salaryData.map(d => d.val),
+                    backgroundColor: bgColorsSalary,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                indexAxis: 'y', // Horizontal bar
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: commonTooltip
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Annual Income (USD)' }
+                    }
+                }
+            }
+        });
+
+        // --- 5. Plotly Market Dynamics (Scatter/Bubble) ---
+        // Using Plotly for a more statistical view of Growth vs Size
+        
+        const traceHealth = {
+            x: [4.5], // Growth rate %
+            y: [55], // Relative Size Index (arbitrary scaled for visual)
+            mode: 'markers+text',
+            text: ['Traditional<br>Healthcare'],
+            textposition: 'top center',
+            marker: {
+                size: 90, // Big bubble
+                color: '#1E3A8A',
+                opacity: 0.8
+            },
+            name: 'Healthcare'
+        };
+
+        const traceWellness = {
+            x: [9.8], // Growth rate % (Higher)
+            y: [30], // Relative Size Index (Smaller)
+            mode: 'markers+text',
+            text: ['Wellness<br>Economy'],
+            textposition: 'top center',
+            marker: {
+                size: 50, // Smaller bubble
+                color: '#10B981',
+                opacity: 0.8
+            },
+            name: 'Wellness'
+        };
+
+        const traceNiche = {
+            x: [14.2], // High growth
+            y: [15], 
+            mode: 'markers+text',
+            text: ['Health<br>Tech'],
+            textposition: 'bottom center',
+            marker: {
+                size: 25, 
+                color: '#8B5CF6',
+                opacity: 0.8
+            },
+            name: 'Health Tech'
+        };
+
+        const layoutPlotly = {
+            title: 'Market Maturity: Size vs. Projected Growth',
+            showlegend: false,
+            xaxis: {
+                title: 'Projected Annual Growth Rate (%)',
+                range: [0, 18],
+                showgrid: true,
+                gridcolor: '#e5e7eb'
+            },
+            yaxis: {
+                title: 'Relative Market Volume',
+                showgrid: true,
+                gridcolor: '#e5e7eb',
+                showticklabels: false 
+            },
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            margin: { t: 50, b: 50, l: 50, r: 20 },
+            font: { family: 'Roboto, sans-serif' }
+        };
+
+        // Render Plotly with Canvas config
+        Plotly.newPlot('plotlyGrowthChart', [traceHealth, traceWellness, traceNiche], layoutPlotly, {responsive: true, renderer: 'canvas'});
+
+    </script>
+</body>
+</html>
