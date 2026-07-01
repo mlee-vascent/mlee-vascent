@@ -104,8 +104,8 @@ export default function Index() {
         <section className="w-full px-6 md:px-9 lg:px-[200px] py-9 md:py-9 grid grid-cols-1 md:grid-cols-3 gap-9 md:gap-6">
           <div className="flex flex-col justify-center items-start gap-9 md:gap-6 md:px-4">
             <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
-              Designing Interfaces That <br />
-              Feel Effortless
+              Strategic Product Design <br />
+              That Drives Growth
             </h2>
 
             <div className="flex flex-col md:flex-col items-center md:items-center justify-start gap-9 md:gap-6 w-full px-2 md:px-2">
