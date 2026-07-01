@@ -290,67 +290,74 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-0 py-9 md:py-9 flex flex-col items-center gap-1">
-          <h2 className="text-gray-600 text-center font-sora text-[40px] font-bold leading-normal">
-            Portfolio
+        <section className="w-full px-6 md:px-12 lg:px-0 py-16 md:py-20 flex flex-col items-center gap-4">
+          <h2 className="text-gray-600 text-center font-sora text-5xl md:text-6xl font-bold leading-tight max-w-2xl">
+            Featured Work
           </h2>
+          <p className="text-gray-500 text-center text-lg md:text-xl max-w-2xl">
+            Strategic product design and GTM strategy that drives measurable growth
+          </p>
         </section>
 
-        <section className="w-full px-6 md:px-[44px] lg:px-[200px] py-2 md:py-2 flex flex-wrap justify-center items-start gap-12 md:gap-6">
+        <section className="w-full px-6 md:px-[44px] lg:px-[200px] py-8 md:py-12 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
           <Link
             to="/ecommerce"
-            className="flex flex-col items-center gap-5 w-full md:w-[348px] lg:w-auto hover:opacity-80 transition-opacity"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 aspect-square cursor-pointer"
           >
-            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
-              Ecommerce
-            </h3>
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/9aa68bcf174ce04a5b573e0ef1ad6360ea9a04a9?width=580"
               alt="Ecommerce project"
-              className="w-[290px] h-[334px] rounded-br-2xl border-0 outline-none ring-0 shadow-none"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-end justify-end p-6">
+              <h3 className="text-white font-sora text-3xl font-bold">LMScheckout</h3>
+              <p className="text-white/80 text-sm mt-2">Enterprise Commerce</p>
+            </div>
           </Link>
 
           <Link
             to="/portfolio/website"
-            className="flex flex-col items-center gap-5 w-full md:w-[342px] lg:w-auto hover:opacity-80 transition-opacity"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 aspect-square cursor-pointer"
           >
-            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
-              Website
-            </h3>
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/df9bc31f173e10aabca41e06fa9e2d2bd8f04546?width=580"
               alt="Website project"
-              className="w-[290px] h-[334px] rounded-br-2xl border-0 outline-none ring-0 shadow-none"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-end justify-end p-6">
+              <h3 className="text-white font-sora text-3xl font-bold">Envisiontel</h3>
+              <p className="text-white/80 text-sm mt-2">Corporate Website</p>
+            </div>
           </Link>
 
           <Link
             to="/salesforce"
-            className="flex flex-col items-center gap-5 w-full md:w-[342px] lg:w-auto hover:opacity-80 transition-opacity"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-50 to-blue-50 aspect-square cursor-pointer"
           >
-            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
-              Salesforce
-            </h3>
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/659410b2ffaa782061f785f25d99c15df0b1a2eb?width=580"
               alt="Salesforce project"
-              className="w-[290px] h-[334px] rounded-br-2xl border-0 outline-none ring-0 shadow-none"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-end justify-end p-6">
+              <h3 className="text-white font-sora text-3xl font-bold">EnlightenCRM</h3>
+              <p className="text-white/80 text-sm mt-2">Salesforce ISV</p>
+            </div>
           </Link>
 
           <Link
             to="/mobile-app"
-            className="flex flex-col items-center gap-5 w-full md:w-[346px] lg:w-auto hover:opacity-80 transition-opacity"
+            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-cyan-50 aspect-square cursor-pointer"
           >
-            <h3 className="text-gray-600 text-center font-sora text-2xl font-semibold leading-normal">
-              Mobile
-            </h3>
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/78db42db315cce267f0f92f88c4f95df7baf9a16?width=580"
               alt="Mobile project"
-              className="w-[290px] h-[334px] rounded-br-2xl border-0 outline-none ring-0 shadow-none"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-end justify-end p-6">
+              <h3 className="text-white font-sora text-3xl font-bold">Fitleaguer</h3>
+              <p className="text-white/80 text-sm mt-2">Mobile App</p>
+            </div>
           </Link>
         </section>
 
