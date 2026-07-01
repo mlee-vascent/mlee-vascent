@@ -51,7 +51,7 @@ export default function Ecommerce() {
                 </div>
               </div>
             </div>
-            <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-50 to-teal-50 aspect-square flex items-center justify-center">
+            <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-50 to-teal-50 w-full h-96 flex items-center justify-center">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/66222ed966fd45c1c4d79deaf7dc3c373ef42828?width=838"
                 alt="LMScheckout Platform"
