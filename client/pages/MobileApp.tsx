@@ -53,7 +53,7 @@ export default function MobileApp() {
             </div>
             <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-50 flex items-center justify-center p-8">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Ff29af523f052408bb259a47f1b12ca99?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fd55596ad7b7a40bb98d73b95ea3a3697?format=webp&width=800&height=1200"
                 alt="Fitleaguer Mobile App"
                 className="h-[500px] w-auto object-contain"
               />
@@ -71,15 +71,15 @@ export default function MobileApp() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
               <div className="flex items-center justify-center">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F6519784fd7664bf795e7df544d40094d?format=webp&width=800&height=1200"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Ff29af523f052408bb259a47f1b12ca99?format=webp&width=800&height=1200"
                   alt="Fitleaguer League Management"
                   className="h-[500px] w-auto object-contain rounded-2xl shadow-lg"
                 />
               </div>
               <div className="flex items-center justify-center">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fd55596ad7b7a40bb98d73b95ea3a3697?format=webp&width=800&height=1200"
-                  alt="Fitleaguer User Dashboard"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F6519784fd7664bf795e7df544d40094d?format=webp&width=800&height=1200"
+                  alt="Fitleaguer Activity Feed"
                   className="h-[500px] w-auto object-contain rounded-2xl shadow-lg"
                 />
               </div>
