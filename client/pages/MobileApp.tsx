@@ -53,10 +53,36 @@ export default function MobileApp() {
             </div>
             <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-50 flex items-center justify-center p-8">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/2eb26e41379558561607d4d8396fcab00e19366b?width=452"
+                src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Ff29af523f052408bb259a47f1b12ca99?format=webp&width=800&height=1200"
                 alt="Fitleaguer Mobile App"
                 className="h-[500px] w-auto object-contain"
               />
+            </div>
+          </div>
+        </section>
+
+        {/* App Screenshots */}
+        <section className="w-full px-6 md:px-24 lg:px-[200px] py-16 md:py-24 bg-gradient-to-br from-blue-50 to-cyan-50 border-t border-gray-200">
+          <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-gray-600 font-sora text-4xl font-bold">App Experience</h2>
+              <div className="w-12 h-1 bg-orange-primary rounded-full"></div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F6519784fd7664bf795e7df544d40094d?format=webp&width=800&height=1200"
+                  alt="Fitleaguer League Management"
+                  className="h-[500px] w-auto object-contain rounded-2xl shadow-lg"
+                />
+              </div>
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fd55596ad7b7a40bb98d73b95ea3a3697?format=webp&width=800&height=1200"
+                  alt="Fitleaguer User Dashboard"
+                  className="h-[500px] w-auto object-contain rounded-2xl shadow-lg"
+                />
+              </div>
             </div>
           </div>
         </section>
