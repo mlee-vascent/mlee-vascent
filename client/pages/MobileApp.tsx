@@ -90,6 +90,13 @@ export default function MobileApp() {
                   className="h-[500px] w-auto object-contain rounded-2xl shadow-lg"
                 />
               </div>
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Ff77a06e931af415bb16c3245085703b2?format=webp&width=800&height=1200"
+                  alt="Fitleaguer Find Competition"
+                  className="h-[500px] w-auto object-contain rounded-2xl shadow-lg"
+                />
+              </div>
             </div>
           </div>
         </section>
