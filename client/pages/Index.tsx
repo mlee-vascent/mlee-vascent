@@ -181,39 +181,30 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-12 lg:px-[200px] py-12 md:py-16 flex flex-col md:flex-col lg:flex-row justify-center items-center md:items-center lg:items-center gap-10 md:gap-16">
-          <div className="flex-1 flex flex-col items-center md:items-center lg:items-start gap-6">
-            <h2 className="text-gray-600 font-sora text-[30px] font-bold leading-normal text-center md:text-center lg:text-left">
-              IT Cost Reduction Consulting
-            </h2>
-            <div className="flex justify-center items-center w-full lg:hidden">
+        <section className="w-full px-6 md:px-9 lg:px-[200px] py-16 md:py-24">
+          <div className="group flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-16 p-8 md:p-12 bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl border-2 border-purple-200 hover:shadow-2xl hover:border-purple-300 transition-all duration-300">
+            <div className="flex-1 flex flex-col items-center lg:items-start gap-6">
+              <h2 className="text-gray-700 font-sora text-2xl md:text-4xl font-bold leading-tight text-center lg:text-left">
+                IT Cost Reduction Consulting
+              </h2>
+              <p className="text-gray-600 text-base md:text-lg leading-relaxed text-center lg:text-left">
+                Reduce your IT costs and buy the right platforms. Get independent guidance aligned with your business outcomes, not vendor quotas. From UCaaS and CCaaS to Security, Connectivity, and Cloud & Colo, we help you navigate enterprise technology procurement with confidence.
+              </p>
+              <Link
+                to="/operations"
+                className="px-8 py-3 rounded-full bg-purple-600 text-white font-semibold hover:bg-purple-700 shadow-lg hover:shadow-xl transition-all duration-300 self-center lg:self-start"
+              >
+                Explore IT Consulting →
+              </Link>
+            </div>
+
+            <div className="flex-1 flex justify-center items-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fb2171e29b8114b70ae106d6cf47d6942?format=webp&width=800"
                 alt="CCaaS Consulting Services"
-                className="w-full md:w-[500px] h-auto object-contain border-0 outline-none ring-0 shadow-none rounded-2xl"
+                className="w-full max-w-[350px] h-auto object-contain group-hover:scale-105 transition-transform duration-300 rounded-2xl"
               />
             </div>
-            <p className="text-gray-600 text-lg text-center md:text-center lg:text-left max-w-lg">
-              Reduce your IT costs and buy the right platforms. Get independent
-              guidance aligned with your business outcomes, not vendor quotas.
-              From UCaaS and CCaaS to Security, Connectivity, and Cloud & Colo,
-              we help you navigate enterprise technology procurement with
-              confidence.
-            </p>
-            <Link
-              to="/operations"
-              className="px-6 py-3 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center"
-            >
-              Explore IT Consulting
-            </Link>
-          </div>
-
-          <div className="hidden lg:flex justify-center items-center w-full lg:w-auto">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fb2171e29b8114b70ae106d6cf47d6942?format=webp&width=800"
-              alt="CCaaS Consulting Services"
-              className="w-full md:w-[500px] lg:w-[400px] h-auto object-contain border-0 outline-none ring-0 shadow-none rounded-2xl"
-            />
           </div>
         </section>
 
