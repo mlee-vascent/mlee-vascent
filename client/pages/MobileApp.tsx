@@ -2,8 +2,37 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import Seo from "@/components/Seo";
+import { useState } from "react";
 
 export default function MobileApp() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const appImages = [
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Ff29af523f052408bb259a47f1b12ca99?format=webp&width=800&height=1200",
+      alt: "Fitleaguer League Management",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F6519784fd7664bf795e7df544d40094d?format=webp&width=800&height=1200",
+      alt: "Fitleaguer Activity Feed",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fd627a3f9ca8443b89ef235014f9a57e3?format=webp&width=800&height=1200",
+      alt: "Fitleaguer Create League",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Ff77a06e931af415bb16c3245085703b2?format=webp&width=800&height=1200",
+      alt: "Fitleaguer Find Competition",
+    },
+  ];
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % appImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + appImages.length) % appImages.length);
+  };
+
   const ogImage =
     "https://api.builder.io/api/v1/image/assets/TEMP/2eb26e41379558561607d4d8396fcab00e19366b?width=800";
   const description =
@@ -68,35 +97,43 @@ export default function MobileApp() {
               <h2 className="text-gray-600 font-sora text-4xl font-bold">App Experience</h2>
               <div className="w-12 h-1 bg-orange-primary rounded-full"></div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-              <div className="flex items-center justify-center">
+            <div className="flex flex-col items-center gap-8 max-w-2xl mx-auto">
+              <div className="relative w-full flex items-center justify-center">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Ff29af523f052408bb259a47f1b12ca99?format=webp&width=800&height=1200"
-                  alt="Fitleaguer League Management"
-                  className="h-[500px] w-auto object-contain rounded-2xl shadow-lg"
+                  src={appImages[currentImageIndex].src}
+                  alt={appImages[currentImageIndex].alt}
+                  className="h-[500px] w-auto object-contain rounded-2xl shadow-lg transition-opacity duration-300"
                 />
               </div>
-              <div className="flex items-center justify-center">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F6519784fd7664bf795e7df544d40094d?format=webp&width=800&height=1200"
-                  alt="Fitleaguer Activity Feed"
-                  className="h-[500px] w-auto object-contain rounded-2xl shadow-lg"
-                />
+              <div className="flex items-center gap-4 w-full justify-center">
+                <button
+                  onClick={prevImage}
+                  className="px-6 py-3 rounded-lg border-2 border-gray-300 text-gray-600 font-semibold hover:border-orange-primary hover:text-orange-primary transition-colors"
+                >
+                  ← Previous
+                </button>
+                <div className="flex gap-2">
+                  {appImages.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentImageIndex(index)}
+                      className={`w-3 h-3 rounded-full transition-colors ${
+                        index === currentImageIndex
+                          ? "bg-orange-primary"
+                          : "bg-gray-300 hover:bg-gray-400"
+                      }`}
+                      aria-label={`Go to image ${index + 1}`}
+                    />
+                  ))}
+                </div>
+                <button
+                  onClick={nextImage}
+                  className="px-6 py-3 rounded-lg border-2 border-gray-300 text-gray-600 font-semibold hover:border-orange-primary hover:text-orange-primary transition-colors"
+                >
+                  Next →
+                </button>
               </div>
-              <div className="flex items-center justify-center">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fd627a3f9ca8443b89ef235014f9a57e3?format=webp&width=800&height=1200"
-                  alt="Fitleaguer Create League"
-                  className="h-[500px] w-auto object-contain rounded-2xl shadow-lg"
-                />
-              </div>
-              <div className="flex items-center justify-center">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Ff77a06e931af415bb16c3245085703b2?format=webp&width=800&height=1200"
-                  alt="Fitleaguer Find Competition"
-                  className="h-[500px] w-auto object-contain rounded-2xl shadow-lg"
-                />
-              </div>
+              <p className="text-gray-500 text-sm text-center">Image {currentImageIndex + 1} of {appImages.length}</p>
             </div>
           </div>
         </section>
