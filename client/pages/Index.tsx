@@ -278,104 +278,104 @@ export default function Index() {
         </section>
 
         <section className="w-full px-6 md:px-24 lg:px-[200px] py-12 md:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 max-w-5xl mx-auto">
             {/* Card 1: Ecommerce */}
             <Link
               to="/ecommerce"
-              className="group flex flex-col gap-4 cursor-pointer transition-all duration-300 hover:-translate-y-1"
+              className="group flex flex-col gap-6 p-6 md:p-8 cursor-pointer bg-gradient-to-br from-emerald-50 to-teal-100 rounded-3xl border-2 border-emerald-200 hover:shadow-2xl hover:border-emerald-300 transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-emerald-50 to-teal-50 w-full h-56">
+              <div className="relative overflow-hidden rounded-2xl bg-white w-full h-60">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/9aa68bcf174ce04a5b573e0ef1ad6360ea9a04a9?width=580"
                   alt="LMScheckout Ecommerce"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-3">
                 <div className="flex items-center gap-2">
-                  <span className="text-orange-primary font-semibold text-xs uppercase tracking-wider">Ecommerce</span>
-                  <div className="w-1 h-1 rounded-full bg-orange-primary"></div>
-                  <span className="text-gray-500 text-xs">Platform</span>
+                  <span className="text-emerald-700 font-semibold text-xs uppercase tracking-wider">Ecommerce</span>
+                  <div className="w-1 h-1 rounded-full bg-emerald-700"></div>
+                  <span className="text-gray-600 text-xs font-medium">Platform</span>
                 </div>
-                <h3 className="text-gray-600 font-sora text-xl font-bold group-hover:text-orange-primary transition-colors">
+                <h3 className="text-gray-700 font-sora text-2xl font-bold group-hover:text-emerald-700 transition-colors">
                   LMScheckout
                 </h3>
-                <p className="text-gray-500 text-sm">Enterprise course commerce platform</p>
+                <p className="text-gray-600 text-sm leading-relaxed">Enterprise course commerce platform</p>
               </div>
             </Link>
 
             {/* Card 2: Website */}
             <Link
               to="/portfolio/website"
-              className="group flex flex-col gap-4 cursor-pointer transition-all duration-300 hover:-translate-y-1"
+              className="group flex flex-col gap-6 p-6 md:p-8 cursor-pointer bg-gradient-to-br from-amber-50 to-orange-100 rounded-3xl border-2 border-amber-200 hover:shadow-2xl hover:border-amber-300 transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-amber-50 to-orange-50 w-full h-56">
+              <div className="relative overflow-hidden rounded-2xl bg-white w-full h-60">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/df9bc31f173e10aabca41e06fa9e2d2bd8f04546?width=580"
                   alt="Envisiontel Website"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-3">
                 <div className="flex items-center gap-2">
-                  <span className="text-orange-primary font-semibold text-xs uppercase tracking-wider">Website</span>
-                  <div className="w-1 h-1 rounded-full bg-orange-primary"></div>
-                  <span className="text-gray-500 text-xs">Corporate</span>
+                  <span className="text-amber-700 font-semibold text-xs uppercase tracking-wider">Website</span>
+                  <div className="w-1 h-1 rounded-full bg-amber-700"></div>
+                  <span className="text-gray-600 text-xs font-medium">Corporate</span>
                 </div>
-                <h3 className="text-gray-600 font-sora text-xl font-bold group-hover:text-orange-primary transition-colors">
+                <h3 className="text-gray-700 font-sora text-2xl font-bold group-hover:text-amber-700 transition-colors">
                   Envisiontel
                 </h3>
-                <p className="text-gray-500 text-sm">Corporate digital experience</p>
+                <p className="text-gray-600 text-sm leading-relaxed">Corporate digital experience</p>
               </div>
             </Link>
 
             {/* Card 3: Salesforce */}
             <Link
               to="/salesforce"
-              className="group flex flex-col gap-4 cursor-pointer transition-all duration-300 hover:-translate-y-1"
+              className="group flex flex-col gap-6 p-6 md:p-8 cursor-pointer bg-gradient-to-br from-purple-50 to-blue-100 rounded-3xl border-2 border-purple-200 hover:shadow-2xl hover:border-purple-300 transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-50 to-blue-50 w-full h-56">
+              <div className="relative overflow-hidden rounded-2xl bg-white w-full h-60">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/659410b2ffaa782061f785f25d99c15df0b1a2eb?width=580"
                   alt="EnlightenCRM Salesforce"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-3">
                 <div className="flex items-center gap-2">
-                  <span className="text-orange-primary font-semibold text-xs uppercase tracking-wider">Salesforce ISV</span>
-                  <div className="w-1 h-1 rounded-full bg-orange-primary"></div>
-                  <span className="text-gray-500 text-xs">Native</span>
+                  <span className="text-purple-700 font-semibold text-xs uppercase tracking-wider">Salesforce ISV</span>
+                  <div className="w-1 h-1 rounded-full bg-purple-700"></div>
+                  <span className="text-gray-600 text-xs font-medium">Native</span>
                 </div>
-                <h3 className="text-gray-600 font-sora text-xl font-bold group-hover:text-orange-primary transition-colors">
+                <h3 className="text-gray-700 font-sora text-2xl font-bold group-hover:text-purple-700 transition-colors">
                   EnlightenCRM
                 </h3>
-                <p className="text-gray-500 text-sm">Learning management solution</p>
+                <p className="text-gray-600 text-sm leading-relaxed">Learning management solution</p>
               </div>
             </Link>
 
             {/* Card 4: Mobile */}
             <Link
               to="/mobile-app"
-              className="group flex flex-col gap-4 cursor-pointer transition-all duration-300 hover:-translate-y-1"
+              className="group flex flex-col gap-6 p-6 md:p-8 cursor-pointer bg-gradient-to-br from-blue-50 to-cyan-100 rounded-3xl border-2 border-blue-200 hover:shadow-2xl hover:border-blue-300 transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-blue-50 to-cyan-50 w-full h-56">
+              <div className="relative overflow-hidden rounded-2xl bg-white w-full h-60">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/78db42db315cce267f0f92f88c4f95df7baf9a16?width=580"
                   alt="Fitleaguer Mobile"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-3">
                 <div className="flex items-center gap-2">
-                  <span className="text-orange-primary font-semibold text-xs uppercase tracking-wider">Mobile App</span>
-                  <div className="w-1 h-1 rounded-full bg-orange-primary"></div>
-                  <span className="text-gray-500 text-xs">UI/UX</span>
+                  <span className="text-blue-700 font-semibold text-xs uppercase tracking-wider">Mobile App</span>
+                  <div className="w-1 h-1 rounded-full bg-blue-700"></div>
+                  <span className="text-gray-600 text-xs font-medium">UI/UX</span>
                 </div>
-                <h3 className="text-gray-600 font-sora text-xl font-bold group-hover:text-orange-primary transition-colors">
+                <h3 className="text-gray-700 font-sora text-2xl font-bold group-hover:text-blue-700 transition-colors">
                   Fitleaguer
                 </h3>
-                <p className="text-gray-500 text-sm">Fitness gamification platform</p>
+                <p className="text-gray-600 text-sm leading-relaxed">Fitness gamification platform</p>
               </div>
             </Link>
           </div>
