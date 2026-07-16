@@ -8,20 +8,32 @@ export default function MobileApp() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const appImages = [
     {
-      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Ff29af523f052408bb259a47f1b12ca99?format=webp&width=800&height=1200",
-      alt: "Fitleaguer League Management",
+      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F69715f1d790f476aa1734c4bfd68293c?format=webp&width=800&height=1200",
+      alt: "Fitleaguer Home",
     },
     {
-      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F6519784fd7664bf795e7df544d40094d?format=webp&width=800&height=1200",
-      alt: "Fitleaguer Activity Feed",
+      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F47581b19a387408aa021cd5827ccaddf?format=webp&width=800&height=1200",
+      alt: "Fitleaguer Find League",
     },
     {
-      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fd627a3f9ca8443b89ef235014f9a57e3?format=webp&width=800&height=1200",
-      alt: "Fitleaguer Create League",
+      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F725aad1d939048d7a1fd9669931c1f79?format=webp&width=800&height=1200",
+      alt: "Fitleaguer League Details",
     },
     {
-      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Ff77a06e931af415bb16c3245085703b2?format=webp&width=800&height=1200",
-      alt: "Fitleaguer Find Competition",
+      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fc662f7b45cd8475dbe99a151be37cc25?format=webp&width=800&height=1200",
+      alt: "Fitleaguer All Activities",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Ffcf906b8f63c448c98d5d2da2a85811c?format=webp&width=800&height=1200",
+      alt: "Fitleaguer Profile",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fdb472448841c4daab15f9d5190a18114?format=webp&width=800&height=1200",
+      alt: "Fitleaguer Statistics",
+    },
+    {
+      src: "https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F64cf8a90adb24d7abdee3b4eea5ce3dc?format=webp&width=800&height=1200",
+      alt: "Fitleaguer Invite Players",
     },
   ];
 
