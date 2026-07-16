@@ -51,12 +51,14 @@ export default function Ecommerce() {
                 </div>
               </div>
             </div>
-            <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-50 to-teal-50 w-full aspect-square flex items-center justify-center">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F44df82f57f53430eaee856f92863f33e?format=webp&width=800&height=1200"
-                alt="LMScheckout Platform"
-                className="w-full h-full object-cover"
-              />
+            <div className="group relative rounded-3xl overflow-hidden bg-gradient-to-br from-emerald-50 to-teal-100 w-full aspect-square flex items-center justify-center p-4 border-2 border-emerald-200 hover:shadow-2xl hover:border-emerald-300 transition-all duration-300">
+              <div className="relative overflow-hidden rounded-2xl bg-white w-full h-full flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F44df82f57f53430eaee856f92863f33e?format=webp&width=800&height=1200"
+                  alt="LMScheckout Platform"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
             </div>
           </div>
         </section>
