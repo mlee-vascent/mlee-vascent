@@ -51,14 +51,6 @@ export default function Header() {
           >
             Operations
           </Link>
-          <a
-            href="https://blog.verityascent.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 text-lg font-normal hover:underline"
-          >
-            Blog
-          </a>
         </nav>
 
         <button
@@ -109,15 +101,6 @@ export default function Header() {
           >
             Operations
           </Link>
-          <a
-            href="https://blog.verityascent.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 text-lg font-normal"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Blog
-          </a>
         </div>
       )}
     </>
