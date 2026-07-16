@@ -101,96 +101,83 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="w-full px-6 md:px-9 lg:px-[200px] py-9 md:py-9 grid grid-cols-1 md:grid-cols-3 gap-9 md:gap-6">
-          <div className="flex flex-col justify-center items-start gap-9 md:gap-6 md:px-4">
-            <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
-              Strategic Product Design <br />
-              That Drives Growth
-            </h2>
-
-            <div className="flex flex-col md:flex-col items-center md:items-center justify-start gap-9 md:gap-6 w-full px-2 md:px-2">
-              <div className="flex justify-center items-center">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/40db7e666c3b74912cf3d36982b52cc98ca6ec0b?width=400"
-                  alt="Design tools"
-                  className="w-[200px] h-[200px] rounded-full"
-                />
-              </div>
-
-              <div className="flex-1 flex flex-col justify-end items-center md:items-center gap-6 md:gap-6">
-                <p className="text-gray-500 text-base font-normal px-2 md:px-2 text-center md:text-left">
-                  Great design doesn't stop at aesthetics. I combine UI craft
-                  with UX strategy, helping startups and established brands
-                  launch products that are visually stunning, easy to use, and
-                  ready to scale.
-                </p>
-                <Link
-                  to="/portfolio"
-                  className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center self-center md:self-center"
-                >
-                  View Portfolio
-                </Link>
-              </div>
+        <section className="w-full px-6 md:px-9 lg:px-[200px] py-16 md:py-24 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
+          <div className="group flex flex-col justify-between items-center gap-8 p-8 md:p-10 bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl border-2 border-blue-200 hover:shadow-2xl hover:border-blue-300 transition-all duration-300">
+            <div className="flex justify-center items-center">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/40db7e666c3b74912cf3d36982b52cc98ca6ec0b?width=400"
+                alt="Design tools"
+                className="w-[180px] h-[180px] rounded-full shadow-md group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
+
+            <div className="flex flex-col items-center gap-4 text-center">
+              <h2 className="text-gray-700 font-sora text-2xl md:text-3xl font-bold leading-tight">
+                Strategic Product Design That Drives Growth
+              </h2>
+              <p className="text-gray-600 text-base leading-relaxed">
+                Great design doesn't stop at aesthetics. I combine UI craft with UX strategy, helping startups and established brands launch products that are visually stunning, easy to use, and ready to scale.
+              </p>
+            </div>
+
+            <Link
+              to="/portfolio"
+              className="px-8 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 shadow-lg hover:shadow-xl transition-all duration-300 w-full text-center"
+            >
+              View Portfolio →
+            </Link>
           </div>
 
-          <div className="flex flex-col justify-center items-start gap-9 md:gap-6 md:px-4">
-            <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
-              Go-To-Market Strategy That Works & Scales
-            </h2>
-
-            <div className="flex flex-col md:flex-col items-center md:items-center justify-start gap-9 md:gap-6 w-full px-2 md:px-2">
-              <div className="flex justify-center items-center">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F8ea03c0e968742f3979d72ade1d0f85f?format=webp&width=800&height=1200"
-                  alt="Go-To-Market Strategy"
-                  className="w-[200px] h-auto"
-                />
-              </div>
-
-              <div className="flex-1 flex flex-col justify-end items-center md:items-center gap-6 md:gap-6">
-                <p className="text-gray-500 text-base font-normal px-2 md:px-2 text-center md:text-left">
-                  Go-To-Market strategy has historically been a mystery. Hire marketing professionals and hope they get it right and transfer that knowledge to your sales team and customers. What if AI could turn the art into science, saving time and money?
-                </p>
-                <Link
-                  to="/gtm"
-                  className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center self-center md:self-center"
-                >
-                  Learn More
-                </Link>
-              </div>
+          <div className="group flex flex-col justify-between items-center gap-8 p-8 md:p-10 bg-gradient-to-br from-orange-50 to-orange-100 rounded-3xl border-2 border-orange-200 hover:shadow-2xl hover:border-orange-300 transition-all duration-300">
+            <div className="flex justify-center items-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F8ea03c0e968742f3979d72ade1d0f85f?format=webp&width=800&height=1200"
+                alt="Go-To-Market Strategy"
+                className="w-[160px] h-auto shadow-md group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
+
+            <div className="flex flex-col items-center gap-4 text-center">
+              <h2 className="text-gray-700 font-sora text-2xl md:text-3xl font-bold leading-tight">
+                Go-To-Market Strategy That Works & Scales
+              </h2>
+              <p className="text-gray-600 text-base leading-relaxed">
+                Go-To-Market strategy has historically been a mystery. What if AI could turn the art into science, saving time and money while your sales and marketing teams focus on execution?
+              </p>
+            </div>
+
+            <Link
+              to="/gtm"
+              className="px-8 py-3 rounded-full bg-orange-600 text-white font-semibold hover:bg-orange-700 shadow-lg hover:shadow-xl transition-all duration-300 w-full text-center"
+            >
+              Learn More →
+            </Link>
           </div>
 
-          <div className="flex flex-col justify-center items-start gap-9 md:gap-6 md:px-4">
-            <h2 className="text-gray-600 text-center md:text-center font-sora text-[30px] font-bold leading-normal w-full">
-              AI Sales Ops, Built for Automation & Scale
-            </h2>
-
-            <div className="flex flex-col md:flex-col items-center md:items-center justify-start gap-9 md:gap-6 w-full px-2 md:px-2">
-              <div className="flex justify-center items-center">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/fdd9cdf6cd596a6cc3d1b6f5cc1ae6f762a9baf4?width=400"
-                  alt="Sales tools"
-                  className="w-[200px] h-[200px] rounded-full"
-                />
-              </div>
-
-              <div className="flex-1 flex flex-col justify-end items-center md:items-center gap-6 md:gap-6">
-                <p className="text-gray-500 text-base font-normal px-2 md:px-2 text-center md:text-left">
-                  Whether you're a startup or scaling organization, we implement
-                  end-to-end GTM systems leveraging tools like LinkedIn
-                  automation, buyer intent data, and AI-powered sequencing to
-                  accelerate your path to revenue.
-                </p>
-                <Link
-                  to="/sales-ai"
-                  className="px-6 py-2 rounded-xl bg-orange-primary text-white text-lg font-normal inline-block text-center self-center md:self-center"
-                >
-                  Learn More
-                </Link>
-              </div>
+          <div className="group flex flex-col justify-between items-center gap-8 p-8 md:p-10 bg-gradient-to-br from-teal-50 to-teal-100 rounded-3xl border-2 border-teal-200 hover:shadow-2xl hover:border-teal-300 transition-all duration-300">
+            <div className="flex justify-center items-center">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/fdd9cdf6cd596a6cc3d1b6f5cc1ae6f762a9baf4?width=400"
+                alt="Sales tools"
+                className="w-[180px] h-[180px] rounded-full shadow-md group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
+
+            <div className="flex flex-col items-center gap-4 text-center">
+              <h2 className="text-gray-700 font-sora text-2xl md:text-3xl font-bold leading-tight">
+                AI Sales Ops, Built for Automation & Scale
+              </h2>
+              <p className="text-gray-600 text-base leading-relaxed">
+                We implement end-to-end GTM systems leveraging tools like LinkedIn automation, buyer intent data, and AI-powered sequencing to accelerate your path to revenue.
+              </p>
+            </div>
+
+            <Link
+              to="/sales-ai"
+              className="px-8 py-3 rounded-full bg-teal-600 text-white font-semibold hover:bg-teal-700 shadow-lg hover:shadow-xl transition-all duration-300 w-full text-center"
+            >
+              Learn More →
+            </Link>
           </div>
         </section>
 
