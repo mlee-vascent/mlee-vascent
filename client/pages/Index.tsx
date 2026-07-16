@@ -133,7 +133,7 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F8ea03c0e968742f3979d72ade1d0f85f?format=webp&width=800&height=1200"
                 alt="Go-To-Market Strategy"
-                className="w-[160px] h-auto shadow-md group-hover:scale-110 transition-transform duration-300"
+                className="w-[160px] h-auto group-hover:scale-110 transition-transform duration-300"
               />
             </div>
 
