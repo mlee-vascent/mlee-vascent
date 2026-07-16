@@ -94,7 +94,7 @@ export default function MobileApp() {
             </div>
             <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-50 flex items-center justify-center p-8">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2Fd55596ad7b7a40bb98d73b95ea3a3697?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2F4142780b5a85442faddc1827c5dbc44f%2F0c26eeff53484c9bac259d330677effd?format=webp&width=800&height=1200"
                 alt="Fitleaguer Mobile App"
                 className="h-[500px] w-auto object-contain"
               />
